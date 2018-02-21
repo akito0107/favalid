@@ -1,7 +1,7 @@
 {
   "name": "favalid",
   "description": "validator framework",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "build/main.js",
   "repository": "akito0107/favalid",
   "author": {
