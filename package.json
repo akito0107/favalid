@@ -1,14 +1,15 @@
 {
   "name": "favalid",
+  "description": "validator framework",
   "version": "0.0.1",
   "main": "build/main.js",
+  "repository": "akito0107/favalid",
   "author": {
     "name": "Akito Ito",
     "email": "akito0107@gmail.com"
   },
-  "license": "MIT",
+  "license": "apache-2.0",
   "scripts": {
-    "rollup": "rollup -c",
     "fmt": "tslint --fix",
     "lint": "tslint src/**/*.ts",
     "test": "jest",
