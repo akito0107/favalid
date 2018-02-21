@@ -1,3 +1,1 @@
-export const add = (n: number, m: number) => {
-  return n + m;
-};
+export { tester, exec, execWithReducer } from "./core";
