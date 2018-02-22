@@ -26,11 +26,11 @@ export const emailValidatorWithReducer = email => {
   const reducer = (prevError, currentError) => {
     const error = prevError.error || currentError.error;
     let message = prevError.message;
-    message =
-      currentError.error && isBlank(message)
+    if (currentError.error) {
+      message = isBlank(message)
         ? currentError.message
         : message + " / " + currentError.message;
-
+    }
     return { error, message };
   };
 
