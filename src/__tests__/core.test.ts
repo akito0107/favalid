@@ -1,8 +1,10 @@
 import * as assert from "power-assert";
 import {
+  asyncTester,
   ErrorReducer,
   exec,
   execWithReducer,
+  IValidationError,
   Messager,
   Test,
   tester
@@ -58,6 +60,53 @@ describe("exec", () => {
     assert.deepStrictEqual(e, {
       error: true,
       message: "test2"
+    });
+  });
+});
+
+describe("async", () => {
+  test("basic", async () => {
+    const validator = asyncTester(() => {
+      return Promise.resolve(true);
+    }, () => "");
+
+    assert.deepStrictEqual(await validator(), {
+      error: false,
+      message: ""
+    });
+  });
+
+  test("should be invalid", async () => {
+    const validator = asyncTester(() => {
+      return Promise.resolve(false);
+    }, () => "error");
+
+    assert.deepStrictEqual(await validator(), {
+      error: true,
+      message: "error"
+    });
+  });
+
+  test("fail Promise.resolve", async () => {
+    const validator = asyncTester(() => {
+      return Promise.reject(new Error("message"));
+    }, () => "error");
+
+    assert.deepStrictEqual(await validator(), {
+      error: true,
+      message: "error",
+      trace: new Error("message")
+    });
+  });
+
+  test("with async function", async () => {
+    const validator = asyncTester(async () => {
+      return true;
+    }, () => "");
+
+    assert.deepStrictEqual(await validator(), {
+      error: false,
+      message: ""
     });
   });
 });

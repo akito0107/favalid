@@ -1,7 +1,12 @@
 export type Test = () => boolean;
+export type AsyncTest = () => Promise<boolean>;
 export type Validator = () => IValidationError;
 export type Messager = (v?: string) => string;
 export type Tester = (t: Test, m: Messager) => Validator;
+export type AsyncTester = (
+  t: AsyncTest,
+  m: Messager
+) => () => Promise<IValidationError>;
 export type ErrorReducer = (
   p: IValidationError,
   e: IValidationError
@@ -36,8 +41,21 @@ const defaultReducer: ErrorReducer = (m, e) => {
   }
   return e;
 };
+
 export const exec: (...t: Validator[]) => IValidationError = (
   ...tests: Validator[]
 ) => {
   return execWithReducer(defaultReducer, ...tests);
+};
+
+export const asyncTester: AsyncTester = (fn, messager) => async () => {
+  try {
+    const valid = await fn();
+    if (valid) {
+      return { error: false, message: "" };
+    }
+    return { error: true, message: messager() };
+  } catch (e) {
+    return { error: true, message: messager(), trace: e };
+  }
 };
