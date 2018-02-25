@@ -1,12 +1,10 @@
 export type Test = () => boolean;
 export type AsyncTest = () => Promise<boolean>;
 export type Validator = () => IValidationError;
+export type AsyncValidator = () => Promise<IValidationError>;
 export type Messager = (v?: string) => string;
 export type Tester = (t: Test, m: Messager) => Validator;
-export type AsyncTester = (
-  t: AsyncTest,
-  m: Messager
-) => () => Promise<IValidationError>;
+export type AsyncTester = (t: AsyncTest, m: Messager) => AsyncValidator;
 export type ErrorReducer = (
   p: IValidationError,
   e: IValidationError
@@ -35,7 +33,7 @@ export const execWithReducer: (
   );
 };
 
-const defaultReducer: ErrorReducer = (m, e) => {
+export const defaultReducer: ErrorReducer = (m, e) => {
   if (m.error) {
     return m;
   }
@@ -56,6 +54,30 @@ export const asyncTester: AsyncTester = (fn, messager) => async () => {
     }
     return { error: true, message: messager() };
   } catch (e) {
-    return { error: true, message: messager(), trace: e };
+    return { error: true, message: messager() };
   }
+};
+
+export const asyncExecWithReducer: (
+  reducer: ErrorReducer,
+  ...t: AsyncValidator[]
+) => Promise<IValidationError> = async (reducer, ...t) => {
+  const validators = t.map(test => test());
+  const results = await Promise.all(validators);
+  return results.reduce(
+    (m, error) => {
+      return reducer(m, error);
+    },
+    { error: false, message: "" }
+  );
+};
+
+export const asyncExec: (
+  ...t: AsyncValidator[]
+) => Promise<IValidationError> = (...tests: AsyncValidator[]) => {
+  return asyncExecWithReducer(defaultReducer, ...tests);
+};
+
+export const toAsync: (t: Validator) => AsyncValidator = t => async () => {
+  return Promise.resolve(t());
 };

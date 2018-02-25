@@ -1,13 +1,16 @@
 import * as assert from "power-assert";
 import {
+  asyncExec,
+  asyncExecWithReducer,
   asyncTester,
+  defaultReducer,
   ErrorReducer,
   exec,
   execWithReducer,
-  IValidationError,
   Messager,
   Test,
-  tester
+  tester,
+  toAsync
 } from "../core";
 
 describe("tester", () => {
@@ -94,8 +97,7 @@ describe("async", () => {
 
     assert.deepStrictEqual(await validator(), {
       error: true,
-      message: "error",
-      trace: new Error("message")
+      message: "error"
     });
   });
 
@@ -107,6 +109,70 @@ describe("async", () => {
     assert.deepStrictEqual(await validator(), {
       error: false,
       message: ""
+    });
+  });
+});
+
+describe("asyncExec (with Reducer)", () => {
+  test("exec multiple asyncTesters", async () => {
+    const tester1 = asyncTester(() => Promise.resolve(true), () => "test3");
+    const tester2 = asyncTester(() => Promise.resolve(true), () => "test3");
+    const e = await asyncExecWithReducer(defaultReducer, tester1, tester2);
+
+    assert.deepStrictEqual(e, {
+      error: false,
+      message: ""
+    });
+  });
+
+  test("reports first failed test", async () => {
+    const tester1 = asyncTester(() => Promise.resolve(true), () => "test1");
+    const tester2 = asyncTester(
+      () => Promise.reject(new Error("error")),
+      () => "test2"
+    );
+    const tester3 = asyncTester(() => Promise.resolve(true), () => "test3");
+    const e = await asyncExecWithReducer(
+      defaultReducer,
+      tester1,
+      tester2,
+      tester3
+    );
+
+    assert.deepStrictEqual(e, {
+      error: true,
+      message: "test2"
+    });
+  });
+});
+
+describe("asyncExec", () => {
+  test("exec multiple asyncTesters", async () => {
+    const tester1 = asyncTester(() => Promise.resolve(true), () => "test1");
+    const tester2 = asyncTester(
+      () => Promise.reject(new Error("error")),
+      () => "test2"
+    );
+    const tester3 = asyncTester(() => Promise.resolve(true), () => "test3");
+    const e = await asyncExec(tester1, tester2, tester3);
+
+    assert.deepStrictEqual(e, {
+      error: true,
+      message: "test2"
+    });
+  });
+});
+
+describe("converToAsync", () => {
+  test("convert to asyncTeter", async () => {
+    const tester1 = asyncTester(() => Promise.resolve(true), () => "");
+    const tester2 = tester(() => false, () => "test2");
+    const tester3 = tester(() => true, () => "");
+    const e = await asyncExec(tester1, toAsync(tester2), toAsync(tester3));
+
+    assert.deepStrictEqual(e, {
+      error: true,
+      message: "test2"
     });
   });
 });
