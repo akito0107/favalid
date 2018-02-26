@@ -1,5 +1,8 @@
 # favalid
+
 Validator Framework for javascripts.
+
+[![CircleCI](https://circleci.com/gh/akito0107/favalid.svg?style=svg)](https://circleci.com/gh/akito0107/favalid)
 
 ## Getting Started
 

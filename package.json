@@ -13,6 +13,7 @@
     "fmt": "tslint --fix",
     "lint": "tslint src/**/*.ts",
     "test": "jest",
+    "test:cover": "jest --coverage",
     "tsc": "tsc --outDir build"
   },
   "devDependencies": {
