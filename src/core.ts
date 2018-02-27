@@ -2,7 +2,7 @@ export type Test = () => boolean;
 export type AsyncTest = () => Promise<boolean>;
 export type Validator = () => IValidationError;
 export type AsyncValidator = () => Promise<IValidationError>;
-export type Messager = (v?: string) => string;
+export type Messager = (v?: any) => string;
 export type Tester = (t: Test, m: Messager) => Validator;
 export type AsyncTester = (t: AsyncTest, m: Messager) => AsyncValidator;
 export type ErrorReducer = (
@@ -54,7 +54,7 @@ export const asyncTester: AsyncTester = (fn, messager) => async () => {
     }
     return { error: true, message: messager() };
   } catch (e) {
-    return { error: true, message: messager() };
+    return { error: true, message: messager(e) };
   }
 };
 
