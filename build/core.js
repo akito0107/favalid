@@ -37,7 +37,7 @@ exports.asyncTester = (fn, messager) => () => __awaiter(this, void 0, void 0, fu
         return { error: true, message: messager() };
     }
     catch (e) {
-        return { error: true, message: messager() };
+        return { error: true, message: messager(e) };
     }
 });
 exports.asyncExecWithReducer = (reducer, ...t) => __awaiter(this, void 0, void 0, function* () {
