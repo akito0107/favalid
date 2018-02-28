@@ -62,3 +62,6 @@ typings/
 .env
 
 # End of https://www.gitignore.io/api/node
+
+build/**/*.js
+build/**/*.js.map
