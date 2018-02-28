@@ -2,6 +2,7 @@
 
 Validator Framework for javascript.
 
+[![npm version](https://badge.fury.io/js/favalid.svg)](https://badge.fury.io/js/favalid)
 [![CircleCI](https://circleci.com/gh/akito0107/favalid.svg?style=svg)](https://circleci.com/gh/akito0107/favalid)
 
 ## Getting Started
