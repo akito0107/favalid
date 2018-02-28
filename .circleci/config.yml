@@ -1,13 +1,19 @@
 version: 2
 jobs:
   build:
+    environment:
+      - CC_TEST_REPORTER_ID: 6fcf7939554e3b3f3c7a2431471720218bd8c136930013105c5ad4f3e0ced2fc
     docker:
       - image: circleci/node:8.9.4
     working_directory: ~/node
-
     steps:
       - checkout
-
+      - run:
+          name:  Download cc-test-reporter
+          command: |
+            mkdir -p tmp/
+            curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./tmp/cc-test-reporter
+            chmod +x ./tmp/cc-test-reporter
       - restore_cache:
           key: v1-dependencies-{{ checksum "package.json"}}
       - run:
@@ -22,5 +28,11 @@ jobs:
           command: yarn lint
       - run:
           name: Run unit tests
-          command: yarn test:cover
-
+          command: |
+            yarn test:cover
+            ./tmp/cc-test-reporter format-coverage -t lcov -o tmp/codeclimate.json coverage/lcov.info
+      - run:
+          name: Upload coverage results to Code Climate
+          command: |
+            ./tmp/cc-test-reporter sum-coverage tmp/codeclimate.json -p 1 -o tmp/codeclimate.total.json
+            ./tmp/cc-test-reporter upload-coverage -i tmp/codeclimate.total.json
