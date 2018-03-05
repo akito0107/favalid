@@ -4,7 +4,7 @@ import {
   asyncExecWithReducer,
   asyncTester,
   defaultReducer,
-  ErrorReducer,
+  ResultReducer,
   exec,
   execWithReducer,
   Messager,
@@ -42,7 +42,7 @@ describe("execWithReducer", () => {
         called++;
         return true;
       }, () => "");
-    const reducer: ErrorReducer = (m, e) => {
+    const reducer: ResultReducer = (m, e) => {
       if (m.error) {
         return m;
       }
