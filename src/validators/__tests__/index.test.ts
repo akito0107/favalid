@@ -4,7 +4,7 @@ import { required } from "../index";
 describe("required", () => {
   test("strings", () => {
     const messager = () => "error";
-    const result = required("str", messager)();
+    const result = required(messager)("str");
     assert.deepStrictEqual(result, {
       error: false,
       message: ""
@@ -12,7 +12,7 @@ describe("required", () => {
   });
   test("number", () => {
     const messager = () => "error";
-    const result = required(123, messager)();
+    const result = required(messager)(123);
     assert.deepStrictEqual(result, {
       error: false,
       message: ""
@@ -20,7 +20,7 @@ describe("required", () => {
   });
   test("blank strings", () => {
     const messager = () => "error";
-    const result = required("", messager)();
+    const result = required(messager)("");
     assert.deepStrictEqual(result, {
       error: true,
       message: "error"
@@ -28,7 +28,7 @@ describe("required", () => {
   });
   test("white space strings", () => {
     const messager = () => "error";
-    const result = required(" ", messager)();
+    const result = required(messager)(" ");
     assert.deepStrictEqual(result, {
       error: true,
       message: "error"
@@ -36,7 +36,7 @@ describe("required", () => {
   });
   test("null value", () => {
     const messager = () => "error";
-    const result = required(null, messager)();
+    const result = required(messager)(null);
     assert.deepStrictEqual(result, {
       error: true,
       message: "error"
@@ -44,7 +44,7 @@ describe("required", () => {
   });
   test("undefined value", () => {
     const messager = () => "error";
-    const result = required(void 0, messager)();
+    const result = required(messager)(void 0);
     assert.deepStrictEqual(result, {
       error: true,
       message: "error"

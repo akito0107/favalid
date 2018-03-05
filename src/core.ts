@@ -1,21 +1,18 @@
-export type Test = () => boolean;
+export type Test = (...v: any[]) => boolean;
 export type AsyncTest = () => Promise<boolean>;
-export type Validator = () => IValidationResult;
+export type Validator = (...v: any[]) => IValidationResult;
 export type AsyncValidator = () => Promise<IValidationResult>;
 export type Messager = (v?: any) => string;
 export type Tester = (t: Test, m: Messager) => Validator;
 export type AsyncTester = (t: AsyncTest, m: Messager) => AsyncValidator;
-export type ResultReducer = (
-  p: IValidationResult,
-  e: IValidationResult
-) => IValidationResult;
+export type ResultReducer = (p: any, e: IValidationResult) => any;
 export interface IValidationResult {
   error: boolean;
   message: any;
 }
 
-export const tester: Tester = (test, messager) => () => {
-  if (!test()) {
+export const tester: Tester = (test, messager) => (...args) => {
+  if (!test(...args)) {
     return { error: true, message: messager() };
   }
   return { error: false, message: "" };
@@ -23,14 +20,16 @@ export const tester: Tester = (test, messager) => () => {
 
 export const execWithReducer: (
   r: ResultReducer,
+  i: any,
   ...t: Validator[]
-) => IValidationResult = (reducer: ResultReducer, ...tests: Validator[]) => {
-  return tests.reduce(
-    (m, test) => {
-      return reducer(m, test());
-    },
-    { error: false, message: "" }
-  );
+) => (...args: any[]) => IValidationResult = (
+  reducer: ResultReducer,
+  initialValue: any = { error: false, message: "" },
+  ...validators: Validator[]
+) => (...args) => {
+  return validators.reduce((m, validator) => {
+    return reducer(m, validator(...args));
+  }, initialValue);
 };
 
 export const defaultReducer: ResultReducer = (m, e) => {
@@ -40,10 +39,16 @@ export const defaultReducer: ResultReducer = (m, e) => {
   return e;
 };
 
-export const exec: (...t: Validator[]) => IValidationResult = (
-  ...tests: Validator[]
+export const exec: (
+  ...t: Validator[]
+) => (...args: any[]) => IValidationResult = (...tests: Validator[]) => (
+  ...args: any[]
 ) => {
-  return execWithReducer(defaultReducer, ...tests);
+  return execWithReducer(
+    defaultReducer,
+    { error: false, message: "" },
+    ...tests
+  )(...args);
 };
 
 export const asyncTester: AsyncTester = (fn, messager) => async () => {

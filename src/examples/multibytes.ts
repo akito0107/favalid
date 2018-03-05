@@ -8,9 +8,9 @@ const HALF_KANA_MESSAGE = name => () => `${name}に半角文字が含まれて�
 
 export const halfKanaValidator = name => {
   return exec(
-    required(name, REQUIRED_NAME),
-    regexp(name, HALF_KANA_REGEX, HALF_KANA_MESSAGE(name), {
+    required(REQUIRED_NAME),
+    regexp(HALF_KANA_REGEX, HALF_KANA_MESSAGE(name), {
       exclude: true
     })
-  );
+  )(name);
 };

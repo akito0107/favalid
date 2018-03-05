@@ -1,7 +1,7 @@
 import * as assert from "power-assert";
 import { asyncValidator, asyncValidatorWithReason } from "../async";
 
-describe("async", () => {
+describe.skip("async", () => {
   test("valid case", async () => {
     const target = "example@hello.com";
     const res = await asyncValidator(target);
@@ -20,7 +20,7 @@ describe("async", () => {
   });
 });
 
-describe("asyncWithReason", () => {
+describe.skip("asyncWithReason", () => {
   test("invalid case", async () => {
     const target = "invalid@hello.com";
     const res = await asyncValidatorWithReason(target);

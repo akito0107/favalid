@@ -9,9 +9,9 @@ export const passwordConfirmationValidator = (
   passwordConfirmation
 ) => {
   return exec(
-    required(passwordConfirmation, REQUIRED_PASSWORD_CONFIRMATION_MESSAGE),
-    tester(() => {
-      return password === passwordConfirmation;
+    required(REQUIRED_PASSWORD_CONFIRMATION_MESSAGE),
+    tester((confirmation, origin) => {
+      return confirmation === origin;
     }, PASSWORD_NOT_MATCHED_MESSAGE)
-  );
+  )(passwordConfirmation, password);
 };

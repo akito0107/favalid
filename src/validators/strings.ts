@@ -2,22 +2,20 @@ import * as _ from "lodash";
 import { Messager, tester, Validator } from "../core";
 import { strlen } from "../util";
 
-export const minLength: (
-  target: string,
+export const minLength: (limit: number, messager: Messager) => Validator = (
   limit: number,
   messager: Messager
-) => Validator = (target: string, limit: number, messager: Messager) => {
-  return tester(() => {
+) => {
+  return tester((target: string) => {
     return strlen(target) > limit;
   }, messager);
 };
 
-export const maxLength: (
-  target: string,
+export const maxLength: (limit: number, messager: Messager) => Validator = (
   limit: number,
   messager: Messager
-) => Validator = (target: string, limit: number, messager: Messager) => {
-  return tester(() => {
+) => {
+  return tester((target: string) => {
     return strlen(target) < limit;
   }, messager);
 };
@@ -27,14 +25,13 @@ export interface IRegExpOption {
 }
 
 export const regexp: (
-  target: string,
   regex: RegExp,
   messger: Messager,
   opts: IRegExpOption
-) => Validator = (target, regex, messager, { exclude = false }) => {
+) => Validator = (regex, messager, { exclude = false }) => {
   if (exclude) {
-    return tester(() => !regex.test(target), messager);
+    return tester((target: string) => !regex.test(target), messager);
   } else {
-    return tester(() => regex.test(target), messager);
+    return tester((target: string) => regex.test(target), messager);
   }
 };
