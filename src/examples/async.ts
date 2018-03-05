@@ -5,7 +5,7 @@ const USERDB = {
   "example@hello.com": true
 };
 
-const apiRequest = t => async () => {
+const apiRequest = async t => {
   if (USERDB[t]) {
     return Promise.resolve(true);
   }
@@ -14,17 +14,14 @@ const apiRequest = t => async () => {
 
 export const asyncValidator = async target => {
   return asyncExec(
-    toAsync(minLength(target, 10, () => "at least 10 letters.")),
-    asyncTester(apiRequest(target), () => "api check failed")
-  );
+    toAsync(minLength(10, () => "at least 10 letters.")),
+    asyncTester(apiRequest, () => "api check failed")
+  )(target);
 };
 
 export const asyncValidatorWithReason = async target => {
   return asyncExec(
-    toAsync(minLength(target, 10, () => "at least 10 letters.")),
-    asyncTester(
-      apiRequest(target),
-      e => `api check failed with reason: ${e.message}`
-    )
-  );
+    toAsync(minLength(10, () => "at least 10 letters.")),
+    asyncTester(apiRequest, e => `api check failed with reason: ${e.message}`)
+  )(target);
 };

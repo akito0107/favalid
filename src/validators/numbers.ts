@@ -1,21 +1,19 @@
 import { Messager, tester, Validator } from "../core";
 
-export const min: (
-  target: number,
+export const min: (limit: number, messager: Messager) => Validator = (
   limit: number,
   messager: Messager
-) => Validator = (v: number, limit: number, messager: Messager) => {
-  return tester(() => {
+) => {
+  return tester((v: number) => {
     return v <= limit;
   }, messager);
 };
 
-export const max: (
-  target: number,
+export const max: (limit: number, messager: Messager) => Validator = (
   limit: number,
   messager: Messager
-) => Validator = (v: number, limit: number, messager: Messager) => {
-  return tester(() => {
+) => {
+  return tester((v: number) => {
     return v > limit;
   }, messager);
 };
