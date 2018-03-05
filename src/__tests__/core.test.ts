@@ -3,9 +3,9 @@ import {
   asyncExec,
   asyncExecWithReducer,
   asyncTester,
-  defaultReducer,
   combine,
   combineWithReducer,
+  defaultReducer,
   Messager,
   ResultReducer,
   Test,
@@ -77,7 +77,7 @@ describe("combine", () => {
   });
 });
 
-describe.skip("async", () => {
+describe("async", () => {
   test("basic", async () => {
     const validator = asyncTester(() => {
       return Promise.resolve(true);
@@ -123,11 +123,11 @@ describe.skip("async", () => {
   });
 });
 
-describe.skip("asyncExec (with Reducer)", () => {
+describe("asyncExec (with Reducer)", () => {
   test("combine multiple asyncTesters", async () => {
     const tester1 = asyncTester(() => Promise.resolve(true), () => "test3");
     const tester2 = asyncTester(() => Promise.resolve(true), () => "test3");
-    const e = await asyncExecWithReducer(defaultReducer, tester1, tester2);
+    const e = await asyncExecWithReducer(defaultReducer, tester1, tester2)();
 
     assert.deepStrictEqual(e, {
       error: false,
@@ -147,7 +147,7 @@ describe.skip("asyncExec (with Reducer)", () => {
       tester1,
       tester2,
       tester3
-    );
+    )();
 
     assert.deepStrictEqual(e, {
       error: true,
@@ -156,7 +156,7 @@ describe.skip("asyncExec (with Reducer)", () => {
   });
 });
 
-describe.skip("asyncExec", () => {
+describe("asyncExec", () => {
   test("combine multiple asyncTesters", async () => {
     const tester1 = asyncTester(() => Promise.resolve(true), () => "test1");
     const tester2 = asyncTester(
@@ -164,7 +164,7 @@ describe.skip("asyncExec", () => {
       () => "test2"
     );
     const tester3 = asyncTester(() => Promise.resolve(true), () => "test3");
-    const e = await asyncExec(tester1, tester2, tester3);
+    const e = await asyncExec(tester1, tester2, tester3)();
 
     assert.deepStrictEqual(e, {
       error: true,
@@ -173,33 +173,16 @@ describe.skip("asyncExec", () => {
   });
 });
 
-describe.skip("converToAsync", () => {
+describe("converToAsync", () => {
   test("convert to asyncTeter", async () => {
     const tester1 = asyncTester(() => Promise.resolve(true), () => "");
     const tester2 = tester(() => false, () => "test2");
     const tester3 = tester(() => true, () => "");
-    const e = await asyncExec(tester1, toAsync(tester2), toAsync(tester3));
+    const e = await asyncExec(tester1, toAsync(tester2), toAsync(tester3))();
 
     assert.deepStrictEqual(e, {
       error: true,
       message: "test2"
-    });
-  });
-});
-
-const compose: (...t: Validator[]) => Validator = (...testers) => {
-  return () => ({ error: false, message: "" });
-};
-
-describe.skip("compose", () => {
-  test("compose must be return validator", () => {
-    const v = compose(
-      tester(() => false, () => ""),
-      tester(() => false, () => "")
-    );
-    assert.deepStrictEqual(v(), {
-      error: false,
-      message: ""
     });
   });
 });
