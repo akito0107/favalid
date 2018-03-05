@@ -1,4 +1,4 @@
-import { exec, execWithReducer } from "../core";
+import { combine, combineWithReducer } from "../core";
 import { isBlank } from "../util";
 import { maxLength, minLength, regexp, required } from "../validators";
 
@@ -14,7 +14,7 @@ const EMAIL_MIN_LENGTH = 10;
 const MIN_LENGTH_MESSAGE = () => "at least 10 letters.";
 
 export const emailValidator = email => {
-  return exec(
+  return combine(
     required(REQUIRED_EMAIL_MESSAGE),
     minLength(EMAIL_MIN_LENGTH, MIN_LENGTH_MESSAGE),
     maxLength(EMAIL_MAX_LENGTH, MAX_LENGTH_MESSAGE),
@@ -34,7 +34,7 @@ export const emailValidatorWithReducer = email => {
     return { error, message };
   };
 
-  return execWithReducer(
+  return combineWithReducer(
     reducer,
     { error: false, message: "" },
     required(REQUIRED_EMAIL_MESSAGE),

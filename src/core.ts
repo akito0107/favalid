@@ -18,11 +18,11 @@ export const tester: Tester = (test, messager) => (...args) => {
   return { error: false, message: "" };
 };
 
-export const execWithReducer: (
+export const combineWithReducer: (
   r: ResultReducer,
   i: any,
   ...t: Validator[]
-) => (...args: any[]) => IValidationResult = (
+) => (...as: any[]) => IValidationResult = (
   reducer: ResultReducer,
   initialValue: any = { error: false, message: "" },
   ...validators: Validator[]
@@ -39,12 +39,12 @@ export const defaultReducer: ResultReducer = (m, e) => {
   return e;
 };
 
-export const exec: (
+export const combine: (
   ...t: Validator[]
 ) => (...args: any[]) => IValidationResult = (...tests: Validator[]) => (
   ...args: any[]
 ) => {
-  return execWithReducer(
+  return combineWithReducer(
     defaultReducer,
     { error: false, message: "" },
     ...tests

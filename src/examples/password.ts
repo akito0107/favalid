@@ -1,4 +1,4 @@
-import { exec, tester } from "../core";
+import { combine, tester } from "../core";
 import { required } from "../validators";
 
 const REQUIRED_PASSWORD_CONFIRMATION_MESSAGE = () => "required.";
@@ -8,7 +8,7 @@ export const passwordConfirmationValidator = (
   password,
   passwordConfirmation
 ) => {
-  return exec(
+  return combine(
     required(REQUIRED_PASSWORD_CONFIRMATION_MESSAGE),
     tester((confirmation, origin) => {
       return confirmation === origin;

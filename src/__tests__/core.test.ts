@@ -4,8 +4,8 @@ import {
   asyncExecWithReducer,
   asyncTester,
   defaultReducer,
-  exec,
-  execWithReducer,
+  combine,
+  combineWithReducer,
   Messager,
   ResultReducer,
   Test,
@@ -36,8 +36,8 @@ describe("tester", () => {
   });
 });
 
-describe("execWithReducer", () => {
-  test("exec multiple tests", () => {
+describe("combineWithReducer", () => {
+  test("combine multiple tests", () => {
     let called = 0;
     const testerMaker = () =>
       tester(() => {
@@ -50,7 +50,7 @@ describe("execWithReducer", () => {
       }
       return e;
     };
-    execWithReducer(
+    combineWithReducer(
       reducer,
       {
         error: false,
@@ -63,12 +63,12 @@ describe("execWithReducer", () => {
   });
 });
 
-describe("exec", () => {
+describe("combine", () => {
   test("should return first validate failure", () => {
     const tester1 = tester(() => true, () => "test1");
     const tester2 = tester(() => false, () => "test2");
     const tester3 = tester(() => true, () => "test3");
-    const e = exec(tester1, tester2, tester3)();
+    const e = combine(tester1, tester2, tester3)();
 
     assert.deepStrictEqual(e, {
       error: true,
@@ -124,7 +124,7 @@ describe.skip("async", () => {
 });
 
 describe.skip("asyncExec (with Reducer)", () => {
-  test("exec multiple asyncTesters", async () => {
+  test("combine multiple asyncTesters", async () => {
     const tester1 = asyncTester(() => Promise.resolve(true), () => "test3");
     const tester2 = asyncTester(() => Promise.resolve(true), () => "test3");
     const e = await asyncExecWithReducer(defaultReducer, tester1, tester2);
@@ -157,7 +157,7 @@ describe.skip("asyncExec (with Reducer)", () => {
 });
 
 describe.skip("asyncExec", () => {
-  test("exec multiple asyncTesters", async () => {
+  test("combine multiple asyncTesters", async () => {
     const tester1 = asyncTester(() => Promise.resolve(true), () => "test1");
     const tester2 = asyncTester(
       () => Promise.reject(new Error("error")),
