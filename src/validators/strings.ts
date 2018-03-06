@@ -1,4 +1,3 @@
-import * as _ from "lodash";
 import { Messager, tester, Validator } from "../core";
 import { strlen } from "../util";
 
