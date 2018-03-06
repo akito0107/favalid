@@ -1,6 +1,4 @@
-import * as isEmpty from "lodash.isempty";
-import * as isNaN from "lodash.isnan";
-import * as isNumber from "lodash.isnumber";
+import { isEmpty, isNaN, isNumber } from "lodash-es";
 
 export const strlen = (str: string) => [...str].length;
 

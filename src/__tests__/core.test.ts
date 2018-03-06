@@ -9,10 +9,8 @@ import {
   Messager,
   ResultReducer,
   Test,
-  Tester,
   tester,
-  toAsync,
-  Validator
+  toAsync
 } from "../core";
 
 describe("tester", () => {

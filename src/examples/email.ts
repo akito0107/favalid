@@ -1,6 +1,7 @@
 import { combine, combineWithReducer } from "../core";
 import { isBlank } from "../util";
-import { maxLength, minLength, regexp, required } from "../validators";
+import { required } from "../validators/required";
+import { maxLength, minLength, regexp } from "../validators/strings";
 
 const REQUIRED_EMAIL_MESSAGE = () => "required.";
 

@@ -1,5 +1,5 @@
 import { combine, tester } from "../core";
-import { required } from "../validators";
+import { required } from "../validators/required";
 
 const REQUIRED_PASSWORD_CONFIRMATION_MESSAGE = () => "required.";
 const PASSWORD_NOT_MATCHED_MESSAGE = () => "password not matched.";

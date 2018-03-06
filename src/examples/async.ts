@@ -1,5 +1,5 @@
 import { asyncExec, asyncTester, toAsync } from "../core";
-import { minLength } from "../validators";
+import { minLength } from "../validators/strings";
 
 const USERDB = {
   "example@hello.com": true

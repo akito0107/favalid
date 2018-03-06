@@ -1,5 +1,6 @@
 import { combine } from "../core";
-import { regexp, required } from "../validators";
+import { required } from "../validators/required";
+import { regexp } from "../validators/strings";
 
 const REQUIRED_NAME = () => "名前を入力してください。";
 

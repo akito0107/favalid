@@ -1,4 +1,4 @@
-import * as _ from "lodash";
+import { range } from "lodash-es";
 import * as assert from "power-assert";
 import { emailValidator, emailValidatorWithReducer } from "../email";
 
@@ -28,7 +28,7 @@ describe("email", () => {
   });
 
   test("max", () => {
-    const target = _.range(0, 101)
+    const target = range(0, 101)
       .map(() => "a")
       .join("");
     assert.deepStrictEqual(emailValidator(target), {
