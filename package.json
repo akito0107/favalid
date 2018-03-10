@@ -38,7 +38,7 @@
     "transformIgnorePatterns": [
       "<rootDir>/node_modules/(?!lodash-es/.*)"
     ],
-    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "testRegex": "(/__tests__/.*(\\.)(test|spec))\\.(jsx?|tsx?)$",
     "moduleFileExtensions": [
       "ts",
       "js",
