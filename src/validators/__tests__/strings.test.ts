@@ -1,9 +1,5 @@
-import * as assert from "power-assert";
 import { maxLength, minLength, regexp } from "../strings";
-
-function helper(tester, arg, expect) {
-  assert.deepStrictEqual(tester(arg), expect);
-}
+import { helper } from "./helper";
 
 describe("strings", () => {
   test("minLength", () => {
