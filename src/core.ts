@@ -79,7 +79,7 @@ export const asyncCombineWithReducer: (
   }, initialValue);
 };
 
-export const ayncCombine: (
+export const asyncCombine: (
   ...t: AsyncValidator[]
 ) => (...a: any[]) => Promise<IValidationResult> = (
   ...tests: AsyncValidator[]
