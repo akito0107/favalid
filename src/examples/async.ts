@@ -1,4 +1,4 @@
-import { asyncExec, asyncTester, toAsync } from "../core";
+import { ayncCombine, asyncTester, toAsync } from "../core";
 import { minLength } from "../validators/strings";
 
 const USERDB = {
@@ -13,14 +13,14 @@ const apiRequest = async t => {
 };
 
 export const asyncValidator = async target => {
-  return asyncExec(
+  return ayncCombine(
     toAsync(minLength(10, () => "at least 10 letters.")),
     asyncTester(apiRequest, () => "api check failed")
   )(target);
 };
 
 export const asyncValidatorWithReason = async target => {
-  return asyncExec(
+  return ayncCombine(
     toAsync(minLength(10, () => "at least 10 letters.")),
     asyncTester(apiRequest, e => `api check failed with reason: ${e.message}`)
   )(target);

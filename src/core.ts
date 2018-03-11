@@ -63,7 +63,7 @@ export const asyncTester: AsyncTester = (fn, messager) => async (...args) => {
   }
 };
 
-export const asyncExecWithReducer: (
+export const asyncCombineWithReducer: (
   reducer: ResultReducer,
   i: any,
   ...t: AsyncValidator[]
@@ -79,12 +79,12 @@ export const asyncExecWithReducer: (
   }, initialValue);
 };
 
-export const asyncExec: (
+export const ayncCombine: (
   ...t: AsyncValidator[]
 ) => (...a: any[]) => Promise<IValidationResult> = (
   ...tests: AsyncValidator[]
 ) => (...args) => {
-  return asyncExecWithReducer(
+  return asyncCombineWithReducer(
     defaultReducer,
     { error: false, message: "" },
     ...tests
