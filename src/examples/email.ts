@@ -1,5 +1,11 @@
-import { combine, combineWithReducer } from "../core";
-import { maxLength, minLength, regexp, required } from "../main";
+import {
+  combine,
+  combineWithReducer,
+  maxLength,
+  minLength,
+  regexp,
+  required
+} from "../main";
 import { isBlank } from "../util";
 
 const REQUIRED_EMAIL_MESSAGE = () => "required.";

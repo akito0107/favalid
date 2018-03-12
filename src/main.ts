@@ -1,4 +1,12 @@
-export { tester, combine, combineWithReducer } from "./core";
+export {
+  tester,
+  combine,
+  combineWithReducer,
+  asyncTester,
+  asyncCombine,
+  asyncCombineWithReducer,
+  toAsync
+} from "./core";
 export { default as required } from "./validators/required";
 export { default as max } from "./validators/numbers.max";
 export { default as min } from "./validators/numbers.min";

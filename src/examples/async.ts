@@ -1,6 +1,4 @@
-import { asyncCombine, asyncTester, toAsync } from "../core";
-
-import { minLength } from "../main";
+import { asyncCombine, asyncTester, minLength, toAsync } from "../main";
 
 const USERDB = {
   "example@hello.com": true
