@@ -1,4 +1,6 @@
-import { maxLength, minLength, regexp } from "../strings";
+import maxLength from "../strings.maxLength";
+import minLength from "../strings.minLength";
+import regexp from "../strings.regexp";
 import { helper } from "./helper";
 
 describe("strings", () => {
