@@ -1,12 +1,10 @@
-import {
-  integer,
-  lessThan,
-  max,
-  min,
-  moreThan,
-  negative,
-  positive
-} from "../numbers";
+import integer from "../numbers.integer";
+import lessThan from "../numbers.lessThan";
+import max from "../numbers.max";
+import min from "../numbers.min";
+import moreThan from "../numbers.moreThan";
+import negative from "../numbers.negative";
+import positive from "../numbers.positive";
 import { helper } from "./helper";
 
 describe("number validator", () => {

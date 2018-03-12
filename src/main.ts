@@ -1,4 +1,10 @@
 export { tester, combine, combineWithReducer } from "./core";
 export { required } from "./validators/required";
-export { max, min } from "./validators/numbers";
+export { default as max } from "./validators/numbers.max";
+export { default as min } from "./validators/numbers.min";
+export { default as integer } from "./validators/numbers.integer";
+export { default as lessThan } from "./validators/numbers.lessThan";
+export { default as moreThan } from "./validators/numbers.moreThan";
+export { default as positive } from "./validators/numbers.positive";
+export { default as negative } from "./validators/numbers.negative";
 export { regexp, maxLength, minLength } from "./validators/strings";
