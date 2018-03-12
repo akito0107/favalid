@@ -1,5 +1,5 @@
 import * as assert from "power-assert";
-import { required } from "../required";
+import required from "../required";
 
 describe("required", () => {
   test("strings", () => {

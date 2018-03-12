@@ -1,5 +1,5 @@
 export { tester, combine, combineWithReducer } from "./core";
-export { required } from "./validators/required";
+export { default as required } from "./validators/required";
 export { default as max } from "./validators/numbers.max";
 export { default as min } from "./validators/numbers.min";
 export { default as integer } from "./validators/numbers.integer";
