@@ -10,17 +10,19 @@
   },
   "license": "apache-2.0",
   "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:cover": "jest --coverage",
+    "test": "jest ./src",
+    "test:watch": "jest --watch ./src",
+    "test:cover": "jest --coverage ./src",
     "lint": "eslint ./src/**/*.js",
     "lint:fix": "eslint --fix",
     "babel": "babel src/ -- -d lib/"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.0.0-beta.40",
     "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.2",
+    "babel-jest": "^22.4.1",
+    "babel-preset-env": "^1.6.1",
     "babel-preset-flow": "^6.23.0",
     "eslint": "^4.18.2",
     "eslint-config-prettier": "^2.9.0",
@@ -29,23 +31,18 @@
     "eslint-plugin-prettier": "^2.6.0",
     "flow-bin": "^0.67.1",
     "jest": "^22.4.0",
-    "lodash-es": "^4.17.7",
+    "lodash.isempty": "^4.4.0",
+    "lodash.isnan": "^3.0.2",
+    "lodash.isnumber": "^3.0.3",
+    "lodash.isstring": "^4.0.1",
+    "lodash.range": "^3.2.0",
+    "lodash.trim": "^4.5.1",
     "power-assert": "^1.4.4",
     "prettier": "^1.10.2",
-    "prettier-eslint": "^8.8.1"
+    "prettier-eslint": "^8.8.1",
+    "regenerator-runtime": "^0.11.1"
   },
   "jest": {
-    "transform": {
-      "^.+\\.(j|t)sx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
-    },
-    "transformIgnorePatterns": [
-      "<rootDir>/node_modules/(?!lodash-es/.*)"
-    ],
-    "testRegex": "(/__tests__/.*(\\.)(test|spec))\\.(jsx?|tsx?)$",
-    "moduleFileExtensions": [
-      "ts",
-      "js",
-      "json"
-    ]
+    "testRegex": "(/__tests__/.*(\\.)(test|spec))\\.(jsx?|tsx?)$"
   }
 }
