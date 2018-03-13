@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "plugin:flowtype/recommended",
+    "prettier",
+    "prettier/flowtype"
+  ],
+  "plugins": [
+    "jest",
+    "prettier",
+    "flowtype"
+  ]
+}
