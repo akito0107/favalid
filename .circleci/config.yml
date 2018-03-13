@@ -27,6 +27,9 @@ jobs:
           name: Run lint
           command: yarn lint
       - run:
+          name: Flow
+          command: yarn flow
+      - run:
           name: Run unit tests
           command: |
             yarn test:cover
