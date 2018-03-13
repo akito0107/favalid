@@ -15,6 +15,7 @@
     "test:cover": "jest --coverage ./src",
     "lint": "eslint ./src/**/*.js",
     "lint:fix": "eslint --fix",
+    "install:type": "flow-typed install --overwrite",
     "babel": "babel src/ -- -d lib/"
   },
   "devDependencies": {
@@ -30,6 +31,7 @@
     "eslint-plugin-jest": "^21.14.0",
     "eslint-plugin-prettier": "^2.6.0",
     "flow-bin": "^0.67.1",
+    "flow-typed": "^2.3.0",
     "jest": "^22.4.0",
     "lodash.isempty": "^4.4.0",
     "lodash.isnan": "^3.0.2",

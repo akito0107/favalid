@@ -65,3 +65,4 @@ typings/
 
 build/**/*.js
 build/**/*.js.map
+flow-typed
