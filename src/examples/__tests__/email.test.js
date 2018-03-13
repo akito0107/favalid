@@ -1,65 +1,65 @@
-import {range} from 'lodash-es';
-import * as assert from 'power-assert';
-import {emailValidator, emailValidatorWithReducer} from '../email';
+import { range } from "lodash-es";
+import * as assert from "power-assert";
+import { emailValidator, emailValidatorWithReducer } from "../email";
 
-describe('email', () => {
-  test('valid email', () => {
-    const target = 'valid@valid.com';
+describe("email", () => {
+  test("valid email", () => {
+    const target = "valid@valid.com";
     assert.deepStrictEqual(emailValidator(target), {
       error: false,
-      message: '',
+      message: ""
     });
   });
 
-  test('blank email', () => {
-    const target = '';
+  test("blank email", () => {
+    const target = "";
     assert.deepStrictEqual(emailValidator(target), {
       error: true,
-      message: 'required.',
+      message: "required."
     });
   });
 
-  test('min', () => {
-    const target = 'asdf';
+  test("min", () => {
+    const target = "asdf";
     assert.deepStrictEqual(emailValidator(target), {
       error: true,
-      message: 'at least 10 letters.',
+      message: "at least 10 letters."
     });
   });
 
-  test('max', () => {
+  test("max", () => {
     const target = range(0, 101)
-      .map(() => 'a')
-      .join('');
+      .map(() => "a")
+      .join("");
     assert.deepStrictEqual(emailValidator(target), {
       error: true,
-      message: 'exceeds 100 letters.',
+      message: "exceeds 100 letters."
     });
   });
 
-  test('regexp', () => {
-    const target = 'aaabbbcccddd';
+  test("regexp", () => {
+    const target = "aaabbbcccddd";
     assert.deepStrictEqual(emailValidator(target), {
       error: true,
-      message: 'invalid email.',
+      message: "invalid email."
     });
   });
 });
 
-describe('emailWithReducer', () => {
-  test('valid email', () => {
-    const target = 'valid@valid.com';
+describe("emailWithReducer", () => {
+  test("valid email", () => {
+    const target = "valid@valid.com";
     assert.deepStrictEqual(emailValidatorWithReducer(target), {
       error: false,
-      message: '',
+      message: ""
     });
   });
 
-  test('min and invalid format', () => {
-    const target = 'aaa';
+  test("min and invalid format", () => {
+    const target = "aaa";
     assert.deepStrictEqual(emailValidatorWithReducer(target), {
       error: true,
-      message: 'at least 10 letters. / invalid email.',
+      message: "at least 10 letters. / invalid email."
     });
   });
 });

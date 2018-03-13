@@ -1,6 +1,6 @@
 // @flow
 
-import {isEmpty, isNaN, isNumber} from 'lodash-es';
+import { isEmpty, isNaN, isNumber } from "lodash-es";
 
 export const strlen = (str: string) => [...str].length;
 

@@ -15,9 +15,9 @@ export interface IValidationResult {
 
 export const tester: Tester = (test, messager) => (...args) => {
   if (!test(...args)) {
-    return {error: true, message: messager()};
+    return { error: true, message: messager() };
   }
-  return {error: false, message: ''};
+  return { error: false, message: "" };
 };
 
 export const combineWithReducer: (
@@ -26,7 +26,7 @@ export const combineWithReducer: (
   ...t: Validator[]
 ) => (...as: any[]) => IValidationResult = (
   reducer: ResultReducer,
-  initialValue: any = {error: false, message: ''},
+  initialValue: any = { error: false, message: "" },
   ...validators: Validator[]
 ) => (...args) => {
   return validators.reduce((m, validator) => {
@@ -48,8 +48,8 @@ export const combine: (
 ) => {
   return combineWithReducer(
     defaultReducer,
-    {error: false, message: ''},
-    ...tests,
+    { error: false, message: "" },
+    ...tests
   )(...args);
 };
 
@@ -57,11 +57,11 @@ export const asyncTester: AsyncTester = (fn, messager) => async (...args) => {
   try {
     const valid = await fn(...args);
     if (valid) {
-      return {error: false, message: ''};
+      return { error: false, message: "" };
     }
-    return {error: true, message: messager()};
+    return { error: true, message: messager() };
   } catch (e) {
-    return {error: true, message: messager(e)};
+    return { error: true, message: messager(e) };
   }
 };
 
@@ -71,7 +71,7 @@ export const asyncCombineWithReducer: (
   ...t: AsyncValidator[]
 ) => (...a: any[]) => Promise<IValidationResult> = (
   reducer,
-  initialValue = {error: false, message: ''},
+  initialValue = { error: false, message: "" },
   ...testers
 ) => async (...args) => {
   const asyncValidators = testers.map(test => test(...args));
@@ -88,8 +88,8 @@ export const asyncCombine: (
 ) => (...args) => {
   return asyncCombineWithReducer(
     defaultReducer,
-    {error: false, message: ''},
-    ...tests,
+    { error: false, message: "" },
+    ...tests
   )(...args);
 };
 

@@ -1,32 +1,32 @@
-import * as assert from 'power-assert';
-import {asyncValidator, asyncValidatorWithReason} from '../async';
+import * as assert from "power-assert";
+import { asyncValidator, asyncValidatorWithReason } from "../async";
 
-describe('async', () => {
-  test('valid case', async () => {
-    const target = 'example@hello.com';
+describe("async", () => {
+  test("valid case", async () => {
+    const target = "example@hello.com";
     const res = await asyncValidator(target);
     assert.deepStrictEqual(res, {
       error: false,
-      message: '',
+      message: ""
     });
   });
-  test('invalid case', async () => {
-    const target = 'invalid@hello.com';
+  test("invalid case", async () => {
+    const target = "invalid@hello.com";
     const res = await asyncValidator(target);
     assert.deepStrictEqual(res, {
       error: true,
-      message: 'api check failed',
+      message: "api check failed"
     });
   });
 });
 
-describe('asyncWithReason', () => {
-  test('invalid case', async () => {
-    const target = 'invalid@hello.com';
+describe("asyncWithReason", () => {
+  test("invalid case", async () => {
+    const target = "invalid@hello.com";
     const res = await asyncValidatorWithReason(target);
     assert.deepStrictEqual(res, {
       error: true,
-      message: 'api check failed with reason: user not exists',
+      message: "api check failed with reason: user not exists"
     });
   });
 });

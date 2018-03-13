@@ -8,5 +8,8 @@
     "jest",
     "prettier",
     "flowtype"
-  ]
+  ],
+  "rules": {
+    "prettier/prettier": "error"
+  }
 }

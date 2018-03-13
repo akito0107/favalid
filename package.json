@@ -13,7 +13,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:cover": "jest --coverage",
-    "lint": "eslint",
+    "lint": "eslint ./src/**/*.js",
     "lint:fix": "eslint --fix",
     "babel": "babel src/ -- -d lib/"
   },
