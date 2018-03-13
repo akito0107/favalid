@@ -1,4 +1,6 @@
-import * as assert from "power-assert";
+// @flow
+
+import assert from "power-assert";
 import { halfKanaValidator } from "../multibytes";
 
 describe("half kana", () => {

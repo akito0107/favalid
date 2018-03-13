@@ -1,5 +1,7 @@
+// @flow
+
 import { range } from "lodash-es";
-import * as assert from "power-assert";
+import assert from "power-assert";
 import { emailValidator, emailValidatorWithReducer } from "../email";
 
 describe("email", () => {

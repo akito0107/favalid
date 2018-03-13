@@ -1,3 +1,5 @@
+// @flow
+
 import maxLength from "../strings.maxLength";
 import minLength from "../strings.minLength";
 import regexp from "../strings.regexp";

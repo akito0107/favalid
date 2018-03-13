@@ -1,3 +1,5 @@
+// @flow
+
 import {
   combine,
   combineWithReducer,
@@ -19,7 +21,7 @@ const MAX_LENGTH_MESSAGE = () => "exceeds 100 letters.";
 const EMAIL_MIN_LENGTH = 10;
 const MIN_LENGTH_MESSAGE = () => "at least 10 letters.";
 
-export const emailValidator = email => {
+export const emailValidator = (email: string) => {
   return combine(
     required(REQUIRED_EMAIL_MESSAGE),
     minLength(EMAIL_MIN_LENGTH, MIN_LENGTH_MESSAGE),
@@ -28,7 +30,7 @@ export const emailValidator = email => {
   )(email);
 };
 
-export const emailValidatorWithReducer = email => {
+export const emailValidatorWithReducer = (email: string) => {
   const reducer = (prevError, currentError) => {
     const error = prevError.error || currentError.error;
     let message = prevError.message;

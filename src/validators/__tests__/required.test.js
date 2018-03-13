@@ -1,4 +1,6 @@
-import * as assert from "power-assert";
+// @flow
+
+import assert from "power-assert";
 import required from "../required";
 
 describe("required", () => {
