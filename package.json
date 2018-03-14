@@ -1,7 +1,7 @@
 {
   "name": "favalid",
   "description": "validator framework",
-  "version": "0.3.0",
+  "version": "0.4.1",
   "main": "lib/main.js",
   "repository": "akito0107/favalid",
   "author": {
@@ -31,6 +31,7 @@
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.2",
     "babel-jest": "^22.4.1",
+    "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
     "babel-preset-env": "^1.6.1",
     "babel-preset-flow": "^6.23.0",

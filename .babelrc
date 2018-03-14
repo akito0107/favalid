@@ -1,4 +1,7 @@
 {
   "presets": ["env","flow"],
-  "plugins": ["transform-es2015-modules-umd"]
+  "plugins": [
+    "add-module-exports",
+    "transform-es2015-modules-umd"
+  ]
 }
