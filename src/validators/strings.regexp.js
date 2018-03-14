@@ -3,14 +3,14 @@
 import { tester } from "../core";
 import type { Messager, Validator } from "../core";
 
-export interface IRegExpOption {
-  exclude?: boolean;
-}
+export type RegExpOption = {
+  exclude?: boolean
+};
 
 export default (
   regex: RegExp,
   messager: Messager,
-  { exclude = false }: IRegExpOption
+  { exclude = false }: RegExpOption
 ): Validator => {
   if (exclude) {
     return tester((target: string) => !regex.test(target), messager);

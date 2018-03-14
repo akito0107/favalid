@@ -2,13 +2,14 @@
 
 export type Test = (...v: any[]) => boolean;
 export type AsyncTest = (...v: any[]) => Promise<boolean>;
-export type Validator = (...v: any[]) => IValidationResult;
-export type AsyncValidator = (...v: any[]) => Promise<IValidationResult>;
+export type Validator = (...v: any[]) => ValidationResult;
+export type AsyncValidator = (...v: any[]) => Promise<ValidationResult>;
 export type Messager = (v?: any) => string;
 export type Tester = (t: Test, m: Messager) => Validator;
 export type AsyncTester = (t: AsyncTest, m: Messager) => AsyncValidator;
-export type ResultReducer = (p: any, e: IValidationResult) => any;
-export interface IValidationResult {
+export type ResultReducer = (p: any, e: ValidationResult) => any;
+
+export interface ValidationResult {
   error: boolean;
   message: any;
 }
@@ -24,10 +25,10 @@ export const combineWithReducer: (
   r: ResultReducer,
   i: any,
   ...t: Validator[]
-) => (...as: any[]) => IValidationResult = (
-  reducer: ResultReducer,
-  initialValue: any = { error: false, message: "" },
-  ...validators: Validator[]
+) => (...as: any[]) => ValidationResult = (
+  reducer,
+  initialValue = { error: false, message: "" },
+  ...validators
 ) => (...args) => {
   return validators.reduce((m, validator) => {
     return reducer(m, validator(...args));
@@ -43,7 +44,7 @@ export const defaultReducer: ResultReducer = (m, e) => {
 
 export const combine: (
   ...t: Validator[]
-) => (...args: any[]) => IValidationResult = (...tests: Validator[]) => (
+) => (...args: any[]) => ValidationResult = (...tests: Validator[]) => (
   ...args: any[]
 ) => {
   return combineWithReducer(
@@ -69,7 +70,7 @@ export const asyncCombineWithReducer: (
   reducer: ResultReducer,
   i: any,
   ...t: AsyncValidator[]
-) => (...a: any[]) => Promise<IValidationResult> = (
+) => (...a: any[]) => Promise<ValidationResult> = (
   reducer,
   initialValue = { error: false, message: "" },
   ...testers
@@ -83,7 +84,7 @@ export const asyncCombineWithReducer: (
 
 export const asyncCombine: (
   ...t: AsyncValidator[]
-) => (...a: any[]) => Promise<IValidationResult> = (
+) => (...a: any[]) => Promise<ValidationResult> = (
   ...tests: AsyncValidator[]
 ) => (...args) => {
   return asyncCombineWithReducer(
