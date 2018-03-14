@@ -2,7 +2,7 @@
   "name": "favalid",
   "description": "validator framework",
   "version": "0.3.0",
-  "main": "build/main.js",
+  "main": "lib/main.js",
   "repository": "akito0107/favalid",
   "author": {
     "name": "Akito Ito",
@@ -16,13 +16,22 @@
     "lint": "eslint ./src/**/*.js",
     "lint:fix": "eslint --fix",
     "install:type": "flow-typed install --overwrite",
-    "babel": "babel src/ -- -d lib/"
+    "babel": "babel src --out-dir lib --copy-files"
+  },
+  "dependencies": {
+    "lodash.isempty": "^4.4.0",
+    "lodash.isnan": "^3.0.2",
+    "lodash.isnumber": "^3.0.3",
+    "lodash.isstring": "^4.0.1",
+    "lodash.range": "^3.2.0",
+    "lodash.trim": "^4.5.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.2",
     "babel-jest": "^22.4.1",
+    "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
     "babel-preset-env": "^1.6.1",
     "babel-preset-flow": "^6.23.0",
     "eslint": "^4.18.2",
@@ -33,12 +42,6 @@
     "flow-bin": "^0.67.1",
     "flow-typed": "^2.3.0",
     "jest": "^22.4.0",
-    "lodash.isempty": "^4.4.0",
-    "lodash.isnan": "^3.0.2",
-    "lodash.isnumber": "^3.0.3",
-    "lodash.isstring": "^4.0.1",
-    "lodash.range": "^3.2.0",
-    "lodash.trim": "^4.5.1",
     "power-assert": "^1.4.4",
     "prettier": "^1.10.2",
     "prettier-eslint": "^8.8.1",
