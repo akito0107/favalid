@@ -20,3 +20,5 @@ export { default as negative } from "./validators/numbers.negative";
 export { default as regexp } from "./validators/strings.regexp";
 export { default as maxLength } from "./validators/strings.maxLength";
 export { default as minLength } from "./validators/strings.minLength";
+export { default as minDate } from "./validators/date.min";
+export { default as maxDate } from "./validators/date.max";
