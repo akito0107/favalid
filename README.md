@@ -17,6 +17,106 @@ Validator Framework for javascript.
 $ npm install favalid
 ```
 
+### Usage
+#### Primitive Validator
+1. Write higher order validator using `tester()`.
+`tester()` takes two arguments. first argument is `(value: any) => bool` function, which represent validation rules.
+Second argument is `() => string` function, which represents validation error message.
+
+```js
+import { tester } from 'favalid';
+
+const validator = tester((targetValue) => {
+  return targetValue > 100;
+}, () => {
+  return 'must be less than 100';
+})
+```
+
+2. Use it!
+`tester()` returns simple validator function, `(value: any) => ({error: bool, message: string})`.
+
+```js
+console.log(validator(50)); // => { error: false, message: '' }
+
+console.log(validator(101)); // => { error: true, message: 'must ne less than 100' }
+
+```
+
+#### Combined Validator
+1. You can combine these validators using `combine(...validators)`.
+`combine()` returns also validator.
+```js
+import { tester, combine } from 'favalid';
+const validator1 = tester((targetValue) => {
+  return targetValue < 100;
+}, () => {
+  return 'must be less than 100';
+})
+
+const validator2 = tester((targetValue) => {
+  return targetValue > 20;
+}, () => {
+  return 'must be higher than 20';
+})
+
+const combinedValidator = combine(validator1, validator2)
+```
+
+2. Use it.
+```js
+console.log(combinedValidator(80)) // { error: false, message: '' }
+
+console.log(combinedValidator(101)) // { error: true, message: 'must be less than 100' }
+
+console.log(combinedValidator(19)) // { error: true, message: 'must be higher than 20' }
+```
+
+If target values are failed multiple tests, combined validator returns first failed message. 
+ ```js
+ import { tester, combine } from 'favalid';
+ const minLength = tester((targetValue) => {
+   return [....targetValue].length > 2;
+ }, () => {
+   return 'too few letters';
+ })
+ 
+ const regex = tester((targetValue) => {
+   return /^[a-zA-Z]+$/.test(targetValue) // only contains alphabet letters.
+ }, () => {
+   return 'invalid format';
+ })
+ 
+ const combinedValidator = combine(minLength, regex)
+ 
+ console.log(combinedValidator('a')) // { error: true, message: 'too few letters' }
+ 
+ console.log(combinedValidator('1')) // { error: true, message: 'too few letters' }
+ 
+ console.log(combinedValidator('asdf1')) // {  error: true, message: 'invalid format' }
+
+```
+
+#### Using Predefined Higher Order Validators
+You can also use predefined higher order validators found on `favalid/lib/validators`.
+These validators can be combined with your original validators.
+
+```js
+import { tester, combine } from 'favalid';
+import minLength from 'favalid/lib/validators/strings.minLength';
+import regexp from 'favalid/lib/validators/strings.regexp';
+ 
+ const combinedValidator = combine(
+   minLength(3, () => 'too few letters'), 
+   regexp(/^[a-zA-Z]+$/, () => "invalid format", {}),
+   tester(() => {
+     // some original validation rules
+   }, () => ('original error')),
+ )
+
+```
+
+
 ### Examples
 See [src/examples](src/examples).
 
