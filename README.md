@@ -27,7 +27,7 @@ Second argument is `() => string` function, which represents validation error me
 import { tester } from 'favalid';
 
 const validator = tester((targetValue) => {
-  return targetValue > 100;
+  return targetValue < 100;
 }, () => {
   return 'must be less than 100';
 })
@@ -37,10 +37,8 @@ const validator = tester((targetValue) => {
 `tester()` returns simple validator function, `(value: any) => ({error: bool, message: string})`.
 
 ```js
-console.log(validator(50)); // => { error: false, message: '' }
-
+console.log(validator(99)); // => { error: false, message: '' }
 console.log(validator(101)); // => { error: true, message: 'must ne less than 100' }
-
 ```
 
 #### Combined Validator
@@ -76,7 +74,7 @@ If target values are failed multiple tests, combined validator returns first fai
  ```js
  import { tester, combine } from 'favalid';
  const minLength = tester((targetValue) => {
-   return [....targetValue].length > 2;
+   return [...targetValue].length > 2;
  }, () => {
    return 'too few letters';
  })
@@ -102,9 +100,7 @@ You can also use predefined higher order validators found on `favalid/lib/valida
 These validators can be combined with your original validators.
 
 ```js
-import { tester, combine } from 'favalid';
-import minLength from 'favalid/lib/validators/strings.minLength';
-import regexp from 'favalid/lib/validators/strings.regexp';
+import { tester, combine, minLenght, regexp } from 'favalid';
  
  const combinedValidator = combine(
    minLength(3, () => 'too few letters'), 
