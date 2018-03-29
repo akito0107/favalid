@@ -52,4 +52,12 @@ describe("required", () => {
       message: "error"
     });
   });
+  test("multiple value", () => {
+    const messager = () => "error";
+    const result = required(messager)(null, "hoge");
+    assert.deepStrictEqual(result, {
+      error: true,
+      message: "error"
+    });
+  });
 });

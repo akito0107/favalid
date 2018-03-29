@@ -26,4 +26,15 @@ describe("password", () => {
       }
     );
   });
+  test("password confirmation with blank", () => {
+    const password = "xxxx";
+    const confirmation = "";
+    assert.deepStrictEqual(
+      passwordConfirmationValidator(password, confirmation),
+      {
+        error: true,
+        message: "required."
+      }
+    );
+  });
 });
