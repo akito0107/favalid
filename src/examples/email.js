@@ -51,3 +51,21 @@ export const emailValidatorWithReducer = (email: string) => {
     regexp(EMAIL_REGEXP, REGEXP_MESSAGE, {})
   )(email);
 };
+
+export const emailValidatorWithMultipleErrorReducer = (email: string) => {
+  const reducer = (prevError, currentError) => {
+    if (currentError.error) {
+      prevError.push(currentError);
+    }
+    return prevError;
+  };
+
+  return combineWithReducer(
+    reducer,
+    [],
+    required(REQUIRED_EMAIL_MESSAGE),
+    minLength(EMAIL_MIN_LENGTH, MIN_LENGTH_MESSAGE),
+    maxLength(EMAIL_MAX_LENGTH, MAX_LENGTH_MESSAGE),
+    regexp(EMAIL_REGEXP, REGEXP_MESSAGE, {})
+  )(email);
+};

@@ -2,7 +2,11 @@
 
 import range from "lodash.range";
 import assert from "power-assert";
-import { emailValidator, emailValidatorWithReducer } from "../email";
+import {
+  emailValidator,
+  emailValidatorWithMultipleErrorReducer,
+  emailValidatorWithReducer
+} from "../email";
 
 describe("email", () => {
   test("valid email", () => {
@@ -63,5 +67,20 @@ describe("emailWithReducer", () => {
       error: true,
       message: "at least 10 letters. / invalid email."
     });
+  });
+});
+
+describe("emailWithMultipleErrorReducer", () => {
+  test("valid email", () => {
+    const target = "valid@valid.com";
+    assert.deepStrictEqual(emailValidatorWithMultipleErrorReducer(target), []);
+  });
+
+  test("min and invalid format", () => {
+    const target = "aaa";
+    assert.deepStrictEqual(emailValidatorWithMultipleErrorReducer(target), [
+      { error: true, message: "at least 10 letters." },
+      { error: true, message: "invalid email." }
+    ]);
   });
 });
