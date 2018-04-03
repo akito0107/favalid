@@ -101,7 +101,7 @@ You can also use predefined higher order validators found on `favalid/lib/valida
 These validators can be combined with your original validators.
 
 ```js
-import { tester, combine, minLenght, regexp } from 'favalid';
+import { tester, combine, minLength, regexp } from 'favalid';
  
  const combinedValidator = combine(
    minLength(3, () => 'too few letters'), 
@@ -111,6 +111,46 @@ import { tester, combine, minLenght, regexp } from 'favalid';
    }, () => ('original error')),
  )
 
+```
+
+
+#### Validation Result Reducers
+You can aggregate validate errors with your customize error reducer using `conbimeWithReducer(reducer, initialValue, ...validators)`.
+
+```js
+import { tester, combineWithReducer, minLength, maxLength, regexp } from 'favalid';
+
+const REQUIRED_EMAIL_MESSAGE = () => "required.";
+
+const EMAIL_REGEXP = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+const REGEXP_MESSAGE = () => "invalid email.";
+
+const EMAIL_MAX_LENGTH = 100;
+const MAX_LENGTH_MESSAGE = () => "exceeds 100 letters.";
+
+const EMAIL_MIN_LENGTH = 10;
+const MIN_LENGTH_MESSAGE = () => "at least 10 letters.";
+
+const emailValidatorWithMultipleErrorReducer = (email: string) => {
+  const reducer = (prevError, currentError) => {
+    if (currentError.error) {
+      prevError.push(currentError);
+    }
+    return prevError;
+  };
+
+  return combineWithReducer(
+    reducer,
+    [],
+    required(REQUIRED_EMAIL_MESSAGE),
+    minLength(EMAIL_MIN_LENGTH, MIN_LENGTH_MESSAGE),
+    maxLength(EMAIL_MAX_LENGTH, MAX_LENGTH_MESSAGE),
+    regexp(EMAIL_REGEXP, REGEXP_MESSAGE, {})
+  )(email);
+};
+
+console.log(emailValidatorWithMultipleErrorReducer('valid@valid.com')) // => []
+console.log(emailValidatorWithMultipleErrorReducer('aaa')) // => [{error: true, message: 'at least 10 letters.'}, {error: true, message: 'invalid email.'}]
 ```
 
 
