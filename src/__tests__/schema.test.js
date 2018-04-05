@@ -2,7 +2,7 @@
 
 import assert from "power-assert";
 import { combine, tester } from "../core";
-import { shape } from "../schema";
+import shape from "../schema";
 import { emailValidator } from "../examples/email";
 import { maxLength, minLength } from "../main";
 
