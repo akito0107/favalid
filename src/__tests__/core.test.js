@@ -184,3 +184,11 @@ describe("convertToAsync", () => {
     );
   });
 });
+
+describe("messager can receive actual value", () => {
+  const test = tester(() => false, value => `${value}`);
+  helper(test, "test", {
+    error: true,
+    message: "test"
+  });
+});

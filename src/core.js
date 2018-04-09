@@ -16,7 +16,7 @@ export interface ValidationResult {
 
 export const tester: Tester = (test, messager) => (...args) => {
   if (!test(...args)) {
-    return { error: true, message: messager() };
+    return { error: true, message: messager(...args) };
   }
   return { error: false, message: "" };
 };
@@ -60,9 +60,9 @@ export const asyncTester: AsyncTester = (fn, messager) => async (...args) => {
     if (valid) {
       return { error: false, message: "" };
     }
-    return { error: true, message: messager() };
+    return { error: true, message: messager(...args) };
   } catch (e) {
-    return { error: true, message: messager(e) };
+    return { error: true, message: messager(e, ...args) };
   }
 };
 
