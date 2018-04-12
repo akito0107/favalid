@@ -15,7 +15,7 @@
     "test:cover": "jest --coverage ./src",
     "lint": "eslint ./src/**/*.js",
     "lint:fix": "eslint --fix",
-    "install:type": "flow-typed install --overwrite",
+    "install:type": "flow-typed install",
     "babel": "babel src --out-dir lib --copy-files"
   },
   "dependencies": {
