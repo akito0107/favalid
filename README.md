@@ -1,5 +1,7 @@
 # favalid
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/akito0107/favalid.svg)](https://greenkeeper.io/)
+
 Validator Framework for javascript.
 
 [![npm version](https://badge.fury.io/js/favalid.svg)](https://badge.fury.io/js/favalid)
