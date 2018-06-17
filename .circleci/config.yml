@@ -19,6 +19,12 @@ jobs:
       - run:
           name: Run npm install
           command: yarn install
+      - run:
+          name: prepare greenkeeper-lockfile
+          command: |
+            echo 'export PATH=$(yarn global bin):$PATH' >> $BASH_ENV
+            source $BASH_ENV
+            yarn global add greenkeeper-lockfile@1
       - save_cache:
           paths:
             - node_modules
@@ -37,6 +43,7 @@ jobs:
           command: |
             yarn test:cover
             ./tmp/cc-test-reporter format-coverage -t lcov -o tmp/codeclimate.json coverage/lcov.info
+      - run: greenkeeper-lockfile-upload
       - run:
           name: Upload coverage results to Code Climate
           command: |
