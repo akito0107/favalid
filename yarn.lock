@@ -3173,6 +3173,17 @@ load-json-file@^1.0.0:
     pinkie-promise "^2.0.0"
     strip-bom "^2.0.0"
 
+locale-id@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/locale-id/-/locale-id-1.0.2.tgz#1e182cd27ec6c4306b10e4093179e44128d50caa"
+  dependencies:
+    debug "^2.2.0"
+    lodash "^4.6.1"
+
+locale2@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/locale2/-/locale2-2.2.0.tgz#8efe70ce39b5a7917f1ef5b469df7f1c1f5ccad4"
+
 locate-path@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/locate-path/-/locate-path-2.0.0.tgz#2b568b265eec944c6d9c0de9c3dbbbca0354cd8e"
@@ -3224,7 +3235,7 @@ lodash@^4.13.1, lodash@^4.14.0, lodash@^4.15.0, lodash@^4.17.4, lodash@^4.2.0, l
   version "4.17.5"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.5.tgz#99a92d65c0272debe8c96b6057bc8fbfa3bed511"
 
-lodash@^4.17.5:
+lodash@^4.17.5, lodash@^4.6.1:
   version "4.17.10"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.10.tgz#1b7793cf7259ea38fb3661d4d38b3260af8ae4e7"
 

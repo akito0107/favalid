@@ -19,6 +19,8 @@
     "babel": "babel src --out-dir lib --copy-files"
   },
   "dependencies": {
+    "locale-id": "^1.0.2",
+    "locale2": "^2.2.0",
     "lodash.isempty": "^4.4.0",
     "lodash.isnan": "^3.0.2",
     "lodash.isnumber": "^3.0.3",
