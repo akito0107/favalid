@@ -1,6 +1,4 @@
-// @flow
-
-import { isNil, isEmpty } from "ramda";
+import { isEmpty, isNil } from "ramda";
 
 export const strlen = (str: string) => [...str].length;
 

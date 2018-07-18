@@ -1,5 +1,3 @@
-// @flow
-
 export default (obj: any) => {
   return (o: any) => {
     return Object.keys(obj).reduce((prev, k) => {

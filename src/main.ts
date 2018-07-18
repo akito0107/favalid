@@ -1,5 +1,3 @@
-// @flow
-
 export {
   tester,
   combine,
