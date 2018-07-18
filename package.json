@@ -14,7 +14,9 @@
     "test:watch": "jest --watch ./src",
     "test:cover": "jest --coverage ./src",
     "lint": "tslint ./src/**/*.ts",
-    "lint:fix": "tslint --fix"
+    "lint:fix": "tslint --fix",
+    "clean": "rimraf ./lib/*",
+    "tsc": "yarn clean && tsc --outDir lib"
   },
   "dependencies": {
     "@types/power-assert": "^1.5.0",
@@ -28,6 +30,7 @@
     "jest": "^22.4.0",
     "power-assert": "^1.4.4",
     "prettier": "^1.10.2",
+    "rimraf": "^2.6.2",
     "ts-jest": "^23.0.1",
     "tslint": "^5.11.0",
     "tslint-config-prettier": "^1.13.0",
@@ -51,6 +54,9 @@
     "testMatch": [
       "**/__tests__/*.+(ts|tsx|js)"
     ],
-    "testPathIgnorePatterns": ["/node_modules/", "helper.ts"]
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "helper.ts"
+    ]
   }
 }
