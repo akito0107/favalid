@@ -1,16 +1,13 @@
-// @flow
+import { Messager, tester, Validator } from "../core";
 
-import { tester } from "../core";
-import type { Messager, Validator } from "../core";
-
-export type RegExpOption = {
-  exclude?: boolean
-};
+export interface IRegExpOption {
+  exclude?: boolean;
+}
 
 export default (
   regex: RegExp,
   messager: Messager,
-  { exclude = false }: RegExpOption
+  { exclude = false }: IRegExpOption
 ): Validator => {
   if (exclude) {
     return tester((target: string) => !regex.test(target), messager);

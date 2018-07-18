@@ -1,5 +1,3 @@
-// @flow
-
 import integer from "../numbers.integer";
 import lessThan from "../numbers.lessThan";
 import max from "../numbers.max";

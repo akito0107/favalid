@@ -1,10 +1,7 @@
-// @flow
-
-import { tester } from "../core";
-import type { Messager, Validator } from "../core";
+import { Messager, tester, Validator } from "../core";
 
 export default (limit: number, messager: Messager): Validator => {
   return tester((v: number) => {
-    return v < limit;
+    return v > limit;
   }, messager);
 };

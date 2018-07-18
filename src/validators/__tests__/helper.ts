@@ -1,7 +1,5 @@
-// @flow
-
-import assert from "power-assert";
-import type { AsyncValidator, Validator } from "../../core";
+import * as assert from "power-assert";
+import { AsyncValidator, Validator } from "../../core";
 
 export function helper(validator: Validator, arg: any, expect: any) {
   assert.deepStrictEqual(validator(arg), expect);

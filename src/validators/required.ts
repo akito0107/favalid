@@ -1,9 +1,6 @@
-// @flow
-
 import { trim } from "ramda";
+import { Messager, tester, Validator } from "../core";
 import { isBlank, isString } from "../util";
-import { tester } from "../core";
-import type { Messager, Validator } from "../core";
 
 export default (messager: Messager): Validator => {
   return tester(v => {

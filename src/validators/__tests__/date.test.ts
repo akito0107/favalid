@@ -1,7 +1,5 @@
-// @flow
-
-import minDate from "../date.min";
 import maxDate from "../date.max";
+import minDate from "../date.min";
 import { helper } from "./helper";
 
 describe("date", () => {
