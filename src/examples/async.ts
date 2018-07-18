@@ -1,5 +1,3 @@
-// @flow
-
 import { asyncCombine, asyncTester, minLength, toAsync } from "../main";
 
 const USERDB = {

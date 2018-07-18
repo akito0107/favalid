@@ -19,6 +19,7 @@
     "babel": "babel src --out-dir lib --copy-files"
   },
   "dependencies": {
+    "@types/power-assert": "^1.5.0",
     "locale-id": "^1.0.2",
     "locale2": "^2.2.0",
     "ramda": "^0.25.0"
@@ -68,6 +69,7 @@
     },
     "testMatch": [
       "**/__tests__/*.+(ts|tsx|js)"
-    ]
+    ],
+    "testPathIgnorePatterns": ["/node_modules/", "helper.ts"]
   }
 }

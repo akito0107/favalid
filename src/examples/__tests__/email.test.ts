@@ -1,7 +1,5 @@
-// @flow
-
+import * as assert from "power-assert";
 import { repeat } from "ramda";
-import assert from "power-assert";
 import {
   emailValidator,
   emailValidatorWithMultipleErrorReducer,

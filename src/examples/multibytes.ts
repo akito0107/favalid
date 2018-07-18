@@ -1,5 +1,3 @@
-// @flow
-
 import { combine, regexp, required } from "../main";
 
 const REQUIRED_NAME = () => "名前を入力してください。";

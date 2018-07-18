@@ -1,5 +1,3 @@
-// @flow
-
 import { combine, required, tester } from "../main";
 
 const REQUIRED_PASSWORD_CONFIRMATION_MESSAGE = () => "required.";
