@@ -21,12 +21,7 @@
   "dependencies": {
     "locale-id": "^1.0.2",
     "locale2": "^2.2.0",
-    "lodash.isempty": "^4.4.0",
-    "lodash.isnan": "^3.0.2",
-    "lodash.isnumber": "^3.0.3",
-    "lodash.isstring": "^4.0.1",
-    "lodash.range": "^3.2.0",
-    "lodash.trim": "^4.5.1"
+    "ramda": "^0.25.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

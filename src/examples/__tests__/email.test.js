@@ -1,6 +1,6 @@
 // @flow
 
-import range from "lodash.range";
+import { repeat } from "ramda";
 import assert from "power-assert";
 import {
   emailValidator,
@@ -34,9 +34,7 @@ describe("email", () => {
   });
 
   test("max", () => {
-    const target = range(0, 101)
-      .map(() => "a")
-      .join("");
+    const target = repeat("a", 101).join();
     assert.deepStrictEqual(emailValidator(target), {
       error: true,
       message: "exceeds 100 letters."
