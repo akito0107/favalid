@@ -1,8 +1,7 @@
 // @flow
 
-import isString from "lodash.isstring";
-import trim from "lodash.trim";
-import { isBlank } from "../util";
+import { trim } from "ramda";
+import { isBlank, isString } from "../util";
 import { tester } from "../core";
 import type { Messager, Validator } from "../core";
 

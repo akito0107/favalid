@@ -1,11 +1,11 @@
 // @flow
 
-import isEmpty from "lodash.isempty";
-import isNaN from "lodash.isnan";
-import isNumber from "lodash.isnumber";
+import { isNil, isEmpty } from "ramda";
 
 export const strlen = (str: string) => [...str].length;
 
 export const isBlank = (s: any) => {
-  return (isEmpty(s) && !isNumber(s)) || isNaN(s);
+  return isNil(s) || isEmpty(s);
 };
+
+export const isString = (str: string) => typeof str === "string";
