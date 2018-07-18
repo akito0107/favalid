@@ -1,6 +1,4 @@
-// @flow
-
-import assert from "power-assert";
+import * as assert from "power-assert";
 import {
   asyncCombine,
   asyncCombineWithReducer,
@@ -8,10 +6,10 @@ import {
   combine,
   combineWithReducer,
   defaultReducer,
+  ResultReducer,
   tester,
   toAsync
 } from "../core";
-import type { ResultReducer } from "../core";
 import { asyncHelper, helper } from "../validators/__tests__/helper";
 
 describe("tester", () => {

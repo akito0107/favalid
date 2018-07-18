@@ -1,10 +1,8 @@
-// @flow
-
-import assert from "power-assert";
+import * as assert from "power-assert";
 import { combine, tester } from "../core";
-import shape from "../schema";
 import { emailValidator } from "../examples/email";
 import { maxLength, minLength } from "../main";
+import shape from "../schema";
 
 describe("schema", () => {
   test("no error", () => {
@@ -17,12 +15,12 @@ describe("schema", () => {
   });
   test("multiple row", () => {
     const validator = shape({
-      foo: tester(() => false, () => "foo"),
-      bar: tester(() => true, () => "bar")
+      bar: tester(() => true, () => "bar"),
+      foo: tester(() => false, () => "foo")
     });
     assert.deepStrictEqual(validator({ foo: true, bar: true }), {
-      foo: { error: true, message: "foo" },
-      bar: { error: false, message: "" }
+      bar: { error: false, message: "" },
+      foo: { error: true, message: "foo" }
     });
   });
   test("combined validator", () => {
