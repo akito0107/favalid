@@ -41,15 +41,10 @@ describe("combineWithReducer", () => {
       }
       return e;
     };
-    combineWithReducer(
-      reducer,
-      {
-        error: false,
-        message: ""
-      },
-      testerMaker(),
-      testerMaker()
-    )();
+    combineWithReducer([testerMaker(), testerMaker()], reducer, {
+      error: false,
+      message: ""
+    })();
     assert.strictEqual(2, called);
   });
 });
