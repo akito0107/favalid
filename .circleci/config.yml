@@ -30,14 +30,11 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
       - run:
-          name: Run npm install:type
-          command: yarn install:type
-      - run:
           name: Run lint
           command: yarn lint
       - run:
-          name: Flow
-          command: yarn flow
+          name: tsc
+          command: yarn tsc
       - run:
           name: Run unit tests
           command: |
