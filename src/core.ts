@@ -20,13 +20,13 @@ export const tester: Tester = (test, messager) => (...args) => {
 };
 
 export const combineWithReducer: (
+  t: Validator[],
   r: ResultReducer,
-  i: any,
-  ...t: Validator[]
+  i: any
 ) => (...as: any[]) => IValidationResult = (
+  validators,
   reducer,
-  initialValue = { error: false, message: "" },
-  ...validators
+  initialValue = { error: false, message: "" }
 ) => (...args) => {
   return validators.reduce((m, validator) => {
     return reducer(m, validator(...args));
@@ -45,11 +45,10 @@ export const combine: (
 ) => (...args: any[]) => IValidationResult = (...tests: Validator[]) => (
   ...args: any[]
 ) => {
-  return combineWithReducer(
-    defaultReducer,
-    { error: false, message: "" },
-    ...tests
-  )(...args);
+  return combineWithReducer(tests, defaultReducer, {
+    error: false,
+    message: ""
+  })(...args);
 };
 
 export const asyncTester: AsyncTester = (fn, messager) => async (...args) => {
