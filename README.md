@@ -117,7 +117,7 @@ import { tester, combine, minLength, regexp } from 'favalid';
 
 
 #### Validation Result Reducers
-You can aggregate validate errors with your customize error reducer using `conbimeWithReducer(reducer, initialValue, ...validators)`.
+You can aggregate validate errors with your customize error reducer using `conbineWithReducer(validators, reducer, initialValue)`.
 
 ```js
 import { tester, combineWithReducer, minLength, maxLength, regexp } from 'favalid';
@@ -142,12 +142,14 @@ const emailValidatorWithMultipleErrorReducer = (email: string) => {
   };
 
   return combineWithReducer(
+    [
+      required(REQUIRED_EMAIL_MESSAGE),
+      minLength(EMAIL_MIN_LENGTH, MIN_LENGTH_MESSAGE),
+      maxLength(EMAIL_MAX_LENGTH, MAX_LENGTH_MESSAGE),
+      regexp(EMAIL_REGEXP, REGEXP_MESSAGE, {}),
+    ],
     reducer,
     [],
-    required(REQUIRED_EMAIL_MESSAGE),
-    minLength(EMAIL_MIN_LENGTH, MIN_LENGTH_MESSAGE),
-    maxLength(EMAIL_MAX_LENGTH, MAX_LENGTH_MESSAGE),
-    regexp(EMAIL_REGEXP, REGEXP_MESSAGE, {})
   )(email);
 };
 
