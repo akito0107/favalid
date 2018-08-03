@@ -29,6 +29,7 @@
     "@types/jest": "^23.3.0",
     "@types/ramda": "^0.25.35",
     "esdoc": "^1.1.0",
+    "esdoc-importpath-plugin": "^1.0.2",
     "esdoc-standard-plugin": "^1.0.0",
     "esdoc-typescript-plugin": "^1.0.1",
     "jest": "^22.4.0",

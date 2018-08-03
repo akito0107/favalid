@@ -1129,6 +1129,10 @@ esdoc-external-ecmascript-plugin@^1.0.0:
   dependencies:
     fs-extra "1.0.0"
 
+esdoc-importpath-plugin@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/esdoc-importpath-plugin/-/esdoc-importpath-plugin-1.0.2.tgz#529ccf2c840235260d01a95024a5731ef6274775"
+
 esdoc-integrate-manual-plugin@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/esdoc-integrate-manual-plugin/-/esdoc-integrate-manual-plugin-1.0.0.tgz#1854a6aa1c081035d7c8c51e3bdd4fb65aa4711c"
