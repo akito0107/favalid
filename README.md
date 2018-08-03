@@ -47,6 +47,7 @@ console.log(validator(101)); // => { error: true, message: 'must ne less than 10
 #### Combined Validator
 1. You can combine these validators using `combine(...validators)`.
 `combine()` returns also validator.
+
 ```js
 import { tester, combine } from 'favalid';
 const validator1 = tester((targetValue) => {
@@ -65,6 +66,7 @@ const combinedValidator = combine(validator1, validator2)
 ```
 
 2. Use it.
+
 ```js
 console.log(combinedValidator(80)) // { error: false, message: '' }
 
@@ -74,6 +76,7 @@ console.log(combinedValidator(19)) // { error: true, message: 'must be higher th
 ```
 
 If target values are failed multiple tests, combined validator returns first failed message. 
+
  ```js
  import { tester, combine } from 'favalid';
  const minLength = tester((targetValue) => {
