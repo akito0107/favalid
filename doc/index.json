@@ -1,0 +1,2516 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/__tests__/async.test.ts",
+    "content": "import {\n  asyncCombine,\n  asyncCombineWithReducer,\n  asyncTester,\n  toAsync\n} from \"../async\";\n\nimport { defaultReducer, tester } from \"../core\";\n\nimport { asyncHelper } from \"../validators/__tests__/helper\";\n\ndescribe(\"async\", () => {\n  test(\"basic\", async () => {\n    await asyncHelper(\n      asyncTester(() => {\n        return Promise.resolve(true);\n      }, () => \"\"),\n      null,\n      {\n        error: false,\n        message: \"\"\n      }\n    );\n  });\n\n  test(\"should be invalid\", async () => {\n    await asyncHelper(\n      asyncTester(() => {\n        return Promise.resolve(false);\n      }, () => \"error\"),\n      null,\n      {\n        error: true,\n        message: \"error\"\n      }\n    );\n  });\n\n  test(\"fail Promise.resolve\", async () => {\n    await asyncHelper(\n      asyncTester(() => {\n        return Promise.reject(new Error(\"message\"));\n      }, () => \"error\"),\n      null,\n      {\n        error: true,\n        message: \"error\"\n      }\n    );\n  });\n\n  test(\"with async function\", async () => {\n    await asyncHelper(\n      asyncTester(async () => {\n        return true;\n      }, () => \"\"),\n      null,\n      {\n        error: false,\n        message: \"\"\n      }\n    );\n  });\n});\n\ndescribe(\"asyncCombine (with Reducer)\", () => {\n  test(\"combine multiple asyncTesters\", async () => {\n    const tester1 = asyncTester(() => Promise.resolve(true), () => \"test3\");\n    const tester2 = asyncTester(() => Promise.resolve(true), () => \"test3\");\n    await asyncHelper(\n      asyncCombineWithReducer(defaultReducer, tester1, tester2),\n      null,\n      {\n        error: false,\n        message: \"\"\n      }\n    );\n  });\n\n  test(\"reports first failed test\", async () => {\n    const tester1 = asyncTester(() => Promise.resolve(true), () => \"test1\");\n    const tester2 = asyncTester(\n      () => Promise.reject(new Error(\"error\")),\n      () => \"test2\"\n    );\n    const tester3 = asyncTester(() => Promise.resolve(true), () => \"test3\");\n    await asyncHelper(\n      asyncCombineWithReducer(defaultReducer, tester1, tester2, tester3),\n      null,\n      {\n        error: true,\n        message: \"test2\"\n      }\n    );\n  });\n});\n\ndescribe(\"asyncCombine\", () => {\n  test(\"combine multiple asyncTesters\", async () => {\n    const tester1 = asyncTester(() => Promise.resolve(true), () => \"test1\");\n    const tester2 = asyncTester(\n      () => Promise.reject(new Error(\"error\")),\n      () => \"test2\"\n    );\n    const tester3 = asyncTester(() => Promise.resolve(true), () => \"test3\");\n    await asyncHelper(asyncCombine(tester1, tester2, tester3), null, {\n      error: true,\n      message: \"test2\"\n    });\n  });\n});\n\ndescribe(\"convertToAsync\", () => {\n  test(\"convert to asyncTeter\", async () => {\n    const tester1 = asyncTester(() => Promise.resolve(true), () => \"\");\n    const tester2 = tester(() => false, () => \"test2\");\n    const tester3 = tester(() => true, () => \"\");\n    await asyncHelper(\n      asyncCombine(tester1, toAsync(tester2), toAsync(tester3)),\n      null,\n      {\n        error: true,\n        message: \"test2\"\n      }\n    );\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/akito/workspace/favalid/src/__tests__/async.test.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "file",
+    "name": "src/__tests__/core.test.ts",
+    "content": "import * as assert from \"power-assert\";\nimport { combine, combineWithReducer, ResultReducer, tester } from \"../core\";\nimport { helper } from \"../validators/__tests__/helper\";\n\ndescribe(\"tester\", () => {\n  test(\"no error\", () => {\n    helper(tester(() => true, () => \"\"), null, {\n      error: false,\n      message: \"\"\n    });\n  });\n  test(\"has error\", () => {\n    helper(tester(() => false, () => \"error\"), null, {\n      error: true,\n      message: \"error\"\n    });\n  });\n});\n\ndescribe(\"combineWithReducer\", () => {\n  test(\"combine multiple tests\", () => {\n    let called = 0;\n    const testerMaker = () =>\n      tester(() => {\n        called++;\n        return true;\n      }, () => \"\");\n    const reducer: ResultReducer = (m, e) => {\n      if (m.error) {\n        return m;\n      }\n      return e;\n    };\n    combineWithReducer([testerMaker(), testerMaker()], reducer, {\n      error: false,\n      message: \"\"\n    })();\n    assert.strictEqual(2, called);\n  });\n});\n\ndescribe(\"combine\", () => {\n  test(\"should return first validate failure\", () => {\n    const tester1 = tester(() => true, () => \"test1\");\n    const tester2 = tester(() => false, () => \"test2\");\n    const tester3 = tester(() => true, () => \"test3\");\n    helper(combine(tester1, tester2, tester3), null, {\n      error: true,\n      message: \"test2\"\n    });\n  });\n});\n\ndescribe(\"messager can receive actual value\", () => {\n  const test = tester(() => false, value => String(value));\n  helper(test, \"test\", {\n    error: true,\n    message: \"test\"\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/akito/workspace/favalid/src/__tests__/core.test.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 50,
+    "kind": "file",
+    "name": "src/__tests__/schema.test.ts",
+    "content": "import * as assert from \"power-assert\";\nimport { combine, tester } from \"../core\";\nimport { emailValidator } from \"../examples/email\";\nimport { maxLength, minLength } from \"../main\";\nimport shape from \"../schema\";\n\ndescribe(\"schema\", () => {\n  test(\"no error\", () => {\n    const validator = shape({\n      value: tester(() => false, () => \"test\")\n    });\n    assert.deepStrictEqual(validator({ value: true }), {\n      value: { error: true, message: \"test\" }\n    });\n  });\n  test(\"multiple row\", () => {\n    const validator = shape({\n      bar: tester(() => true, () => \"bar\"),\n      foo: tester(() => false, () => \"foo\")\n    });\n    assert.deepStrictEqual(validator({ foo: true, bar: true }), {\n      bar: { error: false, message: \"\" },\n      foo: { error: true, message: \"foo\" }\n    });\n  });\n  test(\"combined validator\", () => {\n    const validator = shape({\n      email: emailValidator,\n      password: combine(\n        minLength(10, () => \"at least 10 letters.\"),\n        maxLength(16, () => \"maximum: 16 letters.\")\n      )\n    });\n\n    [\n      {\n        in: { email: \"test@test.com\", password: \"12345678910\" },\n        out: {\n          email: { error: false, message: \"\" },\n          password: { error: false, message: \"\" }\n        }\n      },\n      {\n        in: { email: \"testtest.com\", password: \"178910\" },\n        out: {\n          email: { error: true, message: \"invalid email.\" },\n          password: { error: true, message: \"at least 10 letters.\" }\n        }\n      },\n      {\n        in: {\n          email: \"testtest.com\",\n          password: \"178910\",\n          unknownprop: \"unknown\"\n        },\n        out: {\n          email: { error: true, message: \"invalid email.\" },\n          password: { error: true, message: \"at least 10 letters.\" }\n        }\n      }\n    ].forEach(c => {\n      assert.deepStrictEqual(validator(c.in), c.out);\n    });\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/akito/workspace/favalid/src/__tests__/schema.test.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 51,
+    "kind": "file",
+    "name": "src/async.ts",
+    "content": "import {\n  AsyncTester,\n  AsyncValidator,\n  defaultReducer,\n  IValidationResult,\n  ResultReducer,\n  Validator\n} from \"./core\";\n\nexport const asyncTester: AsyncTester = (fn, messager) => async (...args) => {\n  try {\n    const valid = await fn(...args);\n    if (valid) {\n      return { error: false, message: \"\" };\n    }\n    return { error: true, message: messager(...args) };\n  } catch (e) {\n    return { error: true, message: messager(e, ...args) };\n  }\n};\n\nexport const asyncCombineWithReducer: (\n  reducer: ResultReducer,\n  i: any,\n  ...t: AsyncValidator[]\n) => (...a: any[]) => Promise<IValidationResult> = (\n  reducer,\n  initialValue = { error: false, message: \"\" },\n  ...testers\n) => async (...args) => {\n  const asyncValidators = testers.map(test => test(...args));\n  const results = await Promise.all(asyncValidators);\n  return results.reduce((m, error) => {\n    return reducer(m, error);\n  }, initialValue);\n};\n\nexport const asyncCombine: (\n  ...t: AsyncValidator[]\n) => (...a: any[]) => Promise<IValidationResult> = (\n  ...tests: AsyncValidator[]\n) => (...args) => {\n  return asyncCombineWithReducer(\n    defaultReducer,\n    { error: false, message: \"\" },\n    ...tests\n  )(...args);\n};\n\nexport const toAsync: (t: Validator) => AsyncValidator = t => async (\n  ...arg\n) => {\n  return Promise.resolve(t(...arg));\n};\n",
+    "static": true,
+    "longname": "/Users/akito/workspace/favalid/src/async.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 52,
+    "kind": "function",
+    "name": "asyncTester",
+    "memberof": "src/async.ts",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/async.ts~asyncTester",
+    "access": "public",
+    "export": true,
+    "importPath": "favalid",
+    "importStyle": "{asyncTester}",
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "params": [
+      {
+        "name": "fn",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "messager",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "{\"error\": boolean, \"message\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 53,
+    "kind": "function",
+    "name": "asyncCombineWithReducer",
+    "memberof": "src/async.ts",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/async.ts~asyncCombineWithReducer",
+    "access": "public",
+    "export": true,
+    "importPath": "favalid",
+    "importStyle": "{asyncCombineWithReducer}",
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "params": [
+      {
+        "name": "reducer",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "initialValue",
+        "optional": true,
+        "types": [
+          "{\"error\": boolean, \"message\": string}"
+        ],
+        "defaultRaw": {
+          "error": false,
+          "message": ""
+        },
+        "defaultValue": "{\"error\":false,\"message\":\"\"}"
+      },
+      {
+        "name": "testers",
+        "types": [
+          "...*"
+        ],
+        "spread": true
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 54,
+    "kind": "function",
+    "name": "asyncCombine",
+    "memberof": "src/async.ts",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/async.ts~asyncCombine",
+    "access": "public",
+    "export": true,
+    "importPath": "favalid",
+    "importStyle": "{asyncCombine}",
+    "description": null,
+    "lineNumber": 21,
+    "undocument": true,
+    "params": [
+      {
+        "name": "tests",
+        "types": [
+          "...*"
+        ],
+        "spread": true
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 55,
+    "kind": "function",
+    "name": "toAsync",
+    "memberof": "src/async.ts",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/async.ts~toAsync",
+    "access": "public",
+    "export": true,
+    "importPath": "favalid",
+    "importStyle": "{toAsync}",
+    "description": null,
+    "lineNumber": 24,
+    "undocument": true,
+    "params": [
+      {
+        "name": "t",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 56,
+    "kind": "file",
+    "name": "src/core.ts",
+    "content": "export type Test = (...v: any[]) => boolean;\nexport type AsyncTest = (...v: any[]) => Promise<boolean>;\nexport type Validator = (...v: any[]) => IValidationResult;\nexport type AsyncValidator = (...v: any[]) => Promise<IValidationResult>;\nexport type Messager = (v?: any, a?: any[]) => string;\nexport type Tester = (t: Test, m: Messager) => Validator;\nexport type AsyncTester = (t: AsyncTest, m: Messager) => AsyncValidator;\nexport type ResultReducer = (p: any, e: IValidationResult) => any;\n\nexport interface IValidationResult {\n  error: boolean;\n  message: any;\n}\n\nexport const tester: Tester = (test, messager) => (...args) => {\n  if (!test(...args)) {\n    return { error: true, message: messager(...args) };\n  }\n  return { error: false, message: \"\" };\n};\n\nexport const combineWithReducer: (\n  t: Validator[],\n  r: ResultReducer,\n  i: any\n) => (...as: any[]) => IValidationResult = (\n  validators,\n  reducer,\n  initialValue = { error: false, message: \"\" }\n) => (...args) => {\n  return validators.reduce((m, validator) => {\n    return reducer(m, validator(...args));\n  }, initialValue);\n};\n\nexport const defaultReducer: ResultReducer = (m, e) => {\n  if (m.error) {\n    return m;\n  }\n  return e;\n};\n\nexport const combine: (\n  ...t: Validator[]\n) => (...args: any[]) => IValidationResult = (...tests: Validator[]) => (\n  ...args: any[]\n) => {\n  return combineWithReducer(tests, defaultReducer, {\n    error: false,\n    message: \"\"\n  })(...args);\n};\n",
+    "static": true,
+    "longname": "/Users/akito/workspace/favalid/src/core.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 57,
+    "kind": "function",
+    "name": "tester",
+    "memberof": "src/core.ts",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/core.ts~tester",
+    "access": "public",
+    "export": true,
+    "importPath": "favalid",
+    "importStyle": "{tester}",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "params": [
+      {
+        "name": "test",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "messager",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "{\"error\": *, \"message\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 58,
+    "kind": "function",
+    "name": "combineWithReducer",
+    "memberof": "src/core.ts",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/core.ts~combineWithReducer",
+    "access": "public",
+    "export": true,
+    "importPath": "favalid",
+    "importStyle": "{combineWithReducer}",
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "params": [
+      {
+        "name": "validators",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "reducer",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "initialValue",
+        "optional": true,
+        "types": [
+          "{\"error\": boolean, \"message\": string}"
+        ],
+        "defaultRaw": {
+          "error": false,
+          "message": ""
+        },
+        "defaultValue": "{\"error\":false,\"message\":\"\"}"
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 59,
+    "kind": "function",
+    "name": "defaultReducer",
+    "memberof": "src/core.ts",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/core.ts~defaultReducer",
+    "access": "public",
+    "export": true,
+    "importPath": "favalid",
+    "importStyle": "{defaultReducer}",
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true,
+    "params": [
+      {
+        "name": "m",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "e",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 60,
+    "kind": "function",
+    "name": "combine",
+    "memberof": "src/core.ts",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/core.ts~combine",
+    "access": "public",
+    "export": true,
+    "importPath": "favalid",
+    "importStyle": "{combine}",
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true,
+    "params": [
+      {
+        "name": "tests",
+        "types": [
+          "...*"
+        ],
+        "spread": true
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 61,
+    "kind": "file",
+    "name": "src/examples/__tests__/async.test.ts",
+    "content": "import * as assert from \"power-assert\";\nimport { asyncValidator, asyncValidatorWithReason } from \"../async\";\n\ndescribe(\"async\", () => {\n  test(\"valid case\", async () => {\n    const target = \"example@hello.com\";\n    const res = await asyncValidator(target);\n    assert.deepStrictEqual(res, {\n      error: false,\n      message: \"\"\n    });\n  });\n  test(\"invalid case\", async () => {\n    const target = \"invalid@hello.com\";\n    const res = await asyncValidator(target);\n    assert.deepStrictEqual(res, {\n      error: true,\n      message: \"api check failed\"\n    });\n  });\n});\n\ndescribe(\"asyncWithReason\", () => {\n  test(\"invalid case\", async () => {\n    const target = \"invalid@hello.com\";\n    const res = await asyncValidatorWithReason(target);\n    assert.deepStrictEqual(res, {\n      error: true,\n      message: \"api check failed with reason: user not exists\"\n    });\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/akito/workspace/favalid/src/examples/__tests__/async.test.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 62,
+    "kind": "file",
+    "name": "src/examples/__tests__/email.test.ts",
+    "content": "import * as assert from \"power-assert\";\nimport { repeat } from \"ramda\";\nimport {\n  emailValidator,\n  emailValidatorWithMultipleErrorReducer,\n  emailValidatorWithReducer\n} from \"../email\";\n\ndescribe(\"email\", () => {\n  test(\"valid email\", () => {\n    const target = \"valid@valid.com\";\n    assert.deepStrictEqual(emailValidator(target), {\n      error: false,\n      message: \"\"\n    });\n  });\n\n  test(\"blank email\", () => {\n    const target = \"\";\n    assert.deepStrictEqual(emailValidator(target), {\n      error: true,\n      message: \"required.\"\n    });\n  });\n\n  test(\"min\", () => {\n    const target = \"asdf\";\n    assert.deepStrictEqual(emailValidator(target), {\n      error: true,\n      message: \"at least 10 letters.\"\n    });\n  });\n\n  test(\"max\", () => {\n    const target = repeat(\"a\", 101).join();\n    assert.deepStrictEqual(emailValidator(target), {\n      error: true,\n      message: \"exceeds 100 letters.\"\n    });\n  });\n\n  test(\"regexp\", () => {\n    const target = \"aaabbbcccddd\";\n    assert.deepStrictEqual(emailValidator(target), {\n      error: true,\n      message: \"invalid email.\"\n    });\n  });\n});\n\ndescribe(\"emailWithReducer\", () => {\n  test(\"valid email\", () => {\n    const target = \"valid@valid.com\";\n    assert.deepStrictEqual(emailValidatorWithReducer(target), {\n      error: false,\n      message: \"\"\n    });\n  });\n\n  test(\"min and invalid format\", () => {\n    const target = \"aaa\";\n    assert.deepStrictEqual(emailValidatorWithReducer(target), {\n      error: true,\n      message: \"at least 10 letters. / invalid email.\"\n    });\n  });\n});\n\ndescribe(\"emailWithMultipleErrorReducer\", () => {\n  test(\"valid email\", () => {\n    const target = \"valid@valid.com\";\n    assert.deepStrictEqual(emailValidatorWithMultipleErrorReducer(target), []);\n  });\n\n  test(\"min and invalid format\", () => {\n    const target = \"aaa\";\n    assert.deepStrictEqual(emailValidatorWithMultipleErrorReducer(target), [\n      { error: true, message: \"at least 10 letters.\" },\n      { error: true, message: \"invalid email.\" }\n    ]);\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/akito/workspace/favalid/src/examples/__tests__/email.test.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 63,
+    "kind": "file",
+    "name": "src/examples/__tests__/multibytes.test.ts",
+    "content": "import * as assert from \"power-assert\";\nimport { halfKanaValidator } from \"../multibytes\";\n\ndescribe(\"half kana\", () => {\n  test(\"全角文字\", () => {\n    const target = \"名前\";\n    assert.deepStrictEqual(halfKanaValidator(target), {\n      error: false,\n      message: \"\"\n    });\n  });\n  test(\"半角文字混入\", () => {\n    const target = \"名前ｶﾀｶﾅ\";\n    assert.deepStrictEqual(halfKanaValidator(target), {\n      error: true,\n      message: \"名前ｶﾀｶﾅに半角文字が含まれています。\"\n    });\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/akito/workspace/favalid/src/examples/__tests__/multibytes.test.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 64,
+    "kind": "file",
+    "name": "src/examples/__tests__/password.test.ts",
+    "content": "import * as assert from \"power-assert\";\nimport { passwordConfirmationValidator } from \"../password\";\n\ndescribe(\"password\", () => {\n  test(\"password confirmation\", () => {\n    const password = \"xxxxx\";\n    const confirmation = \"xxxxx\";\n    assert.deepStrictEqual(\n      passwordConfirmationValidator(password, confirmation),\n      {\n        error: false,\n        message: \"\"\n      }\n    );\n  });\n  test(\"password confirmation not matched\", () => {\n    const password = \"xxxxx\";\n    const confirmation = \"xxxxx7\";\n    assert.deepStrictEqual(\n      passwordConfirmationValidator(password, confirmation),\n      {\n        error: true,\n        message: \"password not matched.\"\n      }\n    );\n  });\n  test(\"password confirmation with blank\", () => {\n    const password = \"xxxx\";\n    const confirmation = \"\";\n    assert.deepStrictEqual(\n      passwordConfirmationValidator(password, confirmation),\n      {\n        error: true,\n        message: \"required.\"\n      }\n    );\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/akito/workspace/favalid/src/examples/__tests__/password.test.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 65,
+    "kind": "file",
+    "name": "src/examples/async.ts",
+    "content": "import { asyncCombine, asyncTester, minLength, toAsync } from \"../main\";\n\nconst USERDB = {\n  \"example@hello.com\": true\n};\n\nconst apiRequest = async t => {\n  if (USERDB[t]) {\n    return Promise.resolve(true);\n  }\n  return Promise.reject(new Error(\"user not exists\"));\n};\n\nexport const asyncValidator = async (target: any) => {\n  return asyncCombine(\n    toAsync(minLength(10, () => \"at least 10 letters.\")),\n    asyncTester(apiRequest, () => \"api check failed\")\n  )(target);\n};\n\nexport const asyncValidatorWithReason = async (target: any) => {\n  return asyncCombine(\n    toAsync(minLength(10, () => \"at least 10 letters.\")),\n    asyncTester(\n      apiRequest,\n      (e: any) => `api check failed with reason: ${e.message}`\n    )\n  )(target);\n};\n",
+    "static": true,
+    "longname": "/Users/akito/workspace/favalid/src/examples/async.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 66,
+    "kind": "variable",
+    "name": "USERDB",
+    "memberof": "src/examples/async.ts",
+    "static": true,
+    "longname": "src/examples/async.ts~USERDB",
+    "access": "public",
+    "export": false,
+    "importPath": "favalid",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"example@hello.com\": boolean}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 67,
+    "kind": "function",
+    "name": "apiRequest",
+    "memberof": "src/examples/async.ts",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/examples/async.ts~apiRequest",
+    "access": "public",
+    "export": false,
+    "importPath": "favalid",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "params": [
+      {
+        "name": "t",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 68,
+    "kind": "function",
+    "name": "asyncValidator",
+    "memberof": "src/examples/async.ts",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/examples/async.ts~asyncValidator",
+    "access": "public",
+    "export": true,
+    "importPath": "favalid",
+    "importStyle": "{asyncValidator}",
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "params": [
+      {
+        "name": "target",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 69,
+    "kind": "function",
+    "name": "asyncValidatorWithReason",
+    "memberof": "src/examples/async.ts",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/examples/async.ts~asyncValidatorWithReason",
+    "access": "public",
+    "export": true,
+    "importPath": "favalid",
+    "importStyle": "{asyncValidatorWithReason}",
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "params": [
+      {
+        "name": "target",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 70,
+    "kind": "file",
+    "name": "src/examples/email.ts",
+    "content": "import {\n  combine,\n  combineWithReducer,\n  maxLength,\n  minLength,\n  regexp,\n  required\n} from \"../main\";\nimport { isBlank } from \"../util\";\n\nconst REQUIRED_EMAIL_MESSAGE = () => \"required.\";\n\nconst EMAIL_REGEXP = /^(([^<>()\\[\\]\\.,;:\\s@\\\"]+(\\.[^<>()\\[\\]\\.,;:\\s@\\\"]+)*)|(\\\".+\\\"))@(([^<>()[\\]\\.,;:\\s@\\\"]+\\.)+[^<>()[\\]\\.,;:\\s@\\\"]{2,})$/i;\nconst REGEXP_MESSAGE = () => \"invalid email.\";\n\nconst EMAIL_MAX_LENGTH = 100;\nconst MAX_LENGTH_MESSAGE = () => \"exceeds 100 letters.\";\n\nconst EMAIL_MIN_LENGTH = 10;\nconst MIN_LENGTH_MESSAGE = () => \"at least 10 letters.\";\n\nexport const emailValidator = (email: string) => {\n  return combine(\n    required(REQUIRED_EMAIL_MESSAGE),\n    minLength(EMAIL_MIN_LENGTH, MIN_LENGTH_MESSAGE),\n    maxLength(EMAIL_MAX_LENGTH, MAX_LENGTH_MESSAGE),\n    regexp(EMAIL_REGEXP, REGEXP_MESSAGE, {})\n  )(email);\n};\n\nexport const emailValidatorWithReducer = (email: string) => {\n  const reducer = (prevError, currentError) => {\n    const error = prevError.error || currentError.error;\n    let message = prevError.message;\n    if (currentError.error) {\n      message = isBlank(message)\n        ? currentError.message\n        : message + \" / \" + currentError.message;\n    }\n    return { error, message };\n  };\n\n  return combineWithReducer(\n    [\n      required(REQUIRED_EMAIL_MESSAGE),\n      minLength(EMAIL_MIN_LENGTH, MIN_LENGTH_MESSAGE),\n      maxLength(EMAIL_MAX_LENGTH, MAX_LENGTH_MESSAGE),\n      regexp(EMAIL_REGEXP, REGEXP_MESSAGE, {})\n    ],\n    reducer,\n    { error: false, message: \"\" }\n  )(email);\n};\n\nexport const emailValidatorWithMultipleErrorReducer = (email: string) => {\n  const reducer = (prevError, currentError) => {\n    if (currentError.error) {\n      prevError.push(currentError);\n    }\n    return prevError;\n  };\n\n  return combineWithReducer(\n    [\n      required(REQUIRED_EMAIL_MESSAGE),\n      minLength(EMAIL_MIN_LENGTH, MIN_LENGTH_MESSAGE),\n      maxLength(EMAIL_MAX_LENGTH, MAX_LENGTH_MESSAGE),\n      regexp(EMAIL_REGEXP, REGEXP_MESSAGE, {})\n    ],\n    reducer,\n    []\n  )(email);\n};\n",
+    "static": true,
+    "longname": "/Users/akito/workspace/favalid/src/examples/email.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 71,
+    "kind": "function",
+    "name": "REQUIRED_EMAIL_MESSAGE",
+    "memberof": "src/examples/email.ts",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/examples/email.ts~REQUIRED_EMAIL_MESSAGE",
+    "access": "public",
+    "export": false,
+    "importPath": "favalid",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 72,
+    "kind": "variable",
+    "name": "EMAIL_REGEXP",
+    "memberof": "src/examples/email.ts",
+    "static": true,
+    "longname": "src/examples/email.ts~EMAIL_REGEXP",
+    "access": "public",
+    "export": false,
+    "importPath": "favalid",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "undefined"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 73,
+    "kind": "function",
+    "name": "REGEXP_MESSAGE",
+    "memberof": "src/examples/email.ts",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/examples/email.ts~REGEXP_MESSAGE",
+    "access": "public",
+    "export": false,
+    "importPath": "favalid",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 74,
+    "kind": "variable",
+    "name": "EMAIL_MAX_LENGTH",
+    "memberof": "src/examples/email.ts",
+    "static": true,
+    "longname": "src/examples/email.ts~EMAIL_MAX_LENGTH",
+    "access": "public",
+    "export": false,
+    "importPath": "favalid",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "number"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 75,
+    "kind": "function",
+    "name": "MAX_LENGTH_MESSAGE",
+    "memberof": "src/examples/email.ts",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/examples/email.ts~MAX_LENGTH_MESSAGE",
+    "access": "public",
+    "export": false,
+    "importPath": "favalid",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 76,
+    "kind": "variable",
+    "name": "EMAIL_MIN_LENGTH",
+    "memberof": "src/examples/email.ts",
+    "static": true,
+    "longname": "src/examples/email.ts~EMAIL_MIN_LENGTH",
+    "access": "public",
+    "export": false,
+    "importPath": "favalid",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "type": {
+      "types": [
+        "number"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 77,
+    "kind": "function",
+    "name": "MIN_LENGTH_MESSAGE",
+    "memberof": "src/examples/email.ts",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/examples/email.ts~MIN_LENGTH_MESSAGE",
+    "access": "public",
+    "export": false,
+    "importPath": "favalid",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 78,
+    "kind": "function",
+    "name": "emailValidator",
+    "memberof": "src/examples/email.ts",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/examples/email.ts~emailValidator",
+    "access": "public",
+    "export": true,
+    "importPath": "favalid",
+    "importStyle": "{emailValidator}",
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "params": [
+      {
+        "name": "email",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 79,
+    "kind": "function",
+    "name": "emailValidatorWithReducer",
+    "memberof": "src/examples/email.ts",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/examples/email.ts~emailValidatorWithReducer",
+    "access": "public",
+    "export": true,
+    "importPath": "favalid",
+    "importStyle": "{emailValidatorWithReducer}",
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "params": [
+      {
+        "name": "email",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 80,
+    "kind": "function",
+    "name": "emailValidatorWithMultipleErrorReducer",
+    "memberof": "src/examples/email.ts",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/examples/email.ts~emailValidatorWithMultipleErrorReducer",
+    "access": "public",
+    "export": true,
+    "importPath": "favalid",
+    "importStyle": "{emailValidatorWithMultipleErrorReducer}",
+    "description": null,
+    "lineNumber": 31,
+    "undocument": true,
+    "params": [
+      {
+        "name": "email",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 81,
+    "kind": "file",
+    "name": "src/examples/multibytes.ts",
+    "content": "import { combine, regexp, required } from \"../main\";\n\nconst REQUIRED_NAME = () => \"名前を入力してください。\";\n\nconst HALF_KANA_REGEX = /[ｦ-ﾟ]/;\nconst HALF_KANA_MESSAGE = name => () => `${name}に半角文字が含まれています。`;\n\nexport const halfKanaValidator = (name: string) => {\n  return combine(\n    required(REQUIRED_NAME),\n    regexp(HALF_KANA_REGEX, HALF_KANA_MESSAGE(name), {\n      exclude: true\n    })\n  )(name);\n};\n",
+    "static": true,
+    "longname": "/Users/akito/workspace/favalid/src/examples/multibytes.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 82,
+    "kind": "function",
+    "name": "REQUIRED_NAME",
+    "memberof": "src/examples/multibytes.ts",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/examples/multibytes.ts~REQUIRED_NAME",
+    "access": "public",
+    "export": false,
+    "importPath": "favalid",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 83,
+    "kind": "variable",
+    "name": "HALF_KANA_REGEX",
+    "memberof": "src/examples/multibytes.ts",
+    "static": true,
+    "longname": "src/examples/multibytes.ts~HALF_KANA_REGEX",
+    "access": "public",
+    "export": false,
+    "importPath": "favalid",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "undefined"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 84,
+    "kind": "function",
+    "name": "HALF_KANA_MESSAGE",
+    "memberof": "src/examples/multibytes.ts",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/examples/multibytes.ts~HALF_KANA_MESSAGE",
+    "access": "public",
+    "export": false,
+    "importPath": "favalid",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "name",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 85,
+    "kind": "function",
+    "name": "halfKanaValidator",
+    "memberof": "src/examples/multibytes.ts",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/examples/multibytes.ts~halfKanaValidator",
+    "access": "public",
+    "export": true,
+    "importPath": "favalid",
+    "importStyle": "{halfKanaValidator}",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "params": [
+      {
+        "name": "name",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 86,
+    "kind": "file",
+    "name": "src/examples/password.ts",
+    "content": "import { combine, required, tester } from \"../main\";\n\nconst REQUIRED_PASSWORD_CONFIRMATION_MESSAGE = () => \"required.\";\nconst PASSWORD_NOT_MATCHED_MESSAGE = () => \"password not matched.\";\n\nexport const passwordConfirmationValidator = (\n  password: string,\n  passwordConfirmation: string\n) => {\n  return combine(\n    required(REQUIRED_PASSWORD_CONFIRMATION_MESSAGE),\n    tester((confirmation, origin) => {\n      return confirmation === origin;\n    }, PASSWORD_NOT_MATCHED_MESSAGE)\n  )(passwordConfirmation, password);\n};\n",
+    "static": true,
+    "longname": "/Users/akito/workspace/favalid/src/examples/password.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 87,
+    "kind": "function",
+    "name": "REQUIRED_PASSWORD_CONFIRMATION_MESSAGE",
+    "memberof": "src/examples/password.ts",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/examples/password.ts~REQUIRED_PASSWORD_CONFIRMATION_MESSAGE",
+    "access": "public",
+    "export": false,
+    "importPath": "favalid",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 88,
+    "kind": "function",
+    "name": "PASSWORD_NOT_MATCHED_MESSAGE",
+    "memberof": "src/examples/password.ts",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/examples/password.ts~PASSWORD_NOT_MATCHED_MESSAGE",
+    "access": "public",
+    "export": false,
+    "importPath": "favalid",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 89,
+    "kind": "function",
+    "name": "passwordConfirmationValidator",
+    "memberof": "src/examples/password.ts",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/examples/password.ts~passwordConfirmationValidator",
+    "access": "public",
+    "export": true,
+    "importPath": "favalid",
+    "importStyle": "{passwordConfirmationValidator}",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "password",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "passwordConfirmation",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 90,
+    "kind": "file",
+    "name": "src/locale2.d.ts",
+    "content": "declare let locale2: any;\nexport default locale2;\n",
+    "static": true,
+    "longname": "/Users/akito/workspace/favalid/src/locale2.d.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 91,
+    "kind": "file",
+    "name": "src/locales.ts",
+    "content": "import locale2 from \"locale2\";\nimport { Messager } from \"./core\";\n\nexport type LocaleProvider = () => string;\n\nexport interface IMessagerWithLocale {\n  locale: string;\n  messager: Messager;\n  isDefault: boolean;\n}\n\nexport const defaultLocaleProvider: LocaleProvider = () => locale2;\n\nexport const messagersWithLocale = (\n  messagers: IMessagerWithLocale[],\n  provider: LocaleProvider = defaultLocaleProvider\n): Messager => {\n  const memo = messagers.reduce((m: IMessagerWithLocale, current) => {\n    m[current.locale] = m.messager;\n    return m;\n  }, {});\n  const defaultMessage = messagers.find(({ isDefault }) => isDefault);\n  if (!defaultMessage) {\n    throw new Error(\"default messager is not provided\");\n  }\n  const defaultMessager = defaultMessage.messager;\n  return (v: any) => {\n    const currentLocale = provider();\n    const messager = memo[currentLocale] || defaultMessager;\n    return messager(v);\n  };\n};\n",
+    "static": true,
+    "longname": "/Users/akito/workspace/favalid/src/locales.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 92,
+    "kind": "function",
+    "name": "defaultLocaleProvider",
+    "memberof": "src/locales.ts",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/locales.ts~defaultLocaleProvider",
+    "access": "public",
+    "export": true,
+    "importPath": "favalid",
+    "importStyle": "{defaultLocaleProvider}",
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 93,
+    "kind": "function",
+    "name": "messagersWithLocale",
+    "memberof": "src/locales.ts",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/locales.ts~messagersWithLocale",
+    "access": "public",
+    "export": true,
+    "importPath": "favalid",
+    "importStyle": "{messagersWithLocale}",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "messagers",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "provider",
+        "optional": true,
+        "types": [
+          "*"
+        ],
+        "defaultRaw": "defaultLocaleProvider",
+        "defaultValue": "defaultLocaleProvider"
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 94,
+    "kind": "file",
+    "name": "src/main.ts",
+    "content": "export { tester, combine, combineWithReducer } from \"./core\";\nexport {\n  asyncCombine,\n  asyncCombineWithReducer,\n  asyncTester,\n  toAsync\n} from \"./async\";\nexport { default as required } from \"./validators/required\";\nexport { default as max } from \"./validators/numbers.max\";\nexport { default as min } from \"./validators/numbers.min\";\nexport { default as integer } from \"./validators/numbers.integer\";\nexport { default as lessThan } from \"./validators/numbers.lessThan\";\nexport { default as moreThan } from \"./validators/numbers.moreThan\";\nexport { default as positive } from \"./validators/numbers.positive\";\nexport { default as negative } from \"./validators/numbers.negative\";\nexport { default as regexp } from \"./validators/strings.regexp\";\nexport { default as maxLength } from \"./validators/strings.maxLength\";\nexport { default as minLength } from \"./validators/strings.minLength\";\nexport { default as minDate } from \"./validators/date.min\";\nexport { default as maxDate } from \"./validators/date.max\";\nexport { default as shape } from \"./schema\";\n",
+    "static": true,
+    "longname": "/Users/akito/workspace/favalid/src/main.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 95,
+    "kind": "file",
+    "name": "src/schema.ts",
+    "content": "export default (obj: any) => {\n  return (o: any) => {\n    return Object.keys(obj).reduce((prev, k) => {\n      const validator = obj[k];\n      if (validator) {\n        prev[k] = validator(o[k]);\n      }\n      return prev;\n    }, {});\n  };\n};\n",
+    "static": true,
+    "longname": "/Users/akito/workspace/favalid/src/schema.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 96,
+    "kind": "function",
+    "name": "schema",
+    "memberof": "src/schema.ts",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/schema.ts~schema",
+    "access": "public",
+    "export": true,
+    "importPath": "favalid",
+    "importStyle": "schema",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "params": [
+      {
+        "name": "obj",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 97,
+    "kind": "file",
+    "name": "src/util.ts",
+    "content": "import { isEmpty, isNil } from \"ramda\";\n\nexport const strlen = (str: string) => [...str].length;\n\nexport const isBlank = (s: any) => {\n  return isNil(s) || isEmpty(s);\n};\n\nexport const isString = (str: string) => typeof str === \"string\";\n",
+    "static": true,
+    "longname": "/Users/akito/workspace/favalid/src/util.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 98,
+    "kind": "function",
+    "name": "strlen",
+    "memberof": "src/util.ts",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/util.ts~strlen",
+    "access": "public",
+    "export": true,
+    "importPath": "favalid",
+    "importStyle": "{strlen}",
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "params": [
+      {
+        "name": "str",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 99,
+    "kind": "function",
+    "name": "isBlank",
+    "memberof": "src/util.ts",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/util.ts~isBlank",
+    "access": "public",
+    "export": true,
+    "importPath": "favalid",
+    "importStyle": "{isBlank}",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "s",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 100,
+    "kind": "function",
+    "name": "isString",
+    "memberof": "src/util.ts",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/util.ts~isString",
+    "access": "public",
+    "export": true,
+    "importPath": "favalid",
+    "importStyle": "{isString}",
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "params": [
+      {
+        "name": "str",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 101,
+    "kind": "file",
+    "name": "src/validators/__tests__/date.test.ts",
+    "content": "import maxDate from \"../date.max\";\nimport minDate from \"../date.min\";\nimport { helper } from \"./helper\";\n\ndescribe(\"date\", () => {\n  test(\"minDate\", () => {\n    helper(minDate(new Date(1990, 1), () => \"\"), new Date(1990, 2), {\n      error: false,\n      message: \"\"\n    });\n  });\n  test(\"minDate:boundary\", () => {\n    helper(minDate(new Date(1990, 1), () => \"error\"), new Date(1990, 1), {\n      error: true,\n      message: \"error\"\n    });\n  });\n  test(\"minDate:fail\", () => {\n    helper(minDate(new Date(1990, 1), () => \"error\"), new Date(1989, 2), {\n      error: true,\n      message: \"error\"\n    });\n  });\n  test(\"maxDate\", () => {\n    helper(maxDate(new Date(1990, 1), () => \"\"), new Date(1989, 2), {\n      error: false,\n      message: \"\"\n    });\n  });\n  test(\"maxDate:boundary\", () => {\n    helper(maxDate(new Date(1990, 1), () => \"error\"), new Date(1990, 1), {\n      error: true,\n      message: \"error\"\n    });\n  });\n  test(\"maxDate:fail\", () => {\n    helper(maxDate(new Date(1990, 1), () => \"error\"), new Date(1990, 2), {\n      error: true,\n      message: \"error\"\n    });\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/akito/workspace/favalid/src/validators/__tests__/date.test.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 102,
+    "kind": "file",
+    "name": "src/validators/__tests__/helper.ts",
+    "content": "import * as assert from \"power-assert\";\nimport { AsyncValidator, Validator } from \"../../core\";\n\nexport function helper(validator: Validator, arg: any, expect: any) {\n  assert.deepStrictEqual(validator(arg), expect);\n}\n\nexport async function asyncHelper(\n  validator: AsyncValidator,\n  arg: any,\n  expect: any\n) {\n  assert.deepStrictEqual(await validator(arg), expect);\n}\n",
+    "static": true,
+    "longname": "/Users/akito/workspace/favalid/src/validators/__tests__/helper.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 103,
+    "kind": "function",
+    "name": "helper",
+    "memberof": "src/validators/__tests__/helper.ts",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/validators/__tests__/helper.ts~helper",
+    "access": "public",
+    "export": true,
+    "importPath": "favalid",
+    "importStyle": "{helper}",
+    "description": "",
+    "lineNumber": 4,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Validator"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "validator",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "undefined"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "arg",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "undefined"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "expect",
+        "description": ""
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 104,
+    "kind": "function",
+    "name": "asyncHelper",
+    "memberof": "src/validators/__tests__/helper.ts",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/validators/__tests__/helper.ts~asyncHelper",
+    "access": "public",
+    "export": true,
+    "importPath": "favalid",
+    "importStyle": "{asyncHelper}",
+    "description": "",
+    "lineNumber": 8,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "AsyncValidator"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "validator",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "undefined"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "arg",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "undefined"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "expect",
+        "description": ""
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 105,
+    "kind": "file",
+    "name": "src/validators/__tests__/numbers.test.ts",
+    "content": "import integer from \"../numbers.integer\";\nimport lessThan from \"../numbers.lessThan\";\nimport max from \"../numbers.max\";\nimport min from \"../numbers.min\";\nimport moreThan from \"../numbers.moreThan\";\nimport negative from \"../numbers.negative\";\nimport positive from \"../numbers.positive\";\nimport { helper } from \"./helper\";\n\ndescribe(\"number validator\", () => {\n  test(\"min\", () => {\n    helper(min(2, () => \"error\"), 1, {\n      error: false,\n      message: \"\"\n    });\n  });\n\n  test(\"min:boundary\", () => {\n    helper(min(2, () => \"error\"), 2, {\n      error: true,\n      message: \"error\"\n    });\n  });\n\n  test(\"min:fail\", () => {\n    helper(min(1, () => \"error\"), 2, {\n      error: true,\n      message: \"error\"\n    });\n  });\n\n  test(\"max\", () => {\n    helper(max(1, () => \"error\"), 2, {\n      error: false,\n      message: \"\"\n    });\n  });\n\n  test(\"max:boundary\", () => {\n    helper(max(2, () => \"error\"), 2, {\n      error: true,\n      message: \"error\"\n    });\n  });\n\n  test(\"max:fail\", () => {\n    helper(max(3, () => \"error\"), 2, {\n      error: true,\n      message: \"error\"\n    });\n  });\n\n  test(\"lessThan\", () => {\n    helper(lessThan(3, () => \"error\"), 2, {\n      error: false,\n      message: \"\"\n    });\n  });\n\n  test(\"lessThan:boundary\", () => {\n    helper(lessThan(3, () => \"error\"), 3, {\n      error: false,\n      message: \"\"\n    });\n  });\n\n  test(\"lessThan:fail\", () => {\n    helper(lessThan(3, () => \"error\"), 4, {\n      error: true,\n      message: \"error\"\n    });\n  });\n\n  test(\"moreThan\", () => {\n    helper(moreThan(3, () => \"error\"), 4, {\n      error: false,\n      message: \"\"\n    });\n  });\n\n  test(\"moreThan:boundary\", () => {\n    helper(moreThan(3, () => \"error\"), 3, {\n      error: false,\n      message: \"\"\n    });\n  });\n\n  test(\"moreThan:fail\", () => {\n    helper(moreThan(3, () => \"error\"), 2, {\n      error: true,\n      message: \"error\"\n    });\n  });\n\n  test(\"integer\", () => {\n    helper(integer(() => \"error\"), 2, {\n      error: false,\n      message: \"\"\n    });\n  });\n\n  test(\"integer:fail\", () => {\n    helper(integer(() => \"error\"), 2.1, {\n      error: true,\n      message: \"error\"\n    });\n  });\n\n  test(\"positive\", () => {\n    helper(positive(() => \"error\"), 1, {\n      error: false,\n      message: \"\"\n    });\n  });\n\n  test(\"positive:fail\", () => {\n    helper(positive(() => \"error\"), -1, {\n      error: true,\n      message: \"error\"\n    });\n  });\n\n  test(\"negative\", () => {\n    helper(negative(() => \"error\"), -1, {\n      error: false,\n      message: \"\"\n    });\n  });\n\n  test(\"negative:fail\", () => {\n    helper(negative(() => \"error\"), 1, {\n      error: true,\n      message: \"error\"\n    });\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/akito/workspace/favalid/src/validators/__tests__/numbers.test.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 106,
+    "kind": "file",
+    "name": "src/validators/__tests__/required.test.ts",
+    "content": "import * as assert from \"power-assert\";\nimport required from \"../required\";\n\ndescribe(\"required\", () => {\n  test(\"strings\", () => {\n    const messager = () => \"error\";\n    const result = required(messager)(\"str\");\n    assert.deepStrictEqual(result, {\n      error: false,\n      message: \"\"\n    });\n  });\n  test(\"number\", () => {\n    const messager = () => \"error\";\n    const result = required(messager)(123);\n    assert.deepStrictEqual(result, {\n      error: false,\n      message: \"\"\n    });\n  });\n  test(\"blank strings\", () => {\n    const messager = () => \"error\";\n    const result = required(messager)(\"\");\n    assert.deepStrictEqual(result, {\n      error: true,\n      message: \"error\"\n    });\n  });\n  test(\"white space strings\", () => {\n    const messager = () => \"error\";\n    const result = required(messager)(\" \");\n    assert.deepStrictEqual(result, {\n      error: true,\n      message: \"error\"\n    });\n  });\n  test(\"null value\", () => {\n    const messager = () => \"error\";\n    const result = required(messager)(null);\n    assert.deepStrictEqual(result, {\n      error: true,\n      message: \"error\"\n    });\n  });\n  test(\"undefined value\", () => {\n    const messager = () => \"error\";\n    const result = required(messager)(void 0);\n    assert.deepStrictEqual(result, {\n      error: true,\n      message: \"error\"\n    });\n  });\n  test(\"multiple value\", () => {\n    const messager = () => \"error\";\n    const result = required(messager)(null, \"hoge\");\n    assert.deepStrictEqual(result, {\n      error: true,\n      message: \"error\"\n    });\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/akito/workspace/favalid/src/validators/__tests__/required.test.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 107,
+    "kind": "file",
+    "name": "src/validators/__tests__/strings.test.ts",
+    "content": "import maxLength from \"../strings.maxLength\";\nimport minLength from \"../strings.minLength\";\nimport regexp from \"../strings.regexp\";\nimport { helper } from \"./helper\";\n\ndescribe(\"strings\", () => {\n  test(\"minLength\", () => {\n    helper(minLength(2, () => \"\"), \"aaa\", {\n      error: false,\n      message: \"\"\n    });\n  });\n  test(\"minLength:fail\", () => {\n    helper(minLength(5, () => \"error\"), \"aaa\", {\n      error: true,\n      message: \"error\"\n    });\n  });\n  test(\"maxLength\", () => {\n    helper(maxLength(10, () => \"\"), \"aaabb\", {\n      error: false,\n      message: \"\"\n    });\n  });\n  test(\"maxLength:fail\", () => {\n    helper(maxLength(2, () => \"error\"), \"aaa\", {\n      error: true,\n      message: \"error\"\n    });\n  });\n  test(\"regexp\", () => {\n    helper(regexp(/abcdef/, () => \"\", {}), \"abcdef\", {\n      error: false,\n      message: \"\"\n    });\n  });\n  test(\"regexp:fail\", () => {\n    helper(regexp(/abcdef/, () => \"error\", {}), \"asdef\", {\n      error: true,\n      message: \"error\"\n    });\n  });\n  test(\"regexp:exclude\", () => {\n    helper(\n      regexp(/[ｦ-ﾟ]/, () => \"\", {\n        exclude: true\n      }),\n      \"全角カタカナのみ\",\n      {\n        error: false,\n        message: \"\"\n      }\n    );\n  });\n  test(\"regexp:exclude:fail\", () => {\n    helper(\n      regexp(/[ｦ-ﾟ]/, () => \"error\", {\n        exclude: true\n      }),\n      \"半角ｶﾀｶﾅまざってる\",\n      {\n        error: true,\n        message: \"error\"\n      }\n    );\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/akito/workspace/favalid/src/validators/__tests__/strings.test.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 108,
+    "kind": "file",
+    "name": "src/validators/date.max.ts",
+    "content": "import { Messager, tester, Validator } from \"../core\";\n\nexport default (date: Date, messager: Messager): Validator => {\n  return tester((v: Date) => {\n    return date > v;\n  }, messager);\n};\n",
+    "static": true,
+    "longname": "/Users/akito/workspace/favalid/src/validators/date.max.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 109,
+    "kind": "function",
+    "name": "date",
+    "memberof": "src/validators/date.max.ts",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/validators/date.max.ts~date",
+    "access": "public",
+    "export": true,
+    "importPath": "favalid",
+    "importStyle": "date",
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "params": [
+      {
+        "name": "date",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "messager",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 110,
+    "kind": "file",
+    "name": "src/validators/date.min.ts",
+    "content": "import { Messager, tester, Validator } from \"../core\";\n\nexport default (date: Date, messager: Messager): Validator => {\n  return tester((v: Date) => {\n    return date < v;\n  }, messager);\n};\n",
+    "static": true,
+    "longname": "/Users/akito/workspace/favalid/src/validators/date.min.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 111,
+    "kind": "function",
+    "name": "date",
+    "memberof": "src/validators/date.min.ts",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/validators/date.min.ts~date",
+    "access": "public",
+    "export": true,
+    "importPath": "favalid",
+    "importStyle": "date",
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "params": [
+      {
+        "name": "date",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "messager",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 112,
+    "kind": "file",
+    "name": "src/validators/numbers.integer.ts",
+    "content": "import { Messager, tester, Validator } from \"../core\";\n\nexport default (messager: Messager): Validator => {\n  return tester((v: number) => {\n    return Number.isInteger(v);\n  }, messager);\n};\n",
+    "static": true,
+    "longname": "/Users/akito/workspace/favalid/src/validators/numbers.integer.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 113,
+    "kind": "function",
+    "name": "numbers",
+    "memberof": "src/validators/numbers.integer.ts",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/validators/numbers.integer.ts~numbers",
+    "access": "public",
+    "export": true,
+    "importPath": "favalid",
+    "importStyle": "numbers",
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "params": [
+      {
+        "name": "messager",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 114,
+    "kind": "file",
+    "name": "src/validators/numbers.lessThan.ts",
+    "content": "import { Messager, tester, Validator } from \"../core\";\n\nexport default (max: number, messager: Messager): Validator => {\n  return tester((v: number) => {\n    return v <= max;\n  }, messager);\n};\n",
+    "static": true,
+    "longname": "/Users/akito/workspace/favalid/src/validators/numbers.lessThan.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 115,
+    "kind": "function",
+    "name": "numbers",
+    "memberof": "src/validators/numbers.lessThan.ts",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/validators/numbers.lessThan.ts~numbers",
+    "access": "public",
+    "export": true,
+    "importPath": "favalid",
+    "importStyle": "numbers",
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "params": [
+      {
+        "name": "max",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "messager",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 116,
+    "kind": "file",
+    "name": "src/validators/numbers.max.ts",
+    "content": "import { Messager, tester, Validator } from \"../core\";\n\nexport default (limit: number, messager: Messager): Validator => {\n  return tester((v: number) => {\n    return v > limit;\n  }, messager);\n};\n",
+    "static": true,
+    "longname": "/Users/akito/workspace/favalid/src/validators/numbers.max.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 117,
+    "kind": "function",
+    "name": "numbers",
+    "memberof": "src/validators/numbers.max.ts",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/validators/numbers.max.ts~numbers",
+    "access": "public",
+    "export": true,
+    "importPath": "favalid",
+    "importStyle": "numbers",
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "params": [
+      {
+        "name": "limit",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "messager",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 118,
+    "kind": "file",
+    "name": "src/validators/numbers.min.ts",
+    "content": "import { Messager, tester, Validator } from \"../core\";\n\nexport default (limit: number, messager: Messager): Validator => {\n  return tester((v: number) => {\n    return v < limit;\n  }, messager);\n};\n",
+    "static": true,
+    "longname": "/Users/akito/workspace/favalid/src/validators/numbers.min.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 119,
+    "kind": "function",
+    "name": "numbers",
+    "memberof": "src/validators/numbers.min.ts",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/validators/numbers.min.ts~numbers",
+    "access": "public",
+    "export": true,
+    "importPath": "favalid",
+    "importStyle": "numbers",
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "params": [
+      {
+        "name": "limit",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "messager",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 120,
+    "kind": "file",
+    "name": "src/validators/numbers.moreThan.ts",
+    "content": "import { Messager, tester, Validator } from \"../core\";\n\nexport default (min: number, messager: Messager): Validator => {\n  return tester((v: number) => {\n    return v >= min;\n  }, messager);\n};\n",
+    "static": true,
+    "longname": "/Users/akito/workspace/favalid/src/validators/numbers.moreThan.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 121,
+    "kind": "function",
+    "name": "numbers",
+    "memberof": "src/validators/numbers.moreThan.ts",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/validators/numbers.moreThan.ts~numbers",
+    "access": "public",
+    "export": true,
+    "importPath": "favalid",
+    "importStyle": "numbers",
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "params": [
+      {
+        "name": "min",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "messager",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 122,
+    "kind": "file",
+    "name": "src/validators/numbers.negative.ts",
+    "content": "import { Messager, tester, Validator } from \"../core\";\n\nexport default (messager: Messager): Validator => {\n  return tester((v: number) => {\n    return v < 0;\n  }, messager);\n};\n",
+    "static": true,
+    "longname": "/Users/akito/workspace/favalid/src/validators/numbers.negative.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 123,
+    "kind": "function",
+    "name": "numbers",
+    "memberof": "src/validators/numbers.negative.ts",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/validators/numbers.negative.ts~numbers",
+    "access": "public",
+    "export": true,
+    "importPath": "favalid",
+    "importStyle": "numbers",
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "params": [
+      {
+        "name": "messager",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 124,
+    "kind": "file",
+    "name": "src/validators/numbers.positive.ts",
+    "content": "import { Messager, tester, Validator } from \"../core\";\n\nexport default (messager: Messager): Validator => {\n  return tester((v: number) => {\n    return v > 0;\n  }, messager);\n};\n",
+    "static": true,
+    "longname": "/Users/akito/workspace/favalid/src/validators/numbers.positive.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 125,
+    "kind": "function",
+    "name": "numbers",
+    "memberof": "src/validators/numbers.positive.ts",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/validators/numbers.positive.ts~numbers",
+    "access": "public",
+    "export": true,
+    "importPath": "favalid",
+    "importStyle": "numbers",
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "params": [
+      {
+        "name": "messager",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 126,
+    "kind": "file",
+    "name": "src/validators/required.ts",
+    "content": "import { trim } from \"ramda\";\nimport { Messager, tester, Validator } from \"../core\";\nimport { isBlank, isString } from \"../util\";\n\nexport default (messager: Messager): Validator => {\n  return tester(v => {\n    if (isString(v)) {\n      v = trim(v);\n    }\n    return !isBlank(v);\n  }, messager);\n};\n",
+    "static": true,
+    "longname": "/Users/akito/workspace/favalid/src/validators/required.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 127,
+    "kind": "function",
+    "name": "required",
+    "memberof": "src/validators/required.ts",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/validators/required.ts~required",
+    "access": "public",
+    "export": true,
+    "importPath": "favalid",
+    "importStyle": "required",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "messager",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 128,
+    "kind": "file",
+    "name": "src/validators/strings.maxLength.ts",
+    "content": "import { Messager, tester, Validator } from \"../core\";\nimport { strlen } from \"../util\";\n\nexport default (limit: number, messager: Messager): Validator => {\n  return tester((target: string) => {\n    return strlen(target) < limit;\n  }, messager);\n};\n",
+    "static": true,
+    "longname": "/Users/akito/workspace/favalid/src/validators/strings.maxLength.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 129,
+    "kind": "function",
+    "name": "strings",
+    "memberof": "src/validators/strings.maxLength.ts",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/validators/strings.maxLength.ts~strings",
+    "access": "public",
+    "export": true,
+    "importPath": "favalid",
+    "importStyle": "strings",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "limit",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "messager",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 130,
+    "kind": "file",
+    "name": "src/validators/strings.minLength.ts",
+    "content": "import { Messager, tester, Validator } from \"../core\";\nimport { strlen } from \"../util\";\n\nexport default (limit: number, messager: Messager): Validator => {\n  return tester((target: string) => {\n    return strlen(target) > limit;\n  }, messager);\n};\n",
+    "static": true,
+    "longname": "/Users/akito/workspace/favalid/src/validators/strings.minLength.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 131,
+    "kind": "function",
+    "name": "strings",
+    "memberof": "src/validators/strings.minLength.ts",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/validators/strings.minLength.ts~strings",
+    "access": "public",
+    "export": true,
+    "importPath": "favalid",
+    "importStyle": "strings",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "limit",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "messager",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 132,
+    "kind": "file",
+    "name": "src/validators/strings.regexp.ts",
+    "content": "import { Messager, tester, Validator } from \"../core\";\n\nexport interface IRegExpOption {\n  exclude?: boolean;\n}\n\nexport default (\n  regex: RegExp,\n  messager: Messager,\n  { exclude = false }: IRegExpOption\n): Validator => {\n  if (exclude) {\n    return tester((target: string) => !regex.test(target), messager);\n  } else {\n    return tester((target: string) => regex.test(target), messager);\n  }\n};\n",
+    "static": true,
+    "longname": "/Users/akito/workspace/favalid/src/validators/strings.regexp.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 133,
+    "kind": "function",
+    "name": "strings",
+    "memberof": "src/validators/strings.regexp.ts",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/validators/strings.regexp.ts~strings",
+    "access": "public",
+    "export": true,
+    "importPath": "favalid",
+    "importStyle": "strings",
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "params": [
+      {
+        "name": "regex",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "messager",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "objectPattern2",
+        "types": [
+          "{\"exclude\": *}"
+        ],
+        "defaultRaw": {
+          "exclude": null
+        },
+        "defaultValue": "{\"exclude\":null}"
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "index",
+    "content": "# favalid\n\n[![Greenkeeper badge](https://badges.greenkeeper.io/akito0107/favalid.svg)](https://greenkeeper.io/)\n\nValidator Framework for javascript.\n\n[![npm version](https://badge.fury.io/js/favalid.svg)](https://badge.fury.io/js/favalid)\n[![CircleCI](https://circleci.com/gh/akito0107/favalid.svg?style=svg)](https://circleci.com/gh/akito0107/favalid)\n[![Test Coverage](https://api.codeclimate.com/v1/badges/6589638b133763bcc95a/test_coverage)](https://codeclimate.com/github/akito0107/favalid/test_coverage)\n[![Maintainability](https://api.codeclimate.com/v1/badges/6589638b133763bcc95a/maintainability)](https://codeclimate.com/github/akito0107/favalid/maintainability)\n\n## Getting Started\n\n### Prerequisites\n- Node.js v8+\n- npm or yarn\n\n### Installing\n```\n$ npm install favalid\n```\n\n### Usage\n#### Primitive Validator\n1. Write higher order validator using `tester()`.\n`tester()` takes two arguments. first argument is `(value: any) => bool` function, which represent validation rules.\nSecond argument is `() => string` function, which represents validation error message.\n\n```js\nimport { tester } from 'favalid';\n\nconst validator = tester((targetValue) => {\n  return targetValue < 100;\n}, () => {\n  return 'must be less than 100';\n})\n```\n\n2. Use it!\n`tester()` returns simple validator function, `(value: any) => ({error: bool, message: string})`.\n\n```js\nconsole.log(validator(99)); // => { error: false, message: '' }\nconsole.log(validator(101)); // => { error: true, message: 'must ne less than 100' }\n```\n\n#### Combined Validator\n1. You can combine these validators using `combine(...validators)`.\n`combine()` returns also validator.\n\n```js\nimport { tester, combine } from 'favalid';\nconst validator1 = tester((targetValue) => {\n  return targetValue < 100;\n}, () => {\n  return 'must be less than 100';\n})\n\nconst validator2 = tester((targetValue) => {\n  return targetValue > 20;\n}, () => {\n  return 'must be higher than 20';\n})\n\nconst combinedValidator = combine(validator1, validator2)\n```\n\n2. Use it.\n\n```js\nconsole.log(combinedValidator(80)) // { error: false, message: '' }\n\nconsole.log(combinedValidator(101)) // { error: true, message: 'must be less than 100' }\n\nconsole.log(combinedValidator(19)) // { error: true, message: 'must be higher than 20' }\n```\n\nIf target values are failed multiple tests, combined validator returns first failed message. \n\n ```js\n import { tester, combine } from 'favalid';\n const minLength = tester((targetValue) => {\n   return [...targetValue].length > 2;\n }, () => {\n   return 'too few letters';\n })\n \n const regex = tester((targetValue) => {\n   return /^[a-zA-Z]+$/.test(targetValue) // only contains alphabet letters.\n }, () => {\n   return 'invalid format';\n })\n \n const combinedValidator = combine(minLength, regex)\n \n console.log(combinedValidator('a')) // { error: true, message: 'too few letters' }\n \n console.log(combinedValidator('1')) // { error: true, message: 'too few letters' }\n \n console.log(combinedValidator('asdf1')) // {  error: true, message: 'invalid format' }\n\n```\n\n#### Using Predefined Higher Order Validators\nYou can also use predefined higher order validators found on `favalid/lib/validators`.\nThese validators can be combined with your original validators.\n\n```js\nimport { tester, combine, minLength, regexp } from 'favalid';\n \n const combinedValidator = combine(\n   minLength(3, () => 'too few letters'), \n   regexp(/^[a-zA-Z]+$/, () => \"invalid format\", {}),\n   tester(() => {\n     // some original validation rules\n   }, () => ('original error')),\n )\n\n```\n\n\n#### Validation Result Reducers\nYou can aggregate validate errors with your customize error reducer using `conbineWithReducer(validators, reducer, initialValue)`.\n\n```js\nimport { tester, combineWithReducer, minLength, maxLength, regexp } from 'favalid';\n\nconst REQUIRED_EMAIL_MESSAGE = () => \"required.\";\n\nconst EMAIL_REGEXP = /^(([^<>()\\[\\]\\.,;:\\s@\\\"]+(\\.[^<>()\\[\\]\\.,;:\\s@\\\"]+)*)|(\\\".+\\\"))@(([^<>()[\\]\\.,;:\\s@\\\"]+\\.)+[^<>()[\\]\\.,;:\\s@\\\"]{2,})$/i;\nconst REGEXP_MESSAGE = () => \"invalid email.\";\n\nconst EMAIL_MAX_LENGTH = 100;\nconst MAX_LENGTH_MESSAGE = () => \"exceeds 100 letters.\";\n\nconst EMAIL_MIN_LENGTH = 10;\nconst MIN_LENGTH_MESSAGE = () => \"at least 10 letters.\";\n\nconst emailValidatorWithMultipleErrorReducer = (email: string) => {\n  const reducer = (prevError, currentError) => {\n    if (currentError.error) {\n      prevError.push(currentError);\n    }\n    return prevError;\n  };\n\n  return combineWithReducer(\n    [\n      required(REQUIRED_EMAIL_MESSAGE),\n      minLength(EMAIL_MIN_LENGTH, MIN_LENGTH_MESSAGE),\n      maxLength(EMAIL_MAX_LENGTH, MAX_LENGTH_MESSAGE),\n      regexp(EMAIL_REGEXP, REGEXP_MESSAGE, {}),\n    ],\n    reducer,\n    [],\n  )(email);\n};\n\nconsole.log(emailValidatorWithMultipleErrorReducer('valid@valid.com')) // => []\nconsole.log(emailValidatorWithMultipleErrorReducer('aaa')) // => [{error: true, message: 'at least 10 letters.'}, {error: true, message: 'invalid email.'}]\n```\n\n\n### Examples\nSee [src/examples](src/examples).\n\n## License\nThis project is licensed under the Apache License 2.0 License - see the [LICENSE](LICENSE) file for details\n",
+    "longname": "/Users/akito/workspace/favalid/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"favalid\",\n  \"description\": \"validator framework\",\n  \"version\": \"0.5.0\",\n  \"main\": \"lib/main.js\",\n  \"repository\": \"akito0107/favalid\",\n  \"author\": {\n    \"name\": \"Akito Ito\",\n    \"email\": \"akito0107@gmail.com\"\n  },\n  \"license\": \"apache-2.0\",\n  \"scripts\": {\n    \"test\": \"jest ./src\",\n    \"test:watch\": \"jest --watch ./src\",\n    \"test:cover\": \"jest --coverage ./src\",\n    \"lint\": \"tslint ./src/**/*.ts\",\n    \"lint:fix\": \"tslint --fix\",\n    \"clean\": \"rimraf ./lib/*\",\n    \"tsc\": \"yarn clean && tsc --outDir lib\",\n    \"docs\": \"esdoc\"\n  },\n  \"dependencies\": {\n    \"@types/power-assert\": \"^1.5.0\",\n    \"locale-id\": \"^1.0.2\",\n    \"locale2\": \"^2.2.0\",\n    \"ramda\": \"^0.25.0\"\n  },\n  \"devDependencies\": {\n    \"@types/jest\": \"^23.3.0\",\n    \"@types/ramda\": \"^0.25.35\",\n    \"esdoc\": \"^1.1.0\",\n    \"esdoc-importpath-plugin\": \"^1.0.2\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"esdoc-typescript-plugin\": \"^1.0.1\",\n    \"jest\": \"^22.4.0\",\n    \"power-assert\": \"^1.4.4\",\n    \"prettier\": \"^1.10.2\",\n    \"rimraf\": \"^2.6.2\",\n    \"ts-jest\": \"^23.0.1\",\n    \"tslint\": \"^5.11.0\",\n    \"tslint-config-prettier\": \"^1.13.0\",\n    \"tslint-plugin-prettier\": \"^1.3.0\",\n    \"typescript\": \"^2.9.2\"\n  },\n  \"jest\": {\n    \"moduleFileExtensions\": [\n      \"ts\",\n      \"tsx\",\n      \"js\"\n    ],\n    \"transform\": {\n      \"^.+\\\\.(ts|tsx)$\": \"ts-jest\"\n    },\n    \"globals\": {\n      \"ts-jest\": {\n        \"tsConfigFile\": \"tsconfig.json\"\n      }\n    },\n    \"testMatch\": [\n      \"**/__tests__/*.+(ts|tsx|js)\"\n    ],\n    \"testPathIgnorePatterns\": [\n      \"/node_modules/\",\n      \"helper.ts\"\n    ]\n  }\n}\n",
+    "longname": "/Users/akito/workspace/favalid/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">src/validators/__tests__/numbers.test.ts | favalid</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="validator framework"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="favalid"><meta property="twitter:description" content="validator framework"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/akito0107/favalid"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-asyncCombine">asyncCombine</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-asyncCombineWithReducer">asyncCombineWithReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-asyncTester">asyncTester</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-toAsync">toAsync</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-combine">combine</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-combineWithReducer">combineWithReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-defaultReducer">defaultReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-tester">tester</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-defaultLocaleProvider">defaultLocaleProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-messagersWithLocale">messagersWithLocale</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-schema">schema</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isBlank">isBlank</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isString">isString</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-strlen">strlen</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#examples">examples</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-asyncValidator">asyncValidator</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-asyncValidatorWithReason">asyncValidatorWithReason</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-emailValidator">emailValidator</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-emailValidatorWithMultipleErrorReducer">emailValidatorWithMultipleErrorReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-emailValidatorWithReducer">emailValidatorWithReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-halfKanaValidator">halfKanaValidator</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-passwordConfirmationValidator">passwordConfirmationValidator</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#validators">validators</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-date">date</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-date">date</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-numbers">numbers</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-numbers">numbers</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-numbers">numbers</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-numbers">numbers</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-numbers">numbers</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-numbers">numbers</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-numbers">numbers</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-required">required</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-strings">strings</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-strings">strings</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-strings">strings</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#validators---tests--">validators/__tests__</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-asyncHelper">asyncHelper</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-helper">helper</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/validators/__tests__/numbers.test.ts</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import integer from &quot;../numbers.integer&quot;;
+import lessThan from &quot;../numbers.lessThan&quot;;
+import max from &quot;../numbers.max&quot;;
+import min from &quot;../numbers.min&quot;;
+import moreThan from &quot;../numbers.moreThan&quot;;
+import negative from &quot;../numbers.negative&quot;;
+import positive from &quot;../numbers.positive&quot;;
+import { helper } from &quot;./helper&quot;;
+
+describe(&quot;number validator&quot;, () =&gt; {
+  test(&quot;min&quot;, () =&gt; {
+    helper(min(2, () =&gt; &quot;error&quot;), 1, {
+      error: false,
+      message: &quot;&quot;
+    });
+  });
+
+  test(&quot;min:boundary&quot;, () =&gt; {
+    helper(min(2, () =&gt; &quot;error&quot;), 2, {
+      error: true,
+      message: &quot;error&quot;
+    });
+  });
+
+  test(&quot;min:fail&quot;, () =&gt; {
+    helper(min(1, () =&gt; &quot;error&quot;), 2, {
+      error: true,
+      message: &quot;error&quot;
+    });
+  });
+
+  test(&quot;max&quot;, () =&gt; {
+    helper(max(1, () =&gt; &quot;error&quot;), 2, {
+      error: false,
+      message: &quot;&quot;
+    });
+  });
+
+  test(&quot;max:boundary&quot;, () =&gt; {
+    helper(max(2, () =&gt; &quot;error&quot;), 2, {
+      error: true,
+      message: &quot;error&quot;
+    });
+  });
+
+  test(&quot;max:fail&quot;, () =&gt; {
+    helper(max(3, () =&gt; &quot;error&quot;), 2, {
+      error: true,
+      message: &quot;error&quot;
+    });
+  });
+
+  test(&quot;lessThan&quot;, () =&gt; {
+    helper(lessThan(3, () =&gt; &quot;error&quot;), 2, {
+      error: false,
+      message: &quot;&quot;
+    });
+  });
+
+  test(&quot;lessThan:boundary&quot;, () =&gt; {
+    helper(lessThan(3, () =&gt; &quot;error&quot;), 3, {
+      error: false,
+      message: &quot;&quot;
+    });
+  });
+
+  test(&quot;lessThan:fail&quot;, () =&gt; {
+    helper(lessThan(3, () =&gt; &quot;error&quot;), 4, {
+      error: true,
+      message: &quot;error&quot;
+    });
+  });
+
+  test(&quot;moreThan&quot;, () =&gt; {
+    helper(moreThan(3, () =&gt; &quot;error&quot;), 4, {
+      error: false,
+      message: &quot;&quot;
+    });
+  });
+
+  test(&quot;moreThan:boundary&quot;, () =&gt; {
+    helper(moreThan(3, () =&gt; &quot;error&quot;), 3, {
+      error: false,
+      message: &quot;&quot;
+    });
+  });
+
+  test(&quot;moreThan:fail&quot;, () =&gt; {
+    helper(moreThan(3, () =&gt; &quot;error&quot;), 2, {
+      error: true,
+      message: &quot;error&quot;
+    });
+  });
+
+  test(&quot;integer&quot;, () =&gt; {
+    helper(integer(() =&gt; &quot;error&quot;), 2, {
+      error: false,
+      message: &quot;&quot;
+    });
+  });
+
+  test(&quot;integer:fail&quot;, () =&gt; {
+    helper(integer(() =&gt; &quot;error&quot;), 2.1, {
+      error: true,
+      message: &quot;error&quot;
+    });
+  });
+
+  test(&quot;positive&quot;, () =&gt; {
+    helper(positive(() =&gt; &quot;error&quot;), 1, {
+      error: false,
+      message: &quot;&quot;
+    });
+  });
+
+  test(&quot;positive:fail&quot;, () =&gt; {
+    helper(positive(() =&gt; &quot;error&quot;), -1, {
+      error: true,
+      message: &quot;error&quot;
+    });
+  });
+
+  test(&quot;negative&quot;, () =&gt; {
+    helper(negative(() =&gt; &quot;error&quot;), -1, {
+      error: false,
+      message: &quot;&quot;
+    });
+  });
+
+  test(&quot;negative:fail&quot;, () =&gt; {
+    helper(negative(() =&gt; &quot;error&quot;), 1, {
+      error: true,
+      message: &quot;error&quot;
+    });
+  });
+});
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
