@@ -12,9 +12,12 @@ import { asyncHelper } from "../validators/__tests__/helper";
 describe("async", () => {
   test("basic", async () => {
     await asyncHelper(
-      asyncTester(() => {
-        return Promise.resolve(true);
-      }, () => ""),
+      asyncTester(
+        () => {
+          return Promise.resolve(true);
+        },
+        () => ""
+      ),
       null,
       {
         error: false,
@@ -25,9 +28,12 @@ describe("async", () => {
 
   test("should be invalid", async () => {
     await asyncHelper(
-      asyncTester(() => {
-        return Promise.resolve(false);
-      }, () => "error"),
+      asyncTester(
+        () => {
+          return Promise.resolve(false);
+        },
+        () => "error"
+      ),
       null,
       {
         error: true,
@@ -38,9 +44,12 @@ describe("async", () => {
 
   test("fail Promise.resolve", async () => {
     await asyncHelper(
-      asyncTester(() => {
-        return Promise.reject(new Error("message"));
-      }, () => "error"),
+      asyncTester(
+        () => {
+          return Promise.reject(new Error("message"));
+        },
+        () => "error"
+      ),
       null,
       {
         error: true,
@@ -51,9 +60,12 @@ describe("async", () => {
 
   test("with async function", async () => {
     await asyncHelper(
-      asyncTester(async () => {
-        return true;
-      }, () => ""),
+      asyncTester(
+        async () => {
+          return true;
+        },
+        () => ""
+      ),
       null,
       {
         error: false,

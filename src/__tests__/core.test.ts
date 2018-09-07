@@ -21,10 +21,13 @@ describe("combineWithReducer", () => {
   test("combine multiple tests", () => {
     let called = 0;
     const testerMaker = () =>
-      tester(() => {
-        called++;
-        return true;
-      }, () => "");
+      tester(
+        () => {
+          called++;
+          return true;
+        },
+        () => ""
+      );
     const reducer: ResultReducer = (m, e) => {
       if (m.error) {
         return m;

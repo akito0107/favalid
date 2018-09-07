@@ -3,6 +3,7 @@
   "description": "validator framework",
   "version": "0.5.0",
   "main": "lib/main.js",
+  "types": "lib/main.d.ts",
   "repository": "akito0107/favalid",
   "author": {
     "name": "Akito Ito",
@@ -40,9 +41,10 @@
     "tslint": "^5.11.0",
     "tslint-config-prettier": "^1.13.0",
     "tslint-plugin-prettier": "^1.3.0",
-    "typescript": "^2.9.2"
+    "typescript": "^3.0.3"
   },
   "jest": {
+    "testURL": "http://localhost/",
     "moduleFileExtensions": [
       "ts",
       "tsx",
