@@ -66,3 +66,5 @@ typings/
 lib/**/*.js
 lib/**/*.js.map
 flow-typed
+
+doc
