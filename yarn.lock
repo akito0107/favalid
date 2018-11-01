@@ -39,9 +39,9 @@
     "@types/empower" "*"
     "@types/power-assert-formatter" "*"
 
-"@types/ramda@^0.25.35":
-  version "0.25.37"
-  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.25.37.tgz#99d91c0a8d7fde279c7438b4dc54354b73385973"
+"@types/ramda@^0.26.0":
+  version "0.26.0"
+  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.26.0.tgz#ce45c2c61b3e510f907cc84941c8cdb99f089b6a"
 
 abab@^1.0.0:
   version "1.0.4"
