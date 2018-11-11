@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "@types/jest": "^23.3.0",
-    "@types/ramda": "^0.25.35",
+    "@types/ramda": "^0.26.0",
     "esdoc": "^1.1.0",
     "esdoc-importpath-plugin": "^1.0.2",
     "esdoc-standard-plugin": "^1.0.0",
