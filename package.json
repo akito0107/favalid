@@ -5,6 +5,7 @@
   "main": "lib/main.js",
   "types": "lib/main.d.ts",
   "repository": "akito0107/favalid",
+  "module": "lib/esm/main.js",
   "author": {
     "name": "Akito Ito",
     "email": "akito0107@gmail.com"
@@ -17,7 +18,7 @@
     "lint": "tslint ./src/**/*.ts",
     "lint:fix": "tslint --fix",
     "clean": "rimraf ./lib/*",
-    "tsc": "yarn clean && tsc --outDir lib",
+    "tsc": "yarn clean && tsc -p es5 --outDir lib && tsc -p es6",
     "docs": "esdoc"
   },
   "dependencies": {
