@@ -22,12 +22,12 @@
     "docs": "esdoc"
   },
   "dependencies": {
-    "@types/power-assert": "^1.5.0",
     "locale-id": "^1.0.2",
     "locale2": "^2.2.0",
     "ramda": "^0.26.0"
   },
   "devDependencies": {
+    "@types/power-assert": "^1.5.0",
     "@types/jest": "^23.3.0",
     "@types/ramda": "^0.26.0",
     "esdoc": "^1.1.0",
