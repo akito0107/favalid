@@ -36,6 +36,9 @@ jobs:
           name: tsc
           command: yarn tsc
       - run:
+          name: bundlesize
+          command: yarn bundlesize
+      - run:
           name: Run unit tests
           command: |
             yarn test:cover
