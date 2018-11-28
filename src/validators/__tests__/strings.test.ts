@@ -29,13 +29,13 @@ describe("strings", () => {
     });
   });
   test("regexp", () => {
-    helper(regexp(/abcdef/, () => "", {}), "abcdef", {
+    helper(regexp(/abcdef/, () => ""), "abcdef", {
       error: false,
       message: ""
     });
   });
   test("regexp:fail", () => {
-    helper(regexp(/abcdef/, () => "error", {}), "asdef", {
+    helper(regexp(/abcdef/, () => "error"), "asdef", {
       error: true,
       message: "error"
     });
