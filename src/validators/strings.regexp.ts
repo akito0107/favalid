@@ -6,14 +6,14 @@ export interface IRegExpOption {
 
 const defaultOption: IRegExpOption = {
   exclude: false
-}
+};
 
 export default (
   regex: RegExp,
   messager: Messager,
-  option?: IRegExpOption,
+  option?: IRegExpOption
 ): Validator => {
-  const opt = { ...defaultOption, ...option }
+  const opt = { ...defaultOption, ...option };
   if (opt.exclude) {
     return tester((target: string) => !regex.test(target), messager);
   } else {
