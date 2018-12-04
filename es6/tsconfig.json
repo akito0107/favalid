@@ -8,6 +8,9 @@
     "preserveConstEnums": true,
     "sourceMap": true,
     "outDir": "../lib/esm",
+    "lib": [
+      "es2015"
+    ],
     "declaration": true
   },
   "include": [
