@@ -63,8 +63,6 @@ typings/
 
 # End of https://www.gitignore.io/api/node
 
-lib/**/*.js
-lib/**/*.js.map
-flow-typed
+lib
 
 doc
