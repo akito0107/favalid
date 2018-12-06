@@ -13,6 +13,27 @@ describe("schema", () => {
       value: { error: true, message: "test" }
     });
   });
+
+  test("nested case", () => {
+    const validator = shape({
+      children: shape({
+        childValue: tester(() => false, () => "test")
+      }),
+      value: tester(() => false, () => "test")
+    });
+    assert.deepStrictEqual(
+      validator({
+        value: true
+      }),
+      {
+        children: {
+          childValue: { error: true, message: "test" }
+        },
+        value: { error: true, message: "test" }
+      }
+    );
+  });
+
   test("multiple row", () => {
     const validator = shape({
       bar: tester(() => true, () => "bar"),
@@ -23,6 +44,7 @@ describe("schema", () => {
       foo: { error: true, message: "foo" }
     });
   });
+
   test("combined validator", () => {
     const validator = shape({
       email: emailValidator,
