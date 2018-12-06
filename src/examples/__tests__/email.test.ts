@@ -1,5 +1,4 @@
 import * as assert from "power-assert";
-import { repeat } from "ramda";
 import {
   emailValidator,
   emailValidatorWithMultipleErrorReducer,
@@ -32,7 +31,7 @@ describe("email", () => {
   });
 
   test("max", () => {
-    const target = repeat("a", 101).join();
+    const target = "a".repeat(101);
     assert.deepStrictEqual(emailValidator(target), {
       error: true,
       message: "exceeds 100 letters."
