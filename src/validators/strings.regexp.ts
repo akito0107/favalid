@@ -1,4 +1,4 @@
-import { Messager, tester, Validator } from "../core";
+import { Messager, tester, ValueValidator } from "../core";
 
 export interface IRegExpOption {
   exclude?: boolean;
@@ -12,7 +12,7 @@ export default (
   regex: RegExp,
   messager: Messager,
   option?: IRegExpOption
-): Validator => {
+): ValueValidator => {
   const opt = { ...defaultOption, ...option };
   if (opt.exclude) {
     return tester((target: string) => !regex.test(target), messager);

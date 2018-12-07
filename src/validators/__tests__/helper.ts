@@ -1,7 +1,7 @@
 import * as assert from "power-assert";
-import { AsyncValidator, Validator } from "../../core";
+import { AsyncValidator, ValueValidator } from "../../core";
 
-export function helper(validator: Validator, arg: any, expect: any) {
+export function helper(validator: ValueValidator, arg: any, expect: any) {
   assert.deepStrictEqual(validator(arg), expect);
 }
 
