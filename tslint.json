@@ -6,6 +6,7 @@
   ],
   "rules": {
     "prettier": true,
+    "interface-over-type-literal": false,
     "no-implicit-dependencies": [true, "dev"]
   }
 }
