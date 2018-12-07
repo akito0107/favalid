@@ -1,5 +1,5 @@
 import * as assert from "power-assert";
-import { isBlank } from "../util";
+import { hasError, isBlank } from "../util";
 
 describe("isBlank", () => {
   test("expected true when got null", () => {
@@ -50,5 +50,51 @@ describe("isBlank", () => {
   test("expected false when got { valueOf: null }", () => {
     const actual = isBlank({ valueOf: null });
     assert.equal(actual, false);
+  });
+});
+
+describe("hasError", () => {
+  [
+    {
+      in: { error: true, message: "some" },
+      out: true
+    },
+    {
+      in: { error: false, message: "" },
+      out: false
+    },
+    {
+      in: {
+        prop1: { error: false, message: "" },
+        prop2: { error: true, message: "test" }
+      },
+      out: true
+    },
+    {
+      in: {
+        prop1: { error: false, message: "" },
+        prop2: { error: false, message: "" },
+        prop3: {
+          prop4: {
+            prop5: { error: true, message: "" }
+          }
+        }
+      },
+      out: true
+    },
+    {
+      in: {
+        prop1: { error: false, message: "" },
+        prop2: { error: false, message: "" },
+        prop3: {
+          prop4: {
+            prop5: { error: false, message: "" }
+          }
+        }
+      },
+      out: false
+    }
+  ].forEach(c => {
+    assert.equal(hasError(c.in), c.out);
   });
 });
