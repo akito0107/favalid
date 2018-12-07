@@ -10,6 +10,12 @@ describe("strings", () => {
       message: ""
     });
   });
+  test("minLength:boundary", () => {
+    helper(minLength(3, () => ""), "aaa", {
+      error: false,
+      message: ""
+    });
+  });
   test("minLength:fail", () => {
     helper(minLength(5, () => "error"), "aaa", {
       error: true,
@@ -18,6 +24,12 @@ describe("strings", () => {
   });
   test("maxLength", () => {
     helper(maxLength(10, () => ""), "aaabb", {
+      error: false,
+      message: ""
+    });
+  });
+  test("maxLength:boundary", () => {
+    helper(maxLength(5, () => ""), "aaabb", {
       error: false,
       message: ""
     });

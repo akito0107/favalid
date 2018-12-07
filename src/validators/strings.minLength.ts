@@ -3,6 +3,6 @@ import { strlen } from "../util";
 
 export default (limit: number, messager: Messager): Validator => {
   return tester((target: string) => {
-    return strlen(target) > limit;
+    return strlen(target) >= limit;
   }, messager);
 };
