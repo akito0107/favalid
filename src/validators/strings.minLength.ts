@@ -1,7 +1,7 @@
-import { Messager, tester, Validator } from "../core";
+import { Messager, tester, ValueValidator } from "../core";
 import { strlen } from "../util";
 
-export default (limit: number, messager: Messager): Validator => {
+export default (limit: number, messager: Messager): ValueValidator => {
   return tester((target: string) => {
     return strlen(target) > limit;
   }, messager);

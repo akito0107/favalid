@@ -18,5 +18,5 @@ export { default as maxLength } from "./validators/strings.maxLength";
 export { default as minLength } from "./validators/strings.minLength";
 export { default as minDate } from "./validators/date.min";
 export { default as maxDate } from "./validators/date.max";
-export { default as shape } from "./schema";
+export { shape, safeShape } from "./schema";
 export { default as conditional } from "./conditional";

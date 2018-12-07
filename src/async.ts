@@ -2,9 +2,9 @@ import {
   AsyncTester,
   AsyncValidator,
   defaultReducer,
-  IValidationResult,
+  ValidationResult,
   ResultReducer,
-  Validator
+  ValueValidator
 } from "./core";
 
 export const asyncTester: AsyncTester = (fn, messager) => async (...args) => {
@@ -23,7 +23,7 @@ export const asyncCombineWithReducer: (
   reducer: ResultReducer,
   i: any,
   ...t: AsyncValidator[]
-) => (...a: any[]) => Promise<IValidationResult> = (
+) => (...a: any[]) => Promise<ValidationResult> = (
   reducer,
   initialValue = { error: false, message: "" },
   ...testers
@@ -37,7 +37,7 @@ export const asyncCombineWithReducer: (
 
 export const asyncCombine: (
   ...t: AsyncValidator[]
-) => (...a: any[]) => Promise<IValidationResult> = (
+) => (...a: any[]) => Promise<ValidationResult> = (
   ...tests: AsyncValidator[]
 ) => (...args) => {
   return asyncCombineWithReducer(
@@ -47,7 +47,7 @@ export const asyncCombine: (
   )(...args);
 };
 
-export const toAsync: (t: Validator) => AsyncValidator = t => async (
+export const toAsync: (t: ValueValidator) => AsyncValidator = t => async (
   ...arg
 ) => {
   return Promise.resolve(t(...arg));

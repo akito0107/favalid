@@ -1,3 +1,5 @@
+import { SchemaValidationResult, ValidationResult } from "./core";
+
 const isNil = (arg: any): boolean => arg === null || arg === undefined;
 
 const isEmpty = (arg: any): boolean => {
@@ -25,3 +27,17 @@ export const isBlank = (s: any) => {
 };
 
 export const isString = (str: string) => typeof str === "string";
+
+export const hasError = <T>(
+  res: T extends object ? SchemaValidationResult<T> : ValidationResult
+): boolean => {
+  const result: any = res;
+  if (result.hasOwnProperty("error")) {
+    return result.error;
+  }
+  const schemaResult: SchemaValidationResult<object> = res;
+
+  return Object.keys(schemaResult).reduce((p, k) => {
+    return p || hasError(schemaResult[k]);
+  }, false);
+};

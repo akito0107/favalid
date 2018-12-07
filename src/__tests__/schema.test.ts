@@ -1,8 +1,15 @@
 import * as assert from "power-assert";
 import { combine, tester } from "../core";
 import { emailValidator } from "../examples/email";
-import { maxLength, minLength } from "../main";
-import shape from "../schema";
+import {
+  conditional,
+  maxLength,
+  minLength,
+  required,
+  safeShape
+} from "../main";
+import { shape } from "../schema";
+import { isString } from "../util";
 
 describe("schema", () => {
   test("no error", () => {
@@ -56,6 +63,159 @@ describe("schema", () => {
         out: {
           email: { error: true, message: "invalid email." },
           password: { error: true, message: "at least 10 letters." }
+        }
+      }
+    ].forEach(c => {
+      assert.deepStrictEqual(validator(c.in), c.out);
+    });
+  });
+
+  test("with conditional", () => {
+    const nameValidator = combine(
+      minLength(5, () => "at least 10 letters."),
+      maxLength(16, () => "maximum: 16 letters.")
+    );
+    const stringRequired = combine(
+      required(() => "required"),
+      tester(str => isString(str), () => "must be string")
+    );
+
+    const validator = shape({
+      email: conditional(stringRequired, emailValidator),
+      name: conditional(
+        required(() => "required"),
+        shape({
+          first: conditional(stringRequired, nameValidator),
+          last: conditional(stringRequired, nameValidator)
+        })
+      )
+    });
+
+    [
+      {
+        in: { email: "", name: { first: "", last: "" } },
+        out: {
+          email: { error: true, message: "required" },
+          name: {
+            first: { error: true, message: "required" },
+            last: { error: true, message: "required" }
+          }
+        }
+      },
+      {
+        in: { email: null, name: { first: 123, last: undefined } },
+        out: {
+          email: { error: true, message: "required" },
+          name: {
+            first: { error: true, message: "must be string" },
+            last: { error: true, message: "required" }
+          }
+        }
+      },
+      {
+        in: { name: { first: "123456", last: "123456" } },
+        out: {
+          email: { error: true, message: "required" },
+          name: {
+            first: { error: false, message: "" },
+            last: { error: false, message: "" }
+          }
+        }
+      },
+      {
+        in: {},
+        out: {
+          email: { error: true, message: "required" },
+          name: { error: true, message: "required" }
+        }
+      }
+    ].forEach(c => {
+      assert.deepStrictEqual(validator(c.in), c.out);
+    });
+  });
+
+  test("ultra nested case with safeShape", () => {
+    const nameValidator = combine(
+      minLength(5, () => "at least 10 letters."),
+      maxLength(16, () => "maximum: 16 letters.")
+    );
+    const stringRequired = combine(
+      required(() => "required"),
+      tester(str => isString(str), () => "must be string")
+    );
+
+    const validator = safeShape({
+      name: safeShape({
+        nameBrother: nameValidator,
+        nameChild: safeShape({
+          nameGrandChild: safeShape({
+            first: conditional(stringRequired, nameValidator)
+          })
+        })
+      })
+    });
+
+    [
+      {
+        in: {
+          name: {
+            nameBrother: "123456",
+            nameChild: {
+              nameGrandChild: {
+                first: "123456"
+              }
+            }
+          }
+        },
+        out: {
+          name: {
+            nameBrother: { error: false, message: "" },
+            nameChild: {
+              nameGrandChild: {
+                first: { error: false, message: "" }
+              }
+            }
+          }
+        }
+      },
+      {
+        in: {
+          name: {
+            nameBrother: "123456",
+            nameChild: {
+              nameGrandChild: {} // treat as a blank
+            }
+          }
+        },
+        out: {
+          name: {
+            nameBrother: { error: false, message: "" },
+            nameChild: {
+              nameGrandChild: { error: true, message: "blank" }
+            }
+          }
+        }
+      },
+      {
+        in: {
+          name: {
+            nameBrother: "123456",
+            nameChild: {}
+          }
+        },
+        out: {
+          name: {
+            nameBrother: { error: false, message: "" },
+            nameChild: { error: true, message: "blank" }
+          }
+        }
+      },
+      {
+        in: {
+          name: {}
+        },
+        out: {
+          name: { error: true, message: "blank" }
         }
       }
     ].forEach(c => {

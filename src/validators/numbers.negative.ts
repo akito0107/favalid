@@ -1,6 +1,6 @@
-import { Messager, tester, Validator } from "../core";
+import { Messager, tester, ValueValidator } from "../core";
 
-export default (messager: Messager): Validator => {
+export default (messager: Messager): ValueValidator => {
   return tester((v: number) => {
     return v < 0;
   }, messager);
