@@ -1,14 +1,15 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "esnext",
+    "target": "es5",
+    "module": "es6",
     "downlevelIteration": true,
     "esModuleInterop": true,
     "removeComments": true,
     "preserveConstEnums": true,
     "sourceMap": true,
     "outDir": "../lib/esm",
-    "declaration": true
+    "declaration": true,
+    "lib": ["es6","es2015.promise"]
   },
   "include": [
     "../src/**/*"

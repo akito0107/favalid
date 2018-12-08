@@ -2,8 +2,8 @@ import {
   AsyncTester,
   AsyncValidator,
   defaultReducer,
-  ValidationResult,
   ResultReducer,
+  ValidationResult,
   ValueValidator
 } from "./core";
 

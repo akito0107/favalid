@@ -19,7 +19,7 @@
     "lint": "tslint ./src/**/*.ts",
     "lint:fix": "tslint --fix",
     "clean": "rimraf ./lib/*",
-    "tsc": "yarn clean && tsc -p es5 --outDir lib && tsc -p es6",
+    "build": "yarn clean && tsc -p es5 --outDir lib && tsc -p esm",
     "docs": "esdoc"
   },
   "dependencies": {
@@ -27,9 +27,11 @@
     "locale2": "^2.2.0"
   },
   "devDependencies": {
+    "@types/es6-promise": "^3.3.0",
     "@types/jest": "^23.3.0",
     "@types/power-assert": "^1.5.0",
     "bundlesize": "^0.17.0",
+    "es6-promise": "^4.2.5",
     "esdoc": "^1.1.0",
     "esdoc-importpath-plugin": "^1.0.2",
     "esdoc-standard-plugin": "^1.0.0",
@@ -69,7 +71,11 @@
   },
   "bundlesize": [
     {
-      "path": "./lib/*/**.js",
+      "path": "./lib/esm/*.js",
+      "maxSize": "1 kb"
+    },
+    {
+      "path": "./lib/esm/validators/*.js",
       "maxSize": "1 kb"
     }
   ]

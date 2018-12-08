@@ -1,14 +1,15 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "UMD",
+    "target": "es5",
+    "module": "commonjs",
     "downlevelIteration": true,
     "esModuleInterop": true,
     "removeComments": true,
     "preserveConstEnums": true,
     "sourceMap": true,
     "outDir": "../lib",
-    "declaration": true
+    "declaration": true,
+    "lib": ["es6","es2015.promise"]
   },
   "include": [
     "../src/**/*"
