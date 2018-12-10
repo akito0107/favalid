@@ -34,7 +34,7 @@ jobs:
           command: yarn lint
       - run:
           name: tsc
-          command: yarn tsc
+          command: yarn build
       - run:
           name: bundlesize
           command: yarn bundlesize
