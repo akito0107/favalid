@@ -15,7 +15,8 @@ describe("conditional", () => {
     );
     assert.deepStrictEqual(conditional(prerequiments, dummy)(""), {
       error: true,
-      message: "stop"
+      message: "stop",
+      preconditionCheckFailed: true
     });
   });
   test("pass requirements", () => {
@@ -43,8 +44,22 @@ describe("conditional", () => {
     const conditionalCheckedValidator = conditional(precondition, validator);
 
     [
-      { in: null, except: { error: true, message: "required" } },
-      { in: 123, except: { error: true, message: "must be string" } },
+      {
+        in: null,
+        except: {
+          error: true,
+          message: "required",
+          preconditionCheckFailed: true
+        }
+      },
+      {
+        in: 123,
+        except: {
+          error: true,
+          message: "must be string",
+          preconditionCheckFailed: true
+        }
+      },
       { in: "1234", except: { error: true, message: "min 5 length" } },
       { in: "12345678910", except: { error: true, message: "max 10 length" } },
       { in: "123456789", except: { error: false, message: "" } }

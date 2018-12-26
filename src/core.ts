@@ -21,6 +21,7 @@ export type SchemaValidationResult<T extends object> = {
 export type ValidationResult = {
   error: boolean;
   message: any;
+  preconditionCheckFailed?: boolean;
 };
 
 export const tester: Tester = (test, messager) => (...args) => {
