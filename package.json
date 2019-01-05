@@ -70,7 +70,7 @@
   "bundlesize": [
     {
       "path": "./lib/esm/*.js",
-      "maxSize": "1 kb"
+      "maxSize": "2 kb"
     },
     {
       "path": "./lib/esm/validators/*.js",
