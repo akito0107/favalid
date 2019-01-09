@@ -2,7 +2,7 @@
   "name": "favalid",
   "sideEffects": false,
   "description": "validator framework",
-  "version": "0.8.1",
+  "version": "0.9.0",
   "main": "lib/main.js",
   "types": "lib/main.d.ts",
   "repository": "akito0107/favalid",
