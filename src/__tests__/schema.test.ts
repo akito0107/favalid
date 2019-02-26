@@ -95,27 +95,55 @@ describe("schema", () => {
       {
         in: { email: "", name: { first: "", last: "" } },
         out: {
-          email: { error: true, message: "required" },
+          email: {
+            error: true,
+            message: "required",
+            preconditionCheckFailed: true
+          },
           name: {
-            first: { error: true, message: "required" },
-            last: { error: true, message: "required" }
+            first: {
+              error: true,
+              message: "required",
+              preconditionCheckFailed: true
+            },
+            last: {
+              error: true,
+              message: "required",
+              preconditionCheckFailed: true
+            }
           }
         }
       },
       {
         in: { email: null, name: { first: 123, last: undefined } },
         out: {
-          email: { error: true, message: "required" },
+          email: {
+            error: true,
+            message: "required",
+            preconditionCheckFailed: true
+          },
           name: {
-            first: { error: true, message: "must be string" },
-            last: { error: true, message: "required" }
+            first: {
+              error: true,
+              message: "must be string",
+              preconditionCheckFailed: true
+            },
+            last: {
+              error: true,
+              message: "required",
+              preconditionCheckFailed: true
+            }
           }
         }
       },
       {
         in: { name: { first: "123456", last: "123456" } },
         out: {
-          email: { error: true, message: "required" },
+          email: {
+            error: true,
+            message: "required",
+            preconditionCheckFailed: true
+          },
           name: {
             first: { error: false, message: "" },
             last: { error: false, message: "" }
@@ -125,8 +153,16 @@ describe("schema", () => {
       {
         in: {},
         out: {
-          email: { error: true, message: "required" },
-          name: { error: true, message: "required" }
+          email: {
+            error: true,
+            message: "required",
+            preconditionCheckFailed: true
+          },
+          name: {
+            error: true,
+            message: "required",
+            preconditionCheckFailed: true
+          }
         }
       }
     ].forEach(c => {
@@ -191,7 +227,11 @@ describe("schema", () => {
           name: {
             nameBrother: { error: false, message: "" },
             nameChild: {
-              nameGrandChild: { error: true, message: "blank" }
+              nameGrandChild: {
+                error: true,
+                message: "blank",
+                preconditionCheckFailed: true
+              }
             }
           }
         }
@@ -206,7 +246,11 @@ describe("schema", () => {
         out: {
           name: {
             nameBrother: { error: false, message: "" },
-            nameChild: { error: true, message: "blank" }
+            nameChild: {
+              error: true,
+              message: "blank",
+              preconditionCheckFailed: true
+            }
           }
         }
       },
@@ -215,7 +259,7 @@ describe("schema", () => {
           name: {}
         },
         out: {
-          name: { error: true, message: "blank" }
+          name: { error: true, message: "blank", preconditionCheckFailed: true }
         }
       }
     ].forEach(c => {
