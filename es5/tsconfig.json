@@ -9,13 +9,9 @@
     "sourceMap": true,
     "outDir": "../lib",
     "declaration": true,
-    "lib": ["es6","es2015.promise"]
+    "moduleResolution": "node",
+    "lib": ["es6", "es2015.promise"]
   },
-  "include": [
-    "../src/**/*"
-  ],
-  "exclude": [
-    "../node_modules",
-    "../**/*.test.ts"
-  ]
+  "include": ["../src/**/*"],
+  "exclude": ["../node_modules", "../**/*.test.ts"]
 }
