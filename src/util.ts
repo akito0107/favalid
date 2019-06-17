@@ -28,8 +28,8 @@ export const isBlank = (s: any) => {
 
 export const isString = (str: string) => typeof str === "string";
 
-export const hasError = <T>(
-  res: T extends object ? SchemaValidationResult<T> : ValidationResult
+export const hasError = (
+  res: SchemaValidationResult<object> | ValidationResult
 ): boolean => {
   const result: any = res;
   if (result.hasOwnProperty("error")) {

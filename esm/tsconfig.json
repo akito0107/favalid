@@ -8,14 +8,10 @@
     "preserveConstEnums": true,
     "sourceMap": true,
     "outDir": "../lib/esm",
+    "moduleResolution": "node",
     "declaration": true,
-    "lib": ["es6","es2015.promise"]
+    "lib": ["es6", "es2015.promise"]
   },
-  "include": [
-    "../src/**/*"
-  ],
-  "exclude": [
-    "../node_modules",
-    "../**/*.test.ts"
-  ]
+  "include": ["../src/**/*"],
+  "exclude": ["../node_modules", "../**/*.test.ts"]
 }
