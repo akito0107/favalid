@@ -15,7 +15,7 @@ export type ResultReducer = (p: any, e: ValidationResult) => any;
 export type SchemaValidationResult<T extends object> = {
   [P in keyof T]: T[P] extends object
     ? SchemaValidationResult<T[P]>
-    : ValidationResult
+    : ValidationResult;
 };
 
 export type ValidationResult = {

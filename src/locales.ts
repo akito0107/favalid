@@ -15,10 +15,13 @@ export const messagersWithLocale = (
   messagers: IMessagerWithLocale[],
   provider: LocaleProvider = defaultLocaleProvider
 ): Messager => {
-  const memo = messagers.reduce((m: IMessagerWithLocale, current) => {
-    m[current.locale] = m.messager;
-    return m;
-  }, {});
+  const memo = messagers.reduce(
+    (m: IMessagerWithLocale, current) => {
+      m[current.locale] = m.messager;
+      return m;
+    },
+    {} as any
+  );
   const defaultMessage = messagers.find(({ isDefault }) => isDefault);
   if (!defaultMessage) {
     throw new Error("default messager is not provided");
