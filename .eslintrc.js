@@ -7,6 +7,7 @@ module.exports = {
   env: {
     node: true,
     jest: true,
+    es6: true,
   },
   parser: "@typescript-eslint/parser",
   parserOptions: {
@@ -20,6 +21,7 @@ module.exports = {
       "args": "after-used",
       "ignoreRestSiblings": false
     }],
+    "@typescript-eslint/no-floating-promises": 2,
     "@typescript-eslint/adjacent-overload-signatures": "error"
   }
 };

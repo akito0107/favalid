@@ -10,7 +10,7 @@ import { isBlank } from "../util";
 
 const REQUIRED_EMAIL_MESSAGE = () => "required.";
 
-const EMAIL_REGEXP = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+const EMAIL_REGEXP = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i;
 const REGEXP_MESSAGE = () => "invalid email.";
 
 const EMAIL_MAX_LENGTH = 100;
