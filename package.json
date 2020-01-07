@@ -43,7 +43,7 @@
     "power-assert": "1.6.1",
     "prettier": "1.18.2",
     "rimraf": "3.0.0",
-    "ts-jest": "24.1.0",
+    "ts-jest": "24.3.0",
     "typescript": "3.6.3"
   },
   "jest": {
