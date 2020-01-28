@@ -77,8 +77,14 @@ describe("async", () => {
 
 describe("asyncCombine (with Reducer)", () => {
   test("combine multiple asyncTesters", async () => {
-    const tester1 = asyncTester(() => Promise.resolve(true), () => "test3");
-    const tester2 = asyncTester(() => Promise.resolve(true), () => "test3");
+    const tester1 = asyncTester(
+      () => Promise.resolve(true),
+      () => "test3"
+    );
+    const tester2 = asyncTester(
+      () => Promise.resolve(true),
+      () => "test3"
+    );
     await asyncHelper(
       asyncCombineWithReducer(defaultReducer, tester1, tester2),
       null,
@@ -90,12 +96,18 @@ describe("asyncCombine (with Reducer)", () => {
   });
 
   test("reports first failed test", async () => {
-    const tester1 = asyncTester(() => Promise.resolve(true), () => "test1");
+    const tester1 = asyncTester(
+      () => Promise.resolve(true),
+      () => "test1"
+    );
     const tester2 = asyncTester(
       () => Promise.reject(new Error("error")),
       () => "test2"
     );
-    const tester3 = asyncTester(() => Promise.resolve(true), () => "test3");
+    const tester3 = asyncTester(
+      () => Promise.resolve(true),
+      () => "test3"
+    );
     await asyncHelper(
       asyncCombineWithReducer(defaultReducer, tester1, tester2, tester3),
       null,
@@ -109,12 +121,18 @@ describe("asyncCombine (with Reducer)", () => {
 
 describe("asyncCombine", () => {
   test("combine multiple asyncTesters", async () => {
-    const tester1 = asyncTester(() => Promise.resolve(true), () => "test1");
+    const tester1 = asyncTester(
+      () => Promise.resolve(true),
+      () => "test1"
+    );
     const tester2 = asyncTester(
       () => Promise.reject(new Error("error")),
       () => "test2"
     );
-    const tester3 = asyncTester(() => Promise.resolve(true), () => "test3");
+    const tester3 = asyncTester(
+      () => Promise.resolve(true),
+      () => "test3"
+    );
     await asyncHelper(asyncCombine(tester1, tester2, tester3), null, {
       error: true,
       message: "test2"
@@ -124,9 +142,18 @@ describe("asyncCombine", () => {
 
 describe("convertToAsync", () => {
   test("convert to asyncTeter", async () => {
-    const tester1 = asyncTester(() => Promise.resolve(true), () => "");
-    const tester2 = tester(() => false, () => "test2");
-    const tester3 = tester(() => true, () => "");
+    const tester1 = asyncTester(
+      () => Promise.resolve(true),
+      () => ""
+    );
+    const tester2 = tester(
+      () => false,
+      () => "test2"
+    );
+    const tester3 = tester(
+      () => true,
+      () => ""
+    );
     await asyncHelper(
       asyncCombine(tester1, toAsync(tester2), toAsync(tester3)),
       null,

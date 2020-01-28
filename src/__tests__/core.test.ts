@@ -4,16 +4,30 @@ import { helper } from "../validators/__tests__/helper";
 
 describe("tester", () => {
   test("no error", () => {
-    helper(tester(() => true, () => ""), null, {
-      error: false,
-      message: ""
-    });
+    helper(
+      tester(
+        () => true,
+        () => ""
+      ),
+      null,
+      {
+        error: false,
+        message: ""
+      }
+    );
   });
   test("has error", () => {
-    helper(tester(() => false, () => "error"), null, {
-      error: true,
-      message: "error"
-    });
+    helper(
+      tester(
+        () => false,
+        () => "error"
+      ),
+      null,
+      {
+        error: true,
+        message: "error"
+      }
+    );
   });
 });
 
@@ -44,9 +58,18 @@ describe("combineWithReducer", () => {
 
 describe("combine", () => {
   test("should return first validate failure", () => {
-    const tester1 = tester(() => true, () => "test1");
-    const tester2 = tester(() => false, () => "test2");
-    const tester3 = tester(() => true, () => "test3");
+    const tester1 = tester(
+      () => true,
+      () => "test1"
+    );
+    const tester2 = tester(
+      () => false,
+      () => "test2"
+    );
+    const tester3 = tester(
+      () => true,
+      () => "test3"
+    );
     helper(combine(tester1, tester2, tester3), null, {
       error: true,
       message: "test2"
@@ -55,7 +78,10 @@ describe("combine", () => {
 });
 
 describe("messager can receive actual value", () => {
-  const test = tester(() => false, value => String(value));
+  const test = tester(
+    () => false,
+    value => String(value)
+  );
   helper(test, "test", {
     error: true,
     message: "test"

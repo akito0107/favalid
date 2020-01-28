@@ -14,7 +14,10 @@ import { isString } from "../util";
 describe("schema", () => {
   test("no error", () => {
     const validator = shape({
-      value: tester(() => false, () => "test")
+      value: tester(
+        () => false,
+        () => "test"
+      )
     });
     assert.deepStrictEqual(validator({ value: true }), {
       value: { error: true, message: "test" }
@@ -22,8 +25,14 @@ describe("schema", () => {
   });
   test("multiple row", () => {
     const validator = shape({
-      bar: tester(() => true, () => "bar"),
-      foo: tester(() => false, () => "foo")
+      bar: tester(
+        () => true,
+        () => "bar"
+      ),
+      foo: tester(
+        () => false,
+        () => "foo"
+      )
     });
     assert.deepStrictEqual(validator({ foo: true, bar: true }), {
       bar: { error: false, message: "" },
@@ -77,7 +86,10 @@ describe("schema", () => {
     );
     const stringRequired = combine(
       required(() => "required"),
-      tester(str => isString(str), () => "must be string")
+      tester(
+        str => isString(str),
+        () => "must be string"
+      )
     );
 
     const validator = shape({
@@ -177,7 +189,10 @@ describe("schema", () => {
     );
     const stringRequired = combine(
       required(() => "required"),
-      tester(str => isString(str), () => "must be string")
+      tester(
+        str => isString(str),
+        () => "must be string"
+      )
     );
 
     const validator = safeShape({
