@@ -5,7 +5,10 @@ import { isString } from "../util";
 
 describe("conditional", () => {
   test("stop early", () => {
-    const prerequiments = tester(() => false, () => "stop");
+    const prerequiments = tester(
+      () => false,
+      () => "stop"
+    );
     const dummy = tester(
       () => {
         assert.fail("unreachable");
@@ -20,7 +23,10 @@ describe("conditional", () => {
     });
   });
   test("pass requirements", () => {
-    const prerequiments = tester(() => true, () => "");
+    const prerequiments = tester(
+      () => true,
+      () => ""
+    );
     const dummy = tester(
       () => {
         return true;
@@ -35,7 +41,10 @@ describe("conditional", () => {
   test("combine and conditional", () => {
     const precondition = combine(
       required(() => "required"),
-      tester(str => isString(str), () => "must be string")
+      tester(
+        str => isString(str),
+        () => "must be string"
+      )
     );
     const validator = combine(
       minLength(5, () => "min 5 length"),
