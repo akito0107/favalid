@@ -27,7 +27,7 @@
     "locale2": "^2.2.0"
   },
   "devDependencies": {
-    "@types/jest": "26.0.7",
+    "@types/jest": "26.0.8",
     "@types/power-assert": "1.5.3",
     "@typescript-eslint/eslint-plugin": "3.7.1",
     "@typescript-eslint/parser": "3.7.1",
