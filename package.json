@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "@types/jest": "27.0.2",
-    "@types/power-assert": "1.5.4",
+    "@types/power-assert": "1.5.5",
     "@typescript-eslint/eslint-plugin": "4.32.0",
     "@typescript-eslint/parser": "4.32.0",
     "bundlesize": "0.18.1",
