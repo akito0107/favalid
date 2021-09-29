@@ -675,10 +675,10 @@
   resolved "https://registry.yarnpkg.com/@types/power-assert-formatter/-/power-assert-formatter-1.4.30.tgz#424df0d544d362699bc92a61068b51b04778cea5"
   integrity sha512-QpLIRAdxW9dgGanSJc18RL1J8IYYHRarrkC2fuXxtBFC37PPcfquJiVzj12j5WR3LbVyK4n2FcRBZ11JckjXyA==
 
-"@types/power-assert@1.5.4":
-  version "1.5.4"
-  resolved "https://registry.yarnpkg.com/@types/power-assert/-/power-assert-1.5.4.tgz#0b6341e5325e6e55e49b60ae43b65b5a76e6785c"
-  integrity sha512-3Eru7OZxI97aQ75lc0tmnWjaeZbW8+AimKzoaBRn5wpkwkj90IIxRD986cTEedQ6fqBFeMpcrOGHarPehOsWjg==
+"@types/power-assert@1.5.5":
+  version "1.5.5"
+  resolved "https://registry.yarnpkg.com/@types/power-assert/-/power-assert-1.5.5.tgz#82e846d4daf99a21ff5d129f7c523d705fe369fd"
+  integrity sha512-tsIAQsms6haKOL/o8XkJ8RhMhqpVbZc4gm9xO4ebnJJ9XgxD6Ga2fE8JGzt7ZHGgWg5xF9R3vPnLmx64fWFtHA==
   dependencies:
     "@types/empower" "*"
     "@types/power-assert-formatter" "*"
