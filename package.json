@@ -37,7 +37,7 @@
     "esdoc-standard-plugin": "1.0.0",
     "esdoc-typescript-plugin": "1.0.1",
     "eslint": "8.9.0",
-    "eslint-config-prettier": "8.3.0",
+    "eslint-config-prettier": "8.4.0",
     "eslint-plugin-prettier": "4.0.0",
     "jest": "27.5.1",
     "power-assert": "1.6.1",
