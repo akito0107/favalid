@@ -19,7 +19,7 @@ describe("conditional", () => {
     assert.deepStrictEqual(conditional(prerequiments, dummy)(""), {
       error: true,
       message: "stop",
-      preconditionCheckFailed: true
+      preconditionCheckFailed: true,
     });
   });
   test("pass requirements", () => {
@@ -35,14 +35,14 @@ describe("conditional", () => {
     );
     assert.deepStrictEqual(conditional(prerequiments, dummy)(""), {
       error: false,
-      message: ""
+      message: "",
     });
   });
   test("combine and conditional", () => {
     const precondition = combine(
       required(() => "required"),
       tester(
-        str => isString(str),
+        (str) => isString(str),
         () => "must be string"
       )
     );
@@ -58,21 +58,21 @@ describe("conditional", () => {
         except: {
           error: true,
           message: "required",
-          preconditionCheckFailed: true
-        }
+          preconditionCheckFailed: true,
+        },
       },
       {
         in: 123,
         except: {
           error: true,
           message: "must be string",
-          preconditionCheckFailed: true
-        }
+          preconditionCheckFailed: true,
+        },
       },
       { in: "1234", except: { error: true, message: "min 5 length" } },
       { in: "12345678910", except: { error: true, message: "max 10 length" } },
-      { in: "123456789", except: { error: false, message: "" } }
-    ].forEach(c => {
+      { in: "123456789", except: { error: false, message: "" } },
+    ].forEach((c) => {
       assert.deepStrictEqual(conditionalCheckedValidator(c.in), c.except);
     });
   });
