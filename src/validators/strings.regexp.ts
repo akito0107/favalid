@@ -5,7 +5,7 @@ export interface IRegExpOption {
 }
 
 const defaultOption: IRegExpOption = {
-  exclude: false
+  exclude: false,
 };
 
 export default (
