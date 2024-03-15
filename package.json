@@ -31,7 +31,7 @@
     "@types/power-assert": "1.5.12",
     "@typescript-eslint/eslint-plugin": "7.2.0",
     "@typescript-eslint/parser": "7.2.0",
-    "bundlesize": "0.18.1",
+    "bundlesize": "0.18.2",
     "esdoc": "1.1.0",
     "esdoc-importpath-plugin": "1.0.2",
     "esdoc-standard-plugin": "1.0.0",
