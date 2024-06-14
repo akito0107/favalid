@@ -1,10 +1,10 @@
 import { asyncCombine, asyncTester, minLength, toAsync } from "../main";
 
 const USERDB = {
-  "example@hello.com": true
+  "example@hello.com": true,
 };
 
-const apiRequest = async t => {
+const apiRequest = async (t) => {
   if (USERDB[t]) {
     return Promise.resolve(true);
   }

@@ -6,7 +6,7 @@ import {
   maxLength,
   minLength,
   required,
-  safeShape
+  safeShape,
 } from "../main";
 import { shape } from "../schema";
 import { isString } from "../util";
@@ -17,10 +17,10 @@ describe("schema", () => {
       value: tester(
         () => false,
         () => "test"
-      )
+      ),
     });
     assert.deepStrictEqual(validator({ value: true }), {
-      value: { error: true, message: "test" }
+      value: { error: true, message: "test" },
     });
   });
   test("multiple row", () => {
@@ -32,11 +32,11 @@ describe("schema", () => {
       foo: tester(
         () => false,
         () => "foo"
-      )
+      ),
     });
     assert.deepStrictEqual(validator({ foo: true, bar: true }), {
       bar: { error: false, message: "" },
-      foo: { error: true, message: "foo" }
+      foo: { error: true, message: "foo" },
     });
   });
   test("combined validator", () => {
@@ -45,7 +45,7 @@ describe("schema", () => {
       password: combine(
         minLength(10, () => "at least 10 letters."),
         maxLength(16, () => "maximum: 16 letters.")
-      )
+      ),
     });
 
     [
@@ -53,28 +53,28 @@ describe("schema", () => {
         in: { email: "test@test.com", password: "12345678910" },
         out: {
           email: { error: false, message: "" },
-          password: { error: false, message: "" }
-        }
+          password: { error: false, message: "" },
+        },
       },
       {
         in: { email: "testtest.com", password: "178910" },
         out: {
           email: { error: true, message: "invalid email." },
-          password: { error: true, message: "at least 10 letters." }
-        }
+          password: { error: true, message: "at least 10 letters." },
+        },
       },
       {
         in: {
           email: "testtest.com",
           password: "178910",
-          unknownprop: "unknown"
+          unknownprop: "unknown",
         },
         out: {
           email: { error: true, message: "invalid email." },
-          password: { error: true, message: "at least 10 letters." }
-        }
-      }
-    ].forEach(c => {
+          password: { error: true, message: "at least 10 letters." },
+        },
+      },
+    ].forEach((c) => {
       assert.deepStrictEqual(validator(c.in), c.out);
     });
   });
@@ -87,7 +87,7 @@ describe("schema", () => {
     const stringRequired = combine(
       required(() => "required"),
       tester(
-        str => isString(str),
+        (str) => isString(str),
         () => "must be string"
       )
     );
@@ -98,9 +98,9 @@ describe("schema", () => {
         required(() => "required"),
         shape({
           first: conditional(stringRequired, nameValidator),
-          last: conditional(stringRequired, nameValidator)
+          last: conditional(stringRequired, nameValidator),
         })
-      )
+      ),
     });
 
     [
@@ -110,21 +110,21 @@ describe("schema", () => {
           email: {
             error: true,
             message: "required",
-            preconditionCheckFailed: true
+            preconditionCheckFailed: true,
           },
           name: {
             first: {
               error: true,
               message: "required",
-              preconditionCheckFailed: true
+              preconditionCheckFailed: true,
             },
             last: {
               error: true,
               message: "required",
-              preconditionCheckFailed: true
-            }
-          }
-        }
+              preconditionCheckFailed: true,
+            },
+          },
+        },
       },
       {
         in: { email: null, name: { first: 123, last: undefined } },
@@ -132,21 +132,21 @@ describe("schema", () => {
           email: {
             error: true,
             message: "required",
-            preconditionCheckFailed: true
+            preconditionCheckFailed: true,
           },
           name: {
             first: {
               error: true,
               message: "must be string",
-              preconditionCheckFailed: true
+              preconditionCheckFailed: true,
             },
             last: {
               error: true,
               message: "required",
-              preconditionCheckFailed: true
-            }
-          }
-        }
+              preconditionCheckFailed: true,
+            },
+          },
+        },
       },
       {
         in: { name: { first: "123456", last: "123456" } },
@@ -154,13 +154,13 @@ describe("schema", () => {
           email: {
             error: true,
             message: "required",
-            preconditionCheckFailed: true
+            preconditionCheckFailed: true,
           },
           name: {
             first: { error: false, message: "" },
-            last: { error: false, message: "" }
-          }
-        }
+            last: { error: false, message: "" },
+          },
+        },
       },
       {
         in: {},
@@ -168,16 +168,16 @@ describe("schema", () => {
           email: {
             error: true,
             message: "required",
-            preconditionCheckFailed: true
+            preconditionCheckFailed: true,
           },
           name: {
             error: true,
             message: "required",
-            preconditionCheckFailed: true
-          }
-        }
-      }
-    ].forEach(c => {
+            preconditionCheckFailed: true,
+          },
+        },
+      },
+    ].forEach((c) => {
       assert.deepStrictEqual(validator(c.in), c.out);
     });
   });
@@ -190,7 +190,7 @@ describe("schema", () => {
     const stringRequired = combine(
       required(() => "required"),
       tester(
-        str => isString(str),
+        (str) => isString(str),
         () => "must be string"
       )
     );
@@ -200,10 +200,10 @@ describe("schema", () => {
         nameBrother: nameValidator,
         nameChild: safeShape({
           nameGrandChild: safeShape({
-            first: conditional(stringRequired, nameValidator)
-          })
-        })
-      })
+            first: conditional(stringRequired, nameValidator),
+          }),
+        }),
+      }),
     });
 
     [
@@ -213,30 +213,30 @@ describe("schema", () => {
             nameBrother: "123456",
             nameChild: {
               nameGrandChild: {
-                first: "123456"
-              }
-            }
-          }
+                first: "123456",
+              },
+            },
+          },
         },
         out: {
           name: {
             nameBrother: { error: false, message: "" },
             nameChild: {
               nameGrandChild: {
-                first: { error: false, message: "" }
-              }
-            }
-          }
-        }
+                first: { error: false, message: "" },
+              },
+            },
+          },
+        },
       },
       {
         in: {
           name: {
             nameBrother: "123456",
             nameChild: {
-              nameGrandChild: {} // treat as a blank
-            }
-          }
+              nameGrandChild: {}, // treat as a blank
+            },
+          },
         },
         out: {
           name: {
@@ -245,18 +245,18 @@ describe("schema", () => {
               nameGrandChild: {
                 error: true,
                 message: "blank",
-                preconditionCheckFailed: true
-              }
-            }
-          }
-        }
+                preconditionCheckFailed: true,
+              },
+            },
+          },
+        },
       },
       {
         in: {
           name: {
             nameBrother: "123456",
-            nameChild: {}
-          }
+            nameChild: {},
+          },
         },
         out: {
           name: {
@@ -264,20 +264,24 @@ describe("schema", () => {
             nameChild: {
               error: true,
               message: "blank",
-              preconditionCheckFailed: true
-            }
-          }
-        }
+              preconditionCheckFailed: true,
+            },
+          },
+        },
       },
       {
         in: {
-          name: {}
+          name: {},
         },
         out: {
-          name: { error: true, message: "blank", preconditionCheckFailed: true }
-        }
-      }
-    ].forEach(c => {
+          name: {
+            error: true,
+            message: "blank",
+            preconditionCheckFailed: true,
+          },
+        },
+      },
+    ].forEach((c) => {
       assert.deepStrictEqual(validator(c.in), c.out);
     });
   });
