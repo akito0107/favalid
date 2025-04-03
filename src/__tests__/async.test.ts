@@ -2,7 +2,7 @@ import {
   asyncCombine,
   asyncCombineWithReducer,
   asyncTester,
-  toAsync
+  toAsync,
 } from "../async";
 
 import { defaultReducer, tester } from "../core";
@@ -21,7 +21,7 @@ describe("async", () => {
       null,
       {
         error: false,
-        message: ""
+        message: "",
       }
     );
   });
@@ -37,7 +37,7 @@ describe("async", () => {
       null,
       {
         error: true,
-        message: "error"
+        message: "error",
       }
     );
   });
@@ -53,7 +53,7 @@ describe("async", () => {
       null,
       {
         error: true,
-        message: "error"
+        message: "error",
       }
     );
   });
@@ -69,7 +69,7 @@ describe("async", () => {
       null,
       {
         error: false,
-        message: ""
+        message: "",
       }
     );
   });
@@ -90,7 +90,7 @@ describe("asyncCombine (with Reducer)", () => {
       null,
       {
         error: false,
-        message: ""
+        message: "",
       }
     );
   });
@@ -113,7 +113,7 @@ describe("asyncCombine (with Reducer)", () => {
       null,
       {
         error: true,
-        message: "test2"
+        message: "test2",
       }
     );
   });
@@ -135,7 +135,7 @@ describe("asyncCombine", () => {
     );
     await asyncHelper(asyncCombine(tester1, tester2, tester3), null, {
       error: true,
-      message: "test2"
+      message: "test2",
     });
   });
 });
@@ -159,7 +159,7 @@ describe("convertToAsync", () => {
       null,
       {
         error: true,
-        message: "test2"
+        message: "test2",
       }
     );
   });
