@@ -57,30 +57,18 @@ describe("hasError", () => {
   [
     {
       in: { error: true, message: "some" },
-      out: true
+      out: true,
     },
     {
       in: { error: false, message: "" },
-      out: false
+      out: false,
     },
     {
       in: {
         prop1: { error: false, message: "" },
-        prop2: { error: true, message: "test" }
+        prop2: { error: true, message: "test" },
       },
-      out: true
-    },
-    {
-      in: {
-        prop1: { error: false, message: "" },
-        prop2: { error: false, message: "" },
-        prop3: {
-          prop4: {
-            prop5: { error: true, message: "" }
-          }
-        }
-      },
-      out: true
+      out: true,
     },
     {
       in: {
@@ -88,13 +76,25 @@ describe("hasError", () => {
         prop2: { error: false, message: "" },
         prop3: {
           prop4: {
-            prop5: { error: false, message: "" }
-          }
-        }
+            prop5: { error: true, message: "" },
+          },
+        },
       },
-      out: false
-    }
-  ].forEach(c => {
+      out: true,
+    },
+    {
+      in: {
+        prop1: { error: false, message: "" },
+        prop2: { error: false, message: "" },
+        prop3: {
+          prop4: {
+            prop5: { error: false, message: "" },
+          },
+        },
+      },
+      out: false,
+    },
+  ].forEach((c) => {
     assert.equal(hasError(c.in), c.out);
   });
 });
