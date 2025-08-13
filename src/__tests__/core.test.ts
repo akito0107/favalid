@@ -12,7 +12,7 @@ describe("tester", () => {
       null,
       {
         error: false,
-        message: ""
+        message: "",
       }
     );
   });
@@ -25,7 +25,7 @@ describe("tester", () => {
       null,
       {
         error: true,
-        message: "error"
+        message: "error",
       }
     );
   });
@@ -50,7 +50,7 @@ describe("combineWithReducer", () => {
     };
     combineWithReducer([testerMaker(), testerMaker()], reducer, {
       error: false,
-      message: ""
+      message: "",
     })();
     assert.strictEqual(2, called);
   });
@@ -72,7 +72,7 @@ describe("combine", () => {
     );
     helper(combine(tester1, tester2, tester3), null, {
       error: true,
-      message: "test2"
+      message: "test2",
     });
   });
 });
@@ -80,10 +80,10 @@ describe("combine", () => {
 describe("messager can receive actual value", () => {
   const test = tester(
     () => false,
-    value => String(value)
+    (value) => String(value)
   );
   helper(test, "test", {
     error: true,
-    message: "test"
+    message: "test",
   });
 });

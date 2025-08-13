@@ -4,13 +4,14 @@ import {
   maxLength,
   minLength,
   regexp,
-  required
+  required,
 } from "../main";
 import { isBlank } from "../util";
 
 const REQUIRED_EMAIL_MESSAGE = () => "required.";
 
-const EMAIL_REGEXP = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i;
+const EMAIL_REGEXP =
+  /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i;
 const REGEXP_MESSAGE = () => "invalid email.";
 
 const EMAIL_MAX_LENGTH = 100;
@@ -45,7 +46,7 @@ export const emailValidatorWithReducer = (email: string) => {
       required(REQUIRED_EMAIL_MESSAGE),
       minLength(EMAIL_MIN_LENGTH, MIN_LENGTH_MESSAGE),
       maxLength(EMAIL_MAX_LENGTH, MAX_LENGTH_MESSAGE),
-      regexp(EMAIL_REGEXP, REGEXP_MESSAGE, {})
+      regexp(EMAIL_REGEXP, REGEXP_MESSAGE, {}),
     ],
     reducer,
     { error: false, message: "" }
@@ -65,7 +66,7 @@ export const emailValidatorWithMultipleErrorReducer = (email: string) => {
       required(REQUIRED_EMAIL_MESSAGE),
       minLength(EMAIL_MIN_LENGTH, MIN_LENGTH_MESSAGE),
       maxLength(EMAIL_MAX_LENGTH, MAX_LENGTH_MESSAGE),
-      regexp(EMAIL_REGEXP, REGEXP_MESSAGE, {})
+      regexp(EMAIL_REGEXP, REGEXP_MESSAGE, {}),
     ],
     reducer,
     []
